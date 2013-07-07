@@ -7,6 +7,7 @@ using System.Diagnostics;
 
 namespace CyberAssistTool
 {
+	[Serializable]
 	public class DataSource
 	{
 		public String Name { get; set; }

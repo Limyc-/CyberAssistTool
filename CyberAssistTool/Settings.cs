@@ -38,25 +38,25 @@ namespace CyberAssistTool
 
 		private void Settings_Load(object sender, EventArgs e)
 		{
-			myDocumentsTb.Text = MyDocumentsPath;
-			programDataTb.Text = ProgramDataPath;
+			myDocumentsTextBox.Text = MyDocumentsPath;
+			programDataTextBox.Text = ProgramDataPath;
 		}
 
-		private void pathBtn_Click(object sender, EventArgs e)
+		private void pathButton_Click(object sender, EventArgs e)
 		{
-			Button button = (Button)sender;
+			Button btn = (Button)sender;
 			TextBox textBox;
 
 			FolderBrowserDialog browser = new FolderBrowserDialog();
-			if (button == myDocumentsBtn)
+			if (btn == myDocumentsButton)
 			{
 				browser.SelectedPath = MyDocumentsPath;
-				textBox = myDocumentsTb;
+				textBox = myDocumentsTextBox;
 			}
 			else
 			{
 				browser.SelectedPath = ProgramDataPath;
-				textBox = programDataTb;
+				textBox = programDataTextBox;
 			}
 			
 			if (browser.ShowDialog() == DialogResult.OK)
@@ -65,15 +65,15 @@ namespace CyberAssistTool
 			}
 		}
 
-		private void resetBtn_Click(object sender, EventArgs e)
+		private void resetButton_Click(object sender, EventArgs e)
 		{
 			MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 			ProgramDataPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
-			myDocumentsTb.Text = MyDocumentsPath;
-			programDataTb.Text = ProgramDataPath;
+			myDocumentsTextBox.Text = MyDocumentsPath;
+			programDataTextBox.Text = ProgramDataPath;
 		}
 
-		private void saveBtn_Click(object sender, EventArgs e)
+		private void saveButton_Click(object sender, EventArgs e)
 		{
 			foreach (var tb in this.Controls.OfType<TextBox>())
 			{
@@ -96,10 +96,12 @@ namespace CyberAssistTool
 					tb.SelectAll();
 				}
 			}
+			System.Media.SystemSounds.Asterisk.Play();
+			this.Close();
 			
 		}
 
-		private void cancelBtn_Click(object sender, EventArgs e)
+		private void cancelButton_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}

@@ -29,15 +29,15 @@
 		private void InitializeComponent()
 		{
 			this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-			this.myDocumentsTb = new System.Windows.Forms.TextBox();
-			this.myDocumentsLbl = new System.Windows.Forms.Label();
-			this.myDocumentsBtn = new System.Windows.Forms.Button();
-			this.programDataBtn = new System.Windows.Forms.Button();
-			this.programDataLbl = new System.Windows.Forms.Label();
-			this.programDataTb = new System.Windows.Forms.TextBox();
-			this.resetBtn = new System.Windows.Forms.Button();
-			this.cancelBtn = new System.Windows.Forms.Button();
-			this.saveBtn = new System.Windows.Forms.Button();
+			this.myDocumentsTextBox = new System.Windows.Forms.TextBox();
+			this.myDocumentsLabel = new System.Windows.Forms.Label();
+			this.myDocumentsButton = new System.Windows.Forms.Button();
+			this.programDataButton = new System.Windows.Forms.Button();
+			this.programDataLabel = new System.Windows.Forms.Label();
+			this.programDataTextBox = new System.Windows.Forms.TextBox();
+			this.resetButton = new System.Windows.Forms.Button();
+			this.cancelButton = new System.Windows.Forms.Button();
+			this.saveButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// folderBrowserDialog
@@ -46,105 +46,105 @@
 			// 
 			// myDocumentsTb
 			// 
-			this.myDocumentsTb.Location = new System.Drawing.Point(12, 35);
-			this.myDocumentsTb.Name = "myDocumentsTb";
-			this.myDocumentsTb.Size = new System.Drawing.Size(380, 20);
-			this.myDocumentsTb.TabIndex = 1;
+			this.myDocumentsTextBox.Location = new System.Drawing.Point(12, 35);
+			this.myDocumentsTextBox.Name = "myDocumentsTb";
+			this.myDocumentsTextBox.Size = new System.Drawing.Size(380, 20);
+			this.myDocumentsTextBox.TabIndex = 1;
 			// 
-			// myDocumentsLbl
+			// myDocumentsLabel
 			// 
-			this.myDocumentsLbl.AutoSize = true;
-			this.myDocumentsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.myDocumentsLbl.Location = new System.Drawing.Point(12, 17);
-			this.myDocumentsLbl.Name = "myDocumentsLbl";
-			this.myDocumentsLbl.Size = new System.Drawing.Size(127, 15);
-			this.myDocumentsLbl.TabIndex = 0;
-			this.myDocumentsLbl.Text = "My Documents Folder";
+			this.myDocumentsLabel.AutoSize = true;
+			this.myDocumentsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.myDocumentsLabel.Location = new System.Drawing.Point(12, 17);
+			this.myDocumentsLabel.Name = "myDocumentsLabel";
+			this.myDocumentsLabel.Size = new System.Drawing.Size(127, 15);
+			this.myDocumentsLabel.TabIndex = 0;
+			this.myDocumentsLabel.Text = "My Documents Folder";
 			// 
-			// myDocumentsBtn
+			// myDocumentsButton
 			// 
-			this.myDocumentsBtn.Location = new System.Drawing.Point(398, 33);
-			this.myDocumentsBtn.Name = "myDocumentsBtn";
-			this.myDocumentsBtn.Size = new System.Drawing.Size(24, 23);
-			this.myDocumentsBtn.TabIndex = 2;
-			this.myDocumentsBtn.Text = "...";
-			this.myDocumentsBtn.UseVisualStyleBackColor = true;
-			this.myDocumentsBtn.Click += new System.EventHandler(this.pathBtn_Click);
+			this.myDocumentsButton.Location = new System.Drawing.Point(398, 33);
+			this.myDocumentsButton.Name = "myDocumentsButton";
+			this.myDocumentsButton.Size = new System.Drawing.Size(24, 23);
+			this.myDocumentsButton.TabIndex = 2;
+			this.myDocumentsButton.Text = "...";
+			this.myDocumentsButton.UseVisualStyleBackColor = true;
+			this.myDocumentsButton.Click += new System.EventHandler(this.pathButton_Click);
 			// 
-			// programDataBtn
+			// programDataButton
 			// 
-			this.programDataBtn.Location = new System.Drawing.Point(398, 86);
-			this.programDataBtn.Name = "programDataBtn";
-			this.programDataBtn.Size = new System.Drawing.Size(24, 23);
-			this.programDataBtn.TabIndex = 5;
-			this.programDataBtn.Text = "...";
-			this.programDataBtn.UseVisualStyleBackColor = true;
-			this.programDataBtn.Click += new System.EventHandler(this.pathBtn_Click);
+			this.programDataButton.Location = new System.Drawing.Point(398, 86);
+			this.programDataButton.Name = "programDataButton";
+			this.programDataButton.Size = new System.Drawing.Size(24, 23);
+			this.programDataButton.TabIndex = 5;
+			this.programDataButton.Text = "...";
+			this.programDataButton.UseVisualStyleBackColor = true;
+			this.programDataButton.Click += new System.EventHandler(this.pathButton_Click);
 			// 
-			// programDataLbl
+			// programDataLabel
 			// 
-			this.programDataLbl.AutoSize = true;
-			this.programDataLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.programDataLbl.Location = new System.Drawing.Point(12, 70);
-			this.programDataLbl.Name = "programDataLbl";
-			this.programDataLbl.Size = new System.Drawing.Size(122, 15);
-			this.programDataLbl.TabIndex = 3;
-			this.programDataLbl.Text = "Program Data Folder";
+			this.programDataLabel.AutoSize = true;
+			this.programDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.programDataLabel.Location = new System.Drawing.Point(12, 70);
+			this.programDataLabel.Name = "programDataLabel";
+			this.programDataLabel.Size = new System.Drawing.Size(122, 15);
+			this.programDataLabel.TabIndex = 3;
+			this.programDataLabel.Text = "Program Data Folder";
 			// 
 			// programDataTb
 			// 
-			this.programDataTb.Location = new System.Drawing.Point(12, 88);
-			this.programDataTb.Name = "programDataTb";
-			this.programDataTb.Size = new System.Drawing.Size(380, 20);
-			this.programDataTb.TabIndex = 4;
+			this.programDataTextBox.Location = new System.Drawing.Point(12, 88);
+			this.programDataTextBox.Name = "programDataTb";
+			this.programDataTextBox.Size = new System.Drawing.Size(380, 20);
+			this.programDataTextBox.TabIndex = 4;
 			// 
-			// resetBtn
+			// resetButton
 			// 
-			this.resetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.resetBtn.Location = new System.Drawing.Point(12, 132);
-			this.resetBtn.Name = "resetBtn";
-			this.resetBtn.Size = new System.Drawing.Size(122, 28);
-			this.resetBtn.TabIndex = 6;
-			this.resetBtn.Text = "Reset to Default";
-			this.resetBtn.UseVisualStyleBackColor = true;
-			this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+			this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.resetButton.Location = new System.Drawing.Point(12, 132);
+			this.resetButton.Name = "resetButton";
+			this.resetButton.Size = new System.Drawing.Size(122, 28);
+			this.resetButton.TabIndex = 6;
+			this.resetButton.Text = "Reset to Default";
+			this.resetButton.UseVisualStyleBackColor = true;
+			this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
 			// 
-			// cancelBtn
+			// cancelButton
 			// 
-			this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cancelBtn.Location = new System.Drawing.Point(300, 132);
-			this.cancelBtn.Name = "cancelBtn";
-			this.cancelBtn.Size = new System.Drawing.Size(122, 28);
-			this.cancelBtn.TabIndex = 8;
-			this.cancelBtn.Text = "Cancel";
-			this.cancelBtn.UseVisualStyleBackColor = true;
-			this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+			this.cancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cancelButton.Location = new System.Drawing.Point(300, 132);
+			this.cancelButton.Name = "cancelButton";
+			this.cancelButton.Size = new System.Drawing.Size(122, 28);
+			this.cancelButton.TabIndex = 8;
+			this.cancelButton.Text = "Cancel";
+			this.cancelButton.UseVisualStyleBackColor = true;
+			this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
 			// 
-			// saveBtn
+			// saveButton
 			// 
-			this.saveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.saveBtn.Location = new System.Drawing.Point(156, 132);
-			this.saveBtn.Name = "saveBtn";
-			this.saveBtn.Size = new System.Drawing.Size(122, 28);
-			this.saveBtn.TabIndex = 7;
-			this.saveBtn.Text = "Save";
-			this.saveBtn.UseVisualStyleBackColor = true;
-			this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+			this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.saveButton.Location = new System.Drawing.Point(156, 132);
+			this.saveButton.Name = "saveButton";
+			this.saveButton.Size = new System.Drawing.Size(122, 28);
+			this.saveButton.TabIndex = 7;
+			this.saveButton.Text = "Save";
+			this.saveButton.UseVisualStyleBackColor = true;
+			this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
 			// 
 			// Settings
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(434, 172);
-			this.Controls.Add(this.saveBtn);
-			this.Controls.Add(this.cancelBtn);
-			this.Controls.Add(this.resetBtn);
-			this.Controls.Add(this.programDataBtn);
-			this.Controls.Add(this.programDataLbl);
-			this.Controls.Add(this.programDataTb);
-			this.Controls.Add(this.myDocumentsBtn);
-			this.Controls.Add(this.myDocumentsLbl);
-			this.Controls.Add(this.myDocumentsTb);
+			this.Controls.Add(this.saveButton);
+			this.Controls.Add(this.cancelButton);
+			this.Controls.Add(this.resetButton);
+			this.Controls.Add(this.programDataButton);
+			this.Controls.Add(this.programDataLabel);
+			this.Controls.Add(this.programDataTextBox);
+			this.Controls.Add(this.myDocumentsButton);
+			this.Controls.Add(this.myDocumentsLabel);
+			this.Controls.Add(this.myDocumentsTextBox);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -159,14 +159,14 @@
 		#endregion
 
 		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
-		private System.Windows.Forms.TextBox myDocumentsTb;
-		private System.Windows.Forms.Label myDocumentsLbl;
-		private System.Windows.Forms.Button myDocumentsBtn;
-		private System.Windows.Forms.Button programDataBtn;
-		private System.Windows.Forms.Label programDataLbl;
-		private System.Windows.Forms.TextBox programDataTb;
-		private System.Windows.Forms.Button resetBtn;
-		private System.Windows.Forms.Button cancelBtn;
-		private System.Windows.Forms.Button saveBtn;
+		private System.Windows.Forms.TextBox myDocumentsTextBox;
+		private System.Windows.Forms.Label myDocumentsLabel;
+		private System.Windows.Forms.Button myDocumentsButton;
+		private System.Windows.Forms.Button programDataButton;
+		private System.Windows.Forms.Label programDataLabel;
+		private System.Windows.Forms.TextBox programDataTextBox;
+		private System.Windows.Forms.Button resetButton;
+		private System.Windows.Forms.Button cancelButton;
+		private System.Windows.Forms.Button saveButton;
 	}
 }

@@ -23,19 +23,19 @@ namespace CyberAssistTool
 			
 		}
 
-		private void tribesBtn_Click(object sender, EventArgs e)
+		private void tribesButton_Click(object sender, EventArgs e)
 		{
 			this.DialogResult = DialogResult.Yes;
 			this.Close();
 		}
 
-		private void smiteBtn_Click(object sender, EventArgs e)
+		private void smiteButton_Click(object sender, EventArgs e)
 		{
 			this.DialogResult = DialogResult.No;
 			this.Close();
 		}
 
-		private void otherBtn_Click(object sender, EventArgs e)
+		private void otherButton_Click(object sender, EventArgs e)
 		{
 			this.DialogResult = DialogResult.Retry;
 			this.Close();

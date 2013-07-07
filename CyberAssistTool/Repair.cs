@@ -18,9 +18,9 @@ namespace CyberAssistTool
 			InitializeComponent();
 		}
 
-		private void repairBtn_Click(object sender, EventArgs e)
+		private void repairButton_Click(object sender, EventArgs e)
 		{
-			repairBtn.Enabled = false;
+			repairButton.Enabled = false;
 
 			Process p = new Process();
 			p.StartInfo.FileName = "cmd.exe";
@@ -78,7 +78,7 @@ namespace CyberAssistTool
 
 			System.Media.SystemSounds.Exclamation.Play();
 			MessageBox.Show("Success!", "Operation Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			repairBtn.Enabled = true;
+			repairButton.Enabled = true;
 		}
 
 	}

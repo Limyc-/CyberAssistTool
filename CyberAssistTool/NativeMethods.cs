@@ -7,7 +7,6 @@ using System.Windows.Forms;
 
 namespace CyberAssistTool
 {
-	
 
 	[StructLayout(LayoutKind.Sequential)]
 	public struct DEVMODE

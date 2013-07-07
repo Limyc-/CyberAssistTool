@@ -30,160 +30,160 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.directXBtn = new System.Windows.Forms.Button();
-			this.ccleanerBtn = new System.Windows.Forms.Button();
-			this.trebuchetFontBtn = new System.Windows.Forms.Button();
-			this.arialFontBtn = new System.Windows.Forms.Button();
-			this.physXBtn = new System.Windows.Forms.Button();
-			this.atiDriversBtn = new System.Windows.Forms.Button();
-			this.fwRuleBtn = new System.Windows.Forms.Button();
-			this.dxDiagBtn = new System.Windows.Forms.Button();
+			this.directXButton = new System.Windows.Forms.Button();
+			this.ccleanerButton = new System.Windows.Forms.Button();
+			this.trebuchetFontButton = new System.Windows.Forms.Button();
+			this.arialFontButton = new System.Windows.Forms.Button();
+			this.physXButton = new System.Windows.Forms.Button();
+			this.atiDriversButton = new System.Windows.Forms.Button();
+			this.fwRuleButton = new System.Windows.Forms.Button();
+			this.dxDiagButton = new System.Windows.Forms.Button();
 			this.uacButton = new System.Windows.Forms.Button();
-			this.lruBtn = new System.Windows.Forms.Button();
-			this.timeDateBtn = new System.Windows.Forms.Button();
-			this.nvidiaDriversBtn = new System.Windows.Forms.Button();
-			this.installerBtn = new System.Windows.Forms.Button();
+			this.lruButton = new System.Windows.Forms.Button();
+			this.timeDateButton = new System.Windows.Forms.Button();
+			this.nvidiaDriversButton = new System.Windows.Forms.Button();
+			this.installerButton = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.smiteLoopBtn = new System.Windows.Forms.Button();
-			this.tribesLoopBtn = new System.Windows.Forms.Button();
-			this.cacheBtn = new System.Windows.Forms.Button();
-			this.playBtn = new System.Windows.Forms.Button();
-			this.dotNetCheckBtn = new System.Windows.Forms.Button();
+			this.smiteLoopButton = new System.Windows.Forms.Button();
+			this.tribesLoopButton = new System.Windows.Forms.Button();
+			this.cacheButton = new System.Windows.Forms.Button();
+			this.playButton = new System.Windows.Forms.Button();
+			this.dotNetCheckButton = new System.Windows.Forms.Button();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.resetTribesIniBtn = new System.Windows.Forms.Button();
-			this.smiteIniBtn = new System.Windows.Forms.Button();
-			this.resetSmiteIniBtn = new System.Windows.Forms.Button();
-			this.tribesIniBtn = new System.Windows.Forms.Button();
+			this.resetTribesIniButton = new System.Windows.Forms.Button();
+			this.smiteConfigButton = new System.Windows.Forms.Button();
+			this.resetSmiteConfigButton = new System.Windows.Forms.Button();
+			this.tribesConfigButton = new System.Windows.Forms.Button();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.stopServiceBtn = new System.Windows.Forms.Button();
-			this.uninstallServiceBtn = new System.Windows.Forms.Button();
-			this.startServiceBtn = new System.Windows.Forms.Button();
+			this.stopServiceButton = new System.Windows.Forms.Button();
+			this.uninstallServiceButton = new System.Windows.Forms.Button();
+			this.startServiceButton = new System.Windows.Forms.Button();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
-			this.bigFixPostBtn = new System.Windows.Forms.Button();
-			this.smitePatchesBtn = new System.Windows.Forms.Button();
-			this.tribesPatchesBtn = new System.Windows.Forms.Button();
-			this.guideBtn = new System.Windows.Forms.Button();
-			this.troubleshootClb = new System.Windows.Forms.CheckedListBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.supportTicketBtn = new System.Windows.Forms.Button();
-			this.supportToolBtn = new System.Windows.Forms.Button();
-			this.label2 = new System.Windows.Forms.Label();
+			this.bigFixPostButton = new System.Windows.Forms.Button();
+			this.smitePatchesButton = new System.Windows.Forms.Button();
+			this.tribesPatchesButton = new System.Windows.Forms.Button();
+			this.guideButton = new System.Windows.Forms.Button();
+			this.troubleshootCheckedListBox = new System.Windows.Forms.CheckedListBox();
+			this.checklistLabel = new System.Windows.Forms.Label();
+			this.supportTicketButton = new System.Windows.Forms.Button();
+			this.supportToolButton = new System.Windows.Forms.Button();
+			this.disclaimerLabel = new System.Windows.Forms.Label();
 			this.mainMenuStrip = new System.Windows.Forms.MainMenu(this.components);
-			this.fileMi = new System.Windows.Forms.MenuItem();
-			this.exitMi = new System.Windows.Forms.MenuItem();
-			this.editMi = new System.Windows.Forms.MenuItem();
-			this.settingsMi = new System.Windows.Forms.MenuItem();
-			this.mainTc = new System.Windows.Forms.TabControl();
+			this.fileMenuItem = new System.Windows.Forms.MenuItem();
+			this.exitMenuItem = new System.Windows.Forms.MenuItem();
+			this.editMenuItem = new System.Windows.Forms.MenuItem();
+			this.settingsMenuItem = new System.Windows.Forms.MenuItem();
+			this.mainTabControl = new System.Windows.Forms.TabControl();
 			this.repairTab = new System.Windows.Forms.TabPage();
-			this.iniEditorTab = new System.Windows.Forms.TabPage();
-			this.currentGameLbl = new System.Windows.Forms.Label();
-			this.currentFileLbl = new System.Windows.Forms.Label();
-			this.presetCbo = new System.Windows.Forms.ComboBox();
-			this.loadFileBtn = new System.Windows.Forms.Button();
-			this.saveFileBtn = new System.Windows.Forms.Button();
-			this.iniEditorPnl = new System.Windows.Forms.Panel();
-			this.particleLodBiasCbo = new System.Windows.Forms.ComboBox();
-			this.particleLodBiasLbl = new System.Windows.Forms.Label();
-			this.bShouldAllowRagdollingCbo = new System.Windows.Forms.ComboBox();
-			this.bShouldAllowRagdollingLbl = new System.Windows.Forms.Label();
-			this.bForceStaticTerrainCbo = new System.Windows.Forms.ComboBox();
-			this.bForceStaticTerrainLbl = new System.Windows.Forms.Label();
-			this.useVsyncCbo = new System.Windows.Forms.ComboBox();
-			this.maxSmoothedFrameRateCbo = new System.Windows.Forms.ComboBox();
-			this.minSmoothedFrameRateCbo = new System.Windows.Forms.ComboBox();
-			this.bSmoothFrameRateCbo = new System.Windows.Forms.ComboBox();
-			this.trilinearCbo = new System.Windows.Forms.ComboBox();
-			this.maxAnisotropyCbo = new System.Windows.Forms.ComboBox();
-			this.textureDetailCbo = new System.Windows.Forms.ComboBox();
-			this.bAllowWholeSceneDominantShadowsCbo = new System.Windows.Forms.ComboBox();
-			this.lightEnvironmentShadowsCbo = new System.Windows.Forms.ComboBox();
-			this.textureDetailLbl = new System.Windows.Forms.Label();
-			this.bAllowWholeSceneDominantShadowsLbl = new System.Windows.Forms.Label();
-			this.label32 = new System.Windows.Forms.Label();
-			this.maxAnisotropyLbl = new System.Windows.Forms.Label();
-			this.trilinearLbl = new System.Windows.Forms.Label();
-			this.label35 = new System.Windows.Forms.Label();
-			this.minSmoothedFrameRateLbl = new System.Windows.Forms.Label();
-			this.maxSmoothedFrameRateLbl = new System.Windows.Forms.Label();
-			this.useVsyncLbl = new System.Windows.Forms.Label();
-			this.bSmoothFrameRateLbl = new System.Windows.Forms.Label();
-			this.lightEnvironmentShadowsLbl = new System.Windows.Forms.Label();
-			this.dynamicShadowsCbo = new System.Windows.Forms.ComboBox();
-			this.oneFrameThreadLagCbo = new System.Windows.Forms.ComboBox();
-			this.skeletalMeshLodBiasCbo = new System.Windows.Forms.ComboBox();
-			this.detailModeCbo = new System.Windows.Forms.ComboBox();
-			this.speedTreeFrondsCbo = new System.Windows.Forms.ComboBox();
-			this.speedTreeLeavesCbo = new System.Windows.Forms.ComboBox();
-			this.allowRadialBlurCbo = new System.Windows.Forms.ComboBox();
-			this.motionBlurCbo = new System.Windows.Forms.ComboBox();
-			this.lensFlaresCbo = new System.Windows.Forms.ComboBox();
-			this.fogVolumesCbo = new System.Windows.Forms.ComboBox();
-			this.dynamicShadowsLbl = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.fogVolumesLbl = new System.Windows.Forms.Label();
-			this.lensFlaresLbl = new System.Windows.Forms.Label();
-			this.motionBlurLbl = new System.Windows.Forms.Label();
-			this.speedTreeLeavesLbl = new System.Windows.Forms.Label();
-			this.speedTreeFrondsLbl = new System.Windows.Forms.Label();
-			this.detailModeLbl = new System.Windows.Forms.Label();
-			this.skeletalMesLodBiasLbl = new System.Windows.Forms.Label();
-			this.oneFrameThreadLagLbl = new System.Windows.Forms.Label();
-			this.allowRadialBlurLbl = new System.Windows.Forms.Label();
-			this.distortionLbl = new System.Windows.Forms.Label();
-			this.distortionCbo = new System.Windows.Forms.ComboBox();
-			this.depthOfFieldCbo = new System.Windows.Forms.ComboBox();
-			this.depthOfFieldLbl = new System.Windows.Forms.Label();
-			this.bloomCbo = new System.Windows.Forms.ComboBox();
-			this.ambientOcclusionCbo = new System.Windows.Forms.ComboBox();
-			this.bAllowLightShaftsCbo = new System.Windows.Forms.ComboBox();
-			this.staticDecalsCbo = new System.Windows.Forms.ComboBox();
-			this.dynamicDecalsCbo = new System.Windows.Forms.ComboBox();
-			this.directionalLightMapsCbo = new System.Windows.Forms.ComboBox();
-			this.compositeDynamicLightsCbo = new System.Windows.Forms.ComboBox();
-			this.dynamicLightsCbo = new System.Windows.Forms.ComboBox();
-			this.bUseMaxQualityModeCbo = new System.Windows.Forms.ComboBox();
-			this.screenResCbo = new System.Windows.Forms.ComboBox();
-			this.screenTypeCbo = new System.Windows.Forms.ComboBox();
-			this.infoLbl5 = new System.Windows.Forms.Label();
-			this.screenTypeLbl = new System.Windows.Forms.Label();
-			this.screenResLbl = new System.Windows.Forms.Label();
-			this.bUseMaxQualityModeLbl = new System.Windows.Forms.Label();
-			this.dynamicLightsLbl = new System.Windows.Forms.Label();
-			this.compositeDynamicLightsLbl = new System.Windows.Forms.Label();
-			this.dynamicDecalsLbl = new System.Windows.Forms.Label();
-			this.staticDecalsLbl = new System.Windows.Forms.Label();
-			this.bAllowLightShaftsLbl = new System.Windows.Forms.Label();
-			this.ambientOcclusionLbl = new System.Windows.Forms.Label();
-			this.bloomLbl = new System.Windows.Forms.Label();
-			this.directionalLightMapsLbl = new System.Windows.Forms.Label();
-			this.infoLbl2 = new System.Windows.Forms.Label();
+			this.configEditorTab = new System.Windows.Forms.TabPage();
+			this.currentGameLabel = new System.Windows.Forms.Label();
+			this.currentFileLabel = new System.Windows.Forms.Label();
+			this.presetComboBox = new System.Windows.Forms.ComboBox();
+			this.loadFileButton = new System.Windows.Forms.Button();
+			this.saveFileButton = new System.Windows.Forms.Button();
+			this.iniEditorPanel = new System.Windows.Forms.Panel();
+			this.particleLodBiasComboBox = new System.Windows.Forms.ComboBox();
+			this.particleLodBiasLabel = new System.Windows.Forms.Label();
+			this.bShouldAllowRagdollingComboBox = new System.Windows.Forms.ComboBox();
+			this.bShouldAllowRagdollingLabel = new System.Windows.Forms.Label();
+			this.bForceStaticTerrainComboBox = new System.Windows.Forms.ComboBox();
+			this.bForceStaticTerrainLabel = new System.Windows.Forms.Label();
+			this.useVsyncComboBox = new System.Windows.Forms.ComboBox();
+			this.maxSmoothedFrameRateComboBox = new System.Windows.Forms.ComboBox();
+			this.minSmoothedFrameRateComboBox = new System.Windows.Forms.ComboBox();
+			this.bSmoothFrameRateComboBox = new System.Windows.Forms.ComboBox();
+			this.trilinearComboBox = new System.Windows.Forms.ComboBox();
+			this.maxAnisotropyComboBox = new System.Windows.Forms.ComboBox();
+			this.textureDetailComboBox = new System.Windows.Forms.ComboBox();
+			this.bAllowWholeSceneDominantShadowsComboBox = new System.Windows.Forms.ComboBox();
+			this.lightEnvironmentShadowsComboBox = new System.Windows.Forms.ComboBox();
+			this.textureDetailLabel = new System.Windows.Forms.Label();
+			this.bAllowWholeSceneDominantShadowsLabel = new System.Windows.Forms.Label();
+			this.textureDetailHeaderLabel = new System.Windows.Forms.Label();
+			this.maxAnisotropyLabel = new System.Windows.Forms.Label();
+			this.trilinearLabel = new System.Windows.Forms.Label();
+			this.extraHeaderLabel = new System.Windows.Forms.Label();
+			this.minSmoothedFrameRateLabel = new System.Windows.Forms.Label();
+			this.maxSmoothedFrameRateLabel = new System.Windows.Forms.Label();
+			this.useVsyncLabel = new System.Windows.Forms.Label();
+			this.bSmoothFrameRateLabel = new System.Windows.Forms.Label();
+			this.lightEnvironmentShadowsLabel = new System.Windows.Forms.Label();
+			this.dynamicShadowsComboBox = new System.Windows.Forms.ComboBox();
+			this.oneFrameThreadLagComboBox = new System.Windows.Forms.ComboBox();
+			this.skeletalMeshLodBiasComboBox = new System.Windows.Forms.ComboBox();
+			this.detailModeComboBox = new System.Windows.Forms.ComboBox();
+			this.speedTreeFrondsComboBox = new System.Windows.Forms.ComboBox();
+			this.speedTreeLeavesComboBox = new System.Windows.Forms.ComboBox();
+			this.allowRadialBlurComboBox = new System.Windows.Forms.ComboBox();
+			this.motionBlurComboBox = new System.Windows.Forms.ComboBox();
+			this.lensFlaresComboBox = new System.Windows.Forms.ComboBox();
+			this.fogVolumesComboBox = new System.Windows.Forms.ComboBox();
+			this.dynamicShadowsLabel = new System.Windows.Forms.Label();
+			this.shadowDetailHeaderLabel = new System.Windows.Forms.Label();
+			this.fogVolumesLabel = new System.Windows.Forms.Label();
+			this.lensFlaresLabel = new System.Windows.Forms.Label();
+			this.motionBlurLabel = new System.Windows.Forms.Label();
+			this.speedTreeLeavesLabel = new System.Windows.Forms.Label();
+			this.speedTreeFrondsLabel = new System.Windows.Forms.Label();
+			this.detailModeLabel = new System.Windows.Forms.Label();
+			this.skeletalMesLodBiasLabel = new System.Windows.Forms.Label();
+			this.oneFrameThreadLagLabel = new System.Windows.Forms.Label();
+			this.allowRadialBlurLabel = new System.Windows.Forms.Label();
+			this.distortionLabel = new System.Windows.Forms.Label();
+			this.distortionComboBox = new System.Windows.Forms.ComboBox();
+			this.depthOfFieldComboBox = new System.Windows.Forms.ComboBox();
+			this.depthOfFieldLabel = new System.Windows.Forms.Label();
+			this.bloomComboBox = new System.Windows.Forms.ComboBox();
+			this.ambientOcclusionComboBox = new System.Windows.Forms.ComboBox();
+			this.bAllowLightShaftsComboBox = new System.Windows.Forms.ComboBox();
+			this.staticDecalsComboBox = new System.Windows.Forms.ComboBox();
+			this.dynamicDecalsComboBox = new System.Windows.Forms.ComboBox();
+			this.directionalLightMapsComboBox = new System.Windows.Forms.ComboBox();
+			this.compositeDynamicLightsComboBox = new System.Windows.Forms.ComboBox();
+			this.dynamicLightsComboBox = new System.Windows.Forms.ComboBox();
+			this.bUseMaxQualityModeComboBox = new System.Windows.Forms.ComboBox();
+			this.screenResComboBox = new System.Windows.Forms.ComboBox();
+			this.screenTypeComboBox = new System.Windows.Forms.ComboBox();
+			this.worldDetailHeaderLabel = new System.Windows.Forms.Label();
+			this.screenTypeLabel = new System.Windows.Forms.Label();
+			this.screenResLabel = new System.Windows.Forms.Label();
+			this.bUseMaxQualityModeLabel = new System.Windows.Forms.Label();
+			this.dynamicLightsLabel = new System.Windows.Forms.Label();
+			this.compositeDynamicLightsLabel = new System.Windows.Forms.Label();
+			this.dynamicDecalsLabel = new System.Windows.Forms.Label();
+			this.staticDecalsLabel = new System.Windows.Forms.Label();
+			this.bAllowLightShaftsLabel = new System.Windows.Forms.Label();
+			this.ambientOcclusionLabel = new System.Windows.Forms.Label();
+			this.bloomLabel = new System.Windows.Forms.Label();
+			this.directionalLightMapsLabel = new System.Windows.Forms.Label();
+			this.screenSettingsHeaderLabel = new System.Windows.Forms.Label();
 			this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
 			this.groupBox4.SuspendLayout();
 			this.groupBox5.SuspendLayout();
-			this.mainTc.SuspendLayout();
+			this.mainTabControl.SuspendLayout();
 			this.repairTab.SuspendLayout();
-			this.iniEditorTab.SuspendLayout();
-			this.iniEditorPnl.SuspendLayout();
+			this.configEditorTab.SuspendLayout();
+			this.iniEditorPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.directXBtn);
-			this.groupBox1.Controls.Add(this.ccleanerBtn);
-			this.groupBox1.Controls.Add(this.trebuchetFontBtn);
-			this.groupBox1.Controls.Add(this.arialFontBtn);
-			this.groupBox1.Controls.Add(this.physXBtn);
-			this.groupBox1.Controls.Add(this.atiDriversBtn);
-			this.groupBox1.Controls.Add(this.fwRuleBtn);
-			this.groupBox1.Controls.Add(this.dxDiagBtn);
+			this.groupBox1.Controls.Add(this.directXButton);
+			this.groupBox1.Controls.Add(this.ccleanerButton);
+			this.groupBox1.Controls.Add(this.trebuchetFontButton);
+			this.groupBox1.Controls.Add(this.arialFontButton);
+			this.groupBox1.Controls.Add(this.physXButton);
+			this.groupBox1.Controls.Add(this.atiDriversButton);
+			this.groupBox1.Controls.Add(this.fwRuleButton);
+			this.groupBox1.Controls.Add(this.dxDiagButton);
 			this.groupBox1.Controls.Add(this.uacButton);
-			this.groupBox1.Controls.Add(this.lruBtn);
-			this.groupBox1.Controls.Add(this.timeDateBtn);
-			this.groupBox1.Controls.Add(this.nvidiaDriversBtn);
-			this.groupBox1.Controls.Add(this.installerBtn);
+			this.groupBox1.Controls.Add(this.lruButton);
+			this.groupBox1.Controls.Add(this.timeDateButton);
+			this.groupBox1.Controls.Add(this.nvidiaDriversButton);
+			this.groupBox1.Controls.Add(this.installerButton);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.Location = new System.Drawing.Point(8, 6);
 			this.groupBox1.Name = "groupBox1";
@@ -192,95 +192,95 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Install / Repair";
 			// 
-			// directXBtn
+			// directXButton
 			// 
-			this.directXBtn.Location = new System.Drawing.Point(6, 48);
-			this.directXBtn.Name = "directXBtn";
-			this.directXBtn.Size = new System.Drawing.Size(95, 23);
-			this.directXBtn.TabIndex = 1;
-			this.directXBtn.Tag = "http://www.microsoft.com/en-us/download/details.aspx?id=35";
-			this.directXBtn.Text = "DirectX";
-			this.directXBtn.UseVisualStyleBackColor = true;
-			this.directXBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.directXButton.Location = new System.Drawing.Point(6, 48);
+			this.directXButton.Name = "directXButton";
+			this.directXButton.Size = new System.Drawing.Size(95, 23);
+			this.directXButton.TabIndex = 1;
+			this.directXButton.Tag = "http://www.microsoft.com/en-us/download/details.aspx?id=35";
+			this.directXButton.Text = "DirectX";
+			this.directXButton.UseVisualStyleBackColor = true;
+			this.directXButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// ccleanerBtn
+			// ccleanerButton
 			// 
-			this.ccleanerBtn.Location = new System.Drawing.Point(6, 366);
-			this.ccleanerBtn.Name = "ccleanerBtn";
-			this.ccleanerBtn.Size = new System.Drawing.Size(95, 23);
-			this.ccleanerBtn.TabIndex = 12;
-			this.ccleanerBtn.Tag = "http://www.piriform.com/ccleaner//download/standard";
-			this.ccleanerBtn.Text = "CCleaner";
-			this.ccleanerBtn.UseVisualStyleBackColor = true;
-			this.ccleanerBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.ccleanerButton.Location = new System.Drawing.Point(6, 366);
+			this.ccleanerButton.Name = "ccleanerButton";
+			this.ccleanerButton.Size = new System.Drawing.Size(95, 23);
+			this.ccleanerButton.TabIndex = 12;
+			this.ccleanerButton.Tag = "http://www.piriform.com/ccleaner//download/standard";
+			this.ccleanerButton.Text = "CCleaner";
+			this.ccleanerButton.UseVisualStyleBackColor = true;
+			this.ccleanerButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// trebuchetFontBtn
+			// trebuchetFontButton
 			// 
-			this.trebuchetFontBtn.Location = new System.Drawing.Point(6, 338);
-			this.trebuchetFontBtn.Name = "trebuchetFontBtn";
-			this.trebuchetFontBtn.Size = new System.Drawing.Size(95, 23);
-			this.trebuchetFontBtn.TabIndex = 11;
-			this.trebuchetFontBtn.Tag = "http://www.mediafire.com/download.php?zqbvgfgbjde4gn5";
-			this.trebuchetFontBtn.Text = "Trebuchet Font";
-			this.trebuchetFontBtn.UseVisualStyleBackColor = true;
-			this.trebuchetFontBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.trebuchetFontButton.Location = new System.Drawing.Point(6, 338);
+			this.trebuchetFontButton.Name = "trebuchetFontButton";
+			this.trebuchetFontButton.Size = new System.Drawing.Size(95, 23);
+			this.trebuchetFontButton.TabIndex = 11;
+			this.trebuchetFontButton.Tag = "http://www.mediafire.com/download.php?zqbvgfgbjde4gn5";
+			this.trebuchetFontButton.Text = "Trebuchet Font";
+			this.trebuchetFontButton.UseVisualStyleBackColor = true;
+			this.trebuchetFontButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// arialFontBtn
+			// arialFontButton
 			// 
-			this.arialFontBtn.Location = new System.Drawing.Point(6, 309);
-			this.arialFontBtn.Name = "arialFontBtn";
-			this.arialFontBtn.Size = new System.Drawing.Size(95, 23);
-			this.arialFontBtn.TabIndex = 10;
-			this.arialFontBtn.Tag = "http://www.mediafire.com/download.php?fjmg1abnac5ln2n";
-			this.arialFontBtn.Text = "Arial Font";
-			this.arialFontBtn.UseVisualStyleBackColor = true;
-			this.arialFontBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.arialFontButton.Location = new System.Drawing.Point(6, 309);
+			this.arialFontButton.Name = "arialFontButton";
+			this.arialFontButton.Size = new System.Drawing.Size(95, 23);
+			this.arialFontButton.TabIndex = 10;
+			this.arialFontButton.Tag = "http://www.mediafire.com/download.php?fjmg1abnac5ln2n";
+			this.arialFontButton.Text = "Arial Font";
+			this.arialFontButton.UseVisualStyleBackColor = true;
+			this.arialFontButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// physXBtn
+			// physXButton
 			// 
-			this.physXBtn.Location = new System.Drawing.Point(6, 77);
-			this.physXBtn.Name = "physXBtn";
-			this.physXBtn.Size = new System.Drawing.Size(95, 23);
-			this.physXBtn.TabIndex = 2;
-			this.physXBtn.Tag = "http://www.nvidia.com/content/DriverDownload-March2009/confirmation.php?url=/Wind" +
+			this.physXButton.Location = new System.Drawing.Point(6, 77);
+			this.physXButton.Name = "physXButton";
+			this.physXButton.Size = new System.Drawing.Size(95, 23);
+			this.physXButton.TabIndex = 2;
+			this.physXButton.Tag = "http://www.nvidia.com/content/DriverDownload-March2009/confirmation.php?url=/Wind" +
     "ows/9.12.0613/PhysX-9.12.0613-SystemSoftware.msi&lang=us&type=Other";
-			this.physXBtn.Text = "PhysX";
-			this.physXBtn.UseVisualStyleBackColor = true;
-			this.physXBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.physXButton.Text = "PhysX";
+			this.physXButton.UseVisualStyleBackColor = true;
+			this.physXButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// atiDriversBtn
+			// atiDriversButton
 			// 
-			this.atiDriversBtn.Location = new System.Drawing.Point(6, 106);
-			this.atiDriversBtn.Name = "atiDriversBtn";
-			this.atiDriversBtn.Size = new System.Drawing.Size(95, 23);
-			this.atiDriversBtn.TabIndex = 3;
-			this.atiDriversBtn.Tag = "http://support.amd.com/us/gpudownload/Pages/index.aspx";
-			this.atiDriversBtn.Text = "ATI Drivers";
-			this.atiDriversBtn.UseVisualStyleBackColor = true;
-			this.atiDriversBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.atiDriversButton.Location = new System.Drawing.Point(6, 106);
+			this.atiDriversButton.Name = "atiDriversButton";
+			this.atiDriversButton.Size = new System.Drawing.Size(95, 23);
+			this.atiDriversButton.TabIndex = 3;
+			this.atiDriversButton.Tag = "http://support.amd.com/us/gpudownload/Pages/index.aspx";
+			this.atiDriversButton.Text = "ATI Drivers";
+			this.atiDriversButton.UseVisualStyleBackColor = true;
+			this.atiDriversButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// fwRuleBtn
+			// fwRuleButton
 			// 
-			this.fwRuleBtn.Location = new System.Drawing.Point(6, 280);
-			this.fwRuleBtn.Name = "fwRuleBtn";
-			this.fwRuleBtn.Size = new System.Drawing.Size(95, 23);
-			this.fwRuleBtn.TabIndex = 9;
-			this.fwRuleBtn.Tag = "http://www.sevenforums.com/tutorials/542-windows-firewall-add-remove-exception.ht" +
+			this.fwRuleButton.Location = new System.Drawing.Point(6, 280);
+			this.fwRuleButton.Name = "fwRuleButton";
+			this.fwRuleButton.Size = new System.Drawing.Size(95, 23);
+			this.fwRuleButton.TabIndex = 9;
+			this.fwRuleButton.Tag = "http://www.sevenforums.com/tutorials/542-windows-firewall-add-remove-exception.ht" +
     "ml";
-			this.fwRuleBtn.Text = "Add FW Rule";
-			this.fwRuleBtn.UseVisualStyleBackColor = true;
-			this.fwRuleBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.fwRuleButton.Text = "Add FW Rule";
+			this.fwRuleButton.UseVisualStyleBackColor = true;
+			this.fwRuleButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// dxDiagBtn
+			// dxDiagButton
 			// 
-			this.dxDiagBtn.Location = new System.Drawing.Point(6, 251);
-			this.dxDiagBtn.Name = "dxDiagBtn";
-			this.dxDiagBtn.Size = new System.Drawing.Size(95, 23);
-			this.dxDiagBtn.TabIndex = 8;
-			this.dxDiagBtn.Tag = "dxdiag";
-			this.dxDiagBtn.Text = "Run DX Diag";
-			this.dxDiagBtn.UseVisualStyleBackColor = true;
-			this.dxDiagBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.dxDiagButton.Location = new System.Drawing.Point(6, 251);
+			this.dxDiagButton.Name = "dxDiagButton";
+			this.dxDiagButton.Size = new System.Drawing.Size(95, 23);
+			this.dxDiagButton.TabIndex = 8;
+			this.dxDiagButton.Tag = "dxdiag";
+			this.dxDiagButton.Text = "Run DX Diag";
+			this.dxDiagButton.UseVisualStyleBackColor = true;
+			this.dxDiagButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
 			// uacButton
 			// 
@@ -291,60 +291,60 @@
 			this.uacButton.Tag = "useraccountcontrolsettings";
 			this.uacButton.Text = "UAC";
 			this.uacButton.UseVisualStyleBackColor = true;
-			this.uacButton.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.uacButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// lruBtn
+			// lruButton
 			// 
-			this.lruBtn.Location = new System.Drawing.Point(6, 193);
-			this.lruBtn.Name = "lruBtn";
-			this.lruBtn.Size = new System.Drawing.Size(95, 23);
-			this.lruBtn.TabIndex = 6;
-			this.lruBtn.Tag = "http://www.mediafire.com/?feky85ilxb48ctk";
-			this.lruBtn.Text = "L.R.U.";
-			this.lruBtn.UseVisualStyleBackColor = true;
-			this.lruBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.lruButton.Location = new System.Drawing.Point(6, 193);
+			this.lruButton.Name = "lruButton";
+			this.lruButton.Size = new System.Drawing.Size(95, 23);
+			this.lruButton.TabIndex = 6;
+			this.lruButton.Tag = "http://www.mediafire.com/?feky85ilxb48ctk";
+			this.lruButton.Text = "L.R.U.";
+			this.lruButton.UseVisualStyleBackColor = true;
+			this.lruButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// timeDateBtn
+			// timeDateButton
 			// 
-			this.timeDateBtn.Location = new System.Drawing.Point(6, 164);
-			this.timeDateBtn.Name = "timeDateBtn";
-			this.timeDateBtn.Size = new System.Drawing.Size(95, 23);
-			this.timeDateBtn.TabIndex = 5;
-			this.timeDateBtn.Tag = "timedate.cpl";
-			this.timeDateBtn.Text = "Time / Date";
-			this.timeDateBtn.UseVisualStyleBackColor = true;
-			this.timeDateBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.timeDateButton.Location = new System.Drawing.Point(6, 164);
+			this.timeDateButton.Name = "timeDateButton";
+			this.timeDateButton.Size = new System.Drawing.Size(95, 23);
+			this.timeDateButton.TabIndex = 5;
+			this.timeDateButton.Tag = "timedate.cpl";
+			this.timeDateButton.Text = "Time / Date";
+			this.timeDateButton.UseVisualStyleBackColor = true;
+			this.timeDateButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// nvidiaDriversBtn
+			// nvidiaDriversButton
 			// 
-			this.nvidiaDriversBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.nvidiaDriversBtn.Location = new System.Drawing.Point(6, 135);
-			this.nvidiaDriversBtn.Name = "nvidiaDriversBtn";
-			this.nvidiaDriversBtn.Size = new System.Drawing.Size(95, 23);
-			this.nvidiaDriversBtn.TabIndex = 4;
-			this.nvidiaDriversBtn.Tag = "http://www.nvidia.com/Download/index.aspx?lang=en-us";
-			this.nvidiaDriversBtn.Text = "NVIDIA Drivers";
-			this.nvidiaDriversBtn.UseVisualStyleBackColor = true;
-			this.nvidiaDriversBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.nvidiaDriversButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.nvidiaDriversButton.Location = new System.Drawing.Point(6, 135);
+			this.nvidiaDriversButton.Name = "nvidiaDriversButton";
+			this.nvidiaDriversButton.Size = new System.Drawing.Size(95, 23);
+			this.nvidiaDriversButton.TabIndex = 4;
+			this.nvidiaDriversButton.Tag = "http://www.nvidia.com/Download/index.aspx?lang=en-us";
+			this.nvidiaDriversButton.Text = "NVIDIA Drivers";
+			this.nvidiaDriversButton.UseVisualStyleBackColor = true;
+			this.nvidiaDriversButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// installerBtn
+			// installerButton
 			// 
-			this.installerBtn.Location = new System.Drawing.Point(6, 19);
-			this.installerBtn.Name = "installerBtn";
-			this.installerBtn.Size = new System.Drawing.Size(95, 23);
-			this.installerBtn.TabIndex = 0;
-			this.installerBtn.Tag = "http://www.mediafire.com/?pv777mm7gd1ntba";
-			this.installerBtn.Text = "Installer";
-			this.installerBtn.UseVisualStyleBackColor = true;
-			this.installerBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.installerButton.Location = new System.Drawing.Point(6, 19);
+			this.installerButton.Name = "installerButton";
+			this.installerButton.Size = new System.Drawing.Size(95, 23);
+			this.installerButton.TabIndex = 0;
+			this.installerButton.Tag = "http://www.mediafire.com/?pv777mm7gd1ntba";
+			this.installerButton.Text = "Installer";
+			this.installerButton.UseVisualStyleBackColor = true;
+			this.installerButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Controls.Add(this.smiteLoopBtn);
-			this.groupBox2.Controls.Add(this.tribesLoopBtn);
-			this.groupBox2.Controls.Add(this.cacheBtn);
-			this.groupBox2.Controls.Add(this.playBtn);
-			this.groupBox2.Controls.Add(this.dotNetCheckBtn);
+			this.groupBox2.Controls.Add(this.smiteLoopButton);
+			this.groupBox2.Controls.Add(this.tribesLoopButton);
+			this.groupBox2.Controls.Add(this.cacheButton);
+			this.groupBox2.Controls.Add(this.playButton);
+			this.groupBox2.Controls.Add(this.dotNetCheckButton);
 			this.groupBox2.Location = new System.Drawing.Point(121, 6);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(107, 166);
@@ -352,67 +352,67 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Auto Fix";
 			// 
-			// smiteLoopBtn
+			// smiteLoopButton
 			// 
-			this.smiteLoopBtn.Enabled = false;
-			this.smiteLoopBtn.Location = new System.Drawing.Point(6, 19);
-			this.smiteLoopBtn.Name = "smiteLoopBtn";
-			this.smiteLoopBtn.Size = new System.Drawing.Size(95, 23);
-			this.smiteLoopBtn.TabIndex = 2;
-			this.smiteLoopBtn.Text = "Smite Loop";
-			this.smiteLoopBtn.UseVisualStyleBackColor = true;
+			this.smiteLoopButton.Enabled = false;
+			this.smiteLoopButton.Location = new System.Drawing.Point(6, 19);
+			this.smiteLoopButton.Name = "smiteLoopButton";
+			this.smiteLoopButton.Size = new System.Drawing.Size(95, 23);
+			this.smiteLoopButton.TabIndex = 2;
+			this.smiteLoopButton.Text = "Smite Loop";
+			this.smiteLoopButton.UseVisualStyleBackColor = true;
 			// 
-			// tribesLoopBtn
+			// tribesLoopButton
 			// 
-			this.tribesLoopBtn.Enabled = false;
-			this.tribesLoopBtn.Location = new System.Drawing.Point(6, 48);
-			this.tribesLoopBtn.Name = "tribesLoopBtn";
-			this.tribesLoopBtn.Size = new System.Drawing.Size(95, 23);
-			this.tribesLoopBtn.TabIndex = 3;
-			this.tribesLoopBtn.Text = "Tribes Loop";
-			this.tribesLoopBtn.UseVisualStyleBackColor = true;
+			this.tribesLoopButton.Enabled = false;
+			this.tribesLoopButton.Location = new System.Drawing.Point(6, 48);
+			this.tribesLoopButton.Name = "tribesLoopButton";
+			this.tribesLoopButton.Size = new System.Drawing.Size(95, 23);
+			this.tribesLoopButton.TabIndex = 3;
+			this.tribesLoopButton.Text = "Tribes Loop";
+			this.tribesLoopButton.UseVisualStyleBackColor = true;
 			// 
-			// cacheBtn
+			// cacheButton
 			// 
-			this.cacheBtn.Location = new System.Drawing.Point(6, 135);
-			this.cacheBtn.Name = "cacheBtn";
-			this.cacheBtn.Size = new System.Drawing.Size(95, 23);
-			this.cacheBtn.TabIndex = 6;
-			this.cacheBtn.Tag = "\\Hi-Rez Studios\\BrowserCacheBattle";
-			this.cacheBtn.Text = "Cache";
-			this.cacheBtn.UseVisualStyleBackColor = true;
-			this.cacheBtn.Click += new System.EventHandler(this.cacheBtn_Click);
+			this.cacheButton.Location = new System.Drawing.Point(6, 135);
+			this.cacheButton.Name = "cacheButton";
+			this.cacheButton.Size = new System.Drawing.Size(95, 23);
+			this.cacheButton.TabIndex = 6;
+			this.cacheButton.Tag = "\\Hi-Rez Studios\\BrowserCacheBattle";
+			this.cacheButton.Text = "Cache";
+			this.cacheButton.UseVisualStyleBackColor = true;
+			this.cacheButton.Click += new System.EventHandler(this.cacheButton_Click);
 			// 
-			// playBtn
+			// playButton
 			// 
-			this.playBtn.Location = new System.Drawing.Point(6, 106);
-			this.playBtn.Name = "playBtn";
-			this.playBtn.Size = new System.Drawing.Size(95, 23);
-			this.playBtn.TabIndex = 5;
-			this.playBtn.Tag = "c:\\windows\\sysnative\\taskkill.exe|/IM HiRezGameNotifier.exe^c:\\windows\\sysnative\\" +
+			this.playButton.Location = new System.Drawing.Point(6, 106);
+			this.playButton.Name = "playButton";
+			this.playButton.Size = new System.Drawing.Size(95, 23);
+			this.playButton.TabIndex = 5;
+			this.playButton.Tag = "c:\\windows\\sysnative\\taskkill.exe|/IM HiRezGameNotifier.exe^c:\\windows\\sysnative\\" +
     "taskkill.exe|/IM Smite.exe^c:\\windows\\sysnative\\taskkill.exe|/IM TribesAscend.ex" +
     "e";
-			this.playBtn.Text = "\"Play\" Button";
-			this.playBtn.UseVisualStyleBackColor = true;
-			this.playBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.playButton.Text = "\"Play\" Button";
+			this.playButton.UseVisualStyleBackColor = true;
+			this.playButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// dotNetCheckBtn
+			// dotNetCheckButton
 			// 
-			this.dotNetCheckBtn.Location = new System.Drawing.Point(6, 77);
-			this.dotNetCheckBtn.Name = "dotNetCheckBtn";
-			this.dotNetCheckBtn.Size = new System.Drawing.Size(95, 23);
-			this.dotNetCheckBtn.TabIndex = 4;
-			this.dotNetCheckBtn.Tag = "c:\\windows\\sysnative\\sfc.exe|/scannow";
-			this.dotNetCheckBtn.Text = ".Net Check";
-			this.dotNetCheckBtn.UseVisualStyleBackColor = true;
-			this.dotNetCheckBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.dotNetCheckButton.Location = new System.Drawing.Point(6, 77);
+			this.dotNetCheckButton.Name = "dotNetCheckButton";
+			this.dotNetCheckButton.Size = new System.Drawing.Size(95, 23);
+			this.dotNetCheckButton.TabIndex = 4;
+			this.dotNetCheckButton.Tag = "c:\\windows\\sysnative\\sfc.exe|/scannow";
+			this.dotNetCheckButton.Text = ".Net Check";
+			this.dotNetCheckButton.UseVisualStyleBackColor = true;
+			this.dotNetCheckButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.Controls.Add(this.resetTribesIniBtn);
-			this.groupBox3.Controls.Add(this.smiteIniBtn);
-			this.groupBox3.Controls.Add(this.resetSmiteIniBtn);
-			this.groupBox3.Controls.Add(this.tribesIniBtn);
+			this.groupBox3.Controls.Add(this.resetTribesIniButton);
+			this.groupBox3.Controls.Add(this.smiteConfigButton);
+			this.groupBox3.Controls.Add(this.resetSmiteConfigButton);
+			this.groupBox3.Controls.Add(this.tribesConfigButton);
 			this.groupBox3.Location = new System.Drawing.Point(234, 6);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(107, 135);
@@ -420,53 +420,53 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "INI Edit";
 			// 
-			// resetTribesIniBtn
+			// resetTribesIniButton
 			// 
-			this.resetTribesIniBtn.Enabled = false;
-			this.resetTribesIniBtn.Location = new System.Drawing.Point(6, 48);
-			this.resetTribesIniBtn.Name = "resetTribesIniBtn";
-			this.resetTribesIniBtn.Size = new System.Drawing.Size(95, 23);
-			this.resetTribesIniBtn.TabIndex = 1;
-			this.resetTribesIniBtn.Text = "Reset";
-			this.resetTribesIniBtn.UseVisualStyleBackColor = true;
+			this.resetTribesIniButton.Enabled = false;
+			this.resetTribesIniButton.Location = new System.Drawing.Point(6, 48);
+			this.resetTribesIniButton.Name = "resetTribesIniButton";
+			this.resetTribesIniButton.Size = new System.Drawing.Size(95, 23);
+			this.resetTribesIniButton.TabIndex = 1;
+			this.resetTribesIniButton.Text = "Reset";
+			this.resetTribesIniButton.UseVisualStyleBackColor = true;
 			// 
-			// smiteIniBtn
+			// smiteConfigButton
 			// 
-			this.smiteIniBtn.Location = new System.Drawing.Point(6, 77);
-			this.smiteIniBtn.Name = "smiteIniBtn";
-			this.smiteIniBtn.Size = new System.Drawing.Size(95, 23);
-			this.smiteIniBtn.TabIndex = 2;
-			this.smiteIniBtn.Tag = "\\My Games\\Smite\\BattleGame\\Config\\BattleEngine.ini";
-			this.smiteIniBtn.Text = "Smite INI";
-			this.smiteIniBtn.UseVisualStyleBackColor = true;
-			this.smiteIniBtn.Click += new System.EventHandler(this.openIniBtn_Click);
+			this.smiteConfigButton.Location = new System.Drawing.Point(6, 77);
+			this.smiteConfigButton.Name = "smiteConfigButton";
+			this.smiteConfigButton.Size = new System.Drawing.Size(95, 23);
+			this.smiteConfigButton.TabIndex = 2;
+			this.smiteConfigButton.Tag = "\\My Games\\Smite\\BattleGame\\Config\\BattleEngine.ini";
+			this.smiteConfigButton.Text = "Smite INI";
+			this.smiteConfigButton.UseVisualStyleBackColor = true;
+			this.smiteConfigButton.Click += new System.EventHandler(this.openIniButton_Click);
 			// 
-			// resetSmiteIniBtn
+			// resetSmiteConfigButton
 			// 
-			this.resetSmiteIniBtn.Enabled = false;
-			this.resetSmiteIniBtn.Location = new System.Drawing.Point(6, 106);
-			this.resetSmiteIniBtn.Name = "resetSmiteIniBtn";
-			this.resetSmiteIniBtn.Size = new System.Drawing.Size(95, 23);
-			this.resetSmiteIniBtn.TabIndex = 3;
-			this.resetSmiteIniBtn.Text = "Reset";
-			this.resetSmiteIniBtn.UseVisualStyleBackColor = true;
+			this.resetSmiteConfigButton.Enabled = false;
+			this.resetSmiteConfigButton.Location = new System.Drawing.Point(6, 106);
+			this.resetSmiteConfigButton.Name = "resetSmiteConfigButton";
+			this.resetSmiteConfigButton.Size = new System.Drawing.Size(95, 23);
+			this.resetSmiteConfigButton.TabIndex = 3;
+			this.resetSmiteConfigButton.Text = "Reset";
+			this.resetSmiteConfigButton.UseVisualStyleBackColor = true;
 			// 
-			// tribesIniBtn
+			// tribesConfigButton
 			// 
-			this.tribesIniBtn.Location = new System.Drawing.Point(6, 19);
-			this.tribesIniBtn.Name = "tribesIniBtn";
-			this.tribesIniBtn.Size = new System.Drawing.Size(95, 23);
-			this.tribesIniBtn.TabIndex = 0;
-			this.tribesIniBtn.Tag = "\\My Games\\Tribes Ascend\\TribesGame\\Config\\tribes.ini";
-			this.tribesIniBtn.Text = "Tribes INI";
-			this.tribesIniBtn.UseVisualStyleBackColor = true;
-			this.tribesIniBtn.Click += new System.EventHandler(this.openIniBtn_Click);
+			this.tribesConfigButton.Location = new System.Drawing.Point(6, 19);
+			this.tribesConfigButton.Name = "tribesConfigButton";
+			this.tribesConfigButton.Size = new System.Drawing.Size(95, 23);
+			this.tribesConfigButton.TabIndex = 0;
+			this.tribesConfigButton.Tag = "\\My Games\\Tribes Ascend\\TribesGame\\Config\\tribes.ini";
+			this.tribesConfigButton.Text = "Tribes INI";
+			this.tribesConfigButton.UseVisualStyleBackColor = true;
+			this.tribesConfigButton.Click += new System.EventHandler(this.openIniButton_Click);
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Controls.Add(this.stopServiceBtn);
-			this.groupBox4.Controls.Add(this.uninstallServiceBtn);
-			this.groupBox4.Controls.Add(this.startServiceBtn);
+			this.groupBox4.Controls.Add(this.stopServiceButton);
+			this.groupBox4.Controls.Add(this.uninstallServiceButton);
+			this.groupBox4.Controls.Add(this.startServiceButton);
 			this.groupBox4.Location = new System.Drawing.Point(121, 180);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(107, 107);
@@ -474,45 +474,45 @@
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "Hi-Rez Service";
 			// 
-			// stopServiceBtn
+			// stopServiceButton
 			// 
-			this.stopServiceBtn.Location = new System.Drawing.Point(6, 48);
-			this.stopServiceBtn.Name = "stopServiceBtn";
-			this.stopServiceBtn.Size = new System.Drawing.Size(95, 23);
-			this.stopServiceBtn.TabIndex = 1;
-			this.stopServiceBtn.Tag = "cmd.exe|/k net stop hipatchservice";
-			this.stopServiceBtn.Text = "Stop Service";
-			this.stopServiceBtn.UseVisualStyleBackColor = true;
-			this.stopServiceBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.stopServiceButton.Location = new System.Drawing.Point(6, 48);
+			this.stopServiceButton.Name = "stopServiceButton";
+			this.stopServiceButton.Size = new System.Drawing.Size(95, 23);
+			this.stopServiceButton.TabIndex = 1;
+			this.stopServiceButton.Tag = "cmd.exe|/k net stop hipatchservice";
+			this.stopServiceButton.Text = "Stop Service";
+			this.stopServiceButton.UseVisualStyleBackColor = true;
+			this.stopServiceButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// uninstallServiceBtn
+			// uninstallServiceButton
 			// 
-			this.uninstallServiceBtn.Location = new System.Drawing.Point(6, 77);
-			this.uninstallServiceBtn.Name = "uninstallServiceBtn";
-			this.uninstallServiceBtn.Size = new System.Drawing.Size(95, 23);
-			this.uninstallServiceBtn.TabIndex = 2;
-			this.uninstallServiceBtn.Tag = "C:\\Program Files\\Hi-Rez Studios\\HiRezGamesDiagAndSupport.exe|uninstall=all";
-			this.uninstallServiceBtn.Text = "Uninstall Svc";
-			this.uninstallServiceBtn.UseVisualStyleBackColor = true;
-			this.uninstallServiceBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.uninstallServiceButton.Location = new System.Drawing.Point(6, 77);
+			this.uninstallServiceButton.Name = "uninstallServiceButton";
+			this.uninstallServiceButton.Size = new System.Drawing.Size(95, 23);
+			this.uninstallServiceButton.TabIndex = 2;
+			this.uninstallServiceButton.Tag = "C:\\Program Files\\Hi-Rez Studios\\HiRezGamesDiagAndSupport.exe|uninstall=all";
+			this.uninstallServiceButton.Text = "Uninstall Svc";
+			this.uninstallServiceButton.UseVisualStyleBackColor = true;
+			this.uninstallServiceButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// startServiceBtn
+			// startServiceButton
 			// 
-			this.startServiceBtn.Location = new System.Drawing.Point(6, 19);
-			this.startServiceBtn.Name = "startServiceBtn";
-			this.startServiceBtn.Size = new System.Drawing.Size(95, 23);
-			this.startServiceBtn.TabIndex = 0;
-			this.startServiceBtn.Tag = "cmd.exe|/k net start hipatchservice";
-			this.startServiceBtn.Text = "Start Service";
-			this.startServiceBtn.UseVisualStyleBackColor = true;
-			this.startServiceBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.startServiceButton.Location = new System.Drawing.Point(6, 19);
+			this.startServiceButton.Name = "startServiceButton";
+			this.startServiceButton.Size = new System.Drawing.Size(95, 23);
+			this.startServiceButton.TabIndex = 0;
+			this.startServiceButton.Tag = "cmd.exe|/k net start hipatchservice";
+			this.startServiceButton.Text = "Start Service";
+			this.startServiceButton.UseVisualStyleBackColor = true;
+			this.startServiceButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Controls.Add(this.bigFixPostBtn);
-			this.groupBox5.Controls.Add(this.smitePatchesBtn);
-			this.groupBox5.Controls.Add(this.tribesPatchesBtn);
-			this.groupBox5.Controls.Add(this.guideBtn);
+			this.groupBox5.Controls.Add(this.bigFixPostButton);
+			this.groupBox5.Controls.Add(this.smitePatchesButton);
+			this.groupBox5.Controls.Add(this.tribesPatchesButton);
+			this.groupBox5.Controls.Add(this.guideButton);
 			this.groupBox5.Location = new System.Drawing.Point(347, 6);
 			this.groupBox5.Name = "groupBox5";
 			this.groupBox5.Size = new System.Drawing.Size(107, 135);
@@ -520,55 +520,55 @@
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "Links";
 			// 
-			// bigFixPostBtn
+			// bigFixPostButton
 			// 
-			this.bigFixPostBtn.Location = new System.Drawing.Point(6, 48);
-			this.bigFixPostBtn.Name = "bigFixPostBtn";
-			this.bigFixPostBtn.Size = new System.Drawing.Size(95, 23);
-			this.bigFixPostBtn.TabIndex = 1;
-			this.bigFixPostBtn.Tag = "http://forum.hirezstudios.com/phpbb/viewtopic.php?f=299&t=42182";
-			this.bigFixPostBtn.Text = "The BIG Fix Post";
-			this.bigFixPostBtn.UseVisualStyleBackColor = true;
-			this.bigFixPostBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.bigFixPostButton.Location = new System.Drawing.Point(6, 48);
+			this.bigFixPostButton.Name = "bigFixPostButton";
+			this.bigFixPostButton.Size = new System.Drawing.Size(95, 23);
+			this.bigFixPostButton.TabIndex = 1;
+			this.bigFixPostButton.Tag = "http://forum.hirezstudios.com/phpbb/viewtopic.php?f=299&t=42182";
+			this.bigFixPostButton.Text = "The BIG Fix Post";
+			this.bigFixPostButton.UseVisualStyleBackColor = true;
+			this.bigFixPostButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// smitePatchesBtn
+			// smitePatchesButton
 			// 
-			this.smitePatchesBtn.Location = new System.Drawing.Point(6, 77);
-			this.smitePatchesBtn.Name = "smitePatchesBtn";
-			this.smitePatchesBtn.Size = new System.Drawing.Size(95, 23);
-			this.smitePatchesBtn.TabIndex = 2;
-			this.smitePatchesBtn.Tag = "http://forum.hirezstudios.com/phpbb/viewforum.php?f=336";
-			this.smitePatchesBtn.Text = "Smite Patches";
-			this.smitePatchesBtn.UseVisualStyleBackColor = true;
-			this.smitePatchesBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.smitePatchesButton.Location = new System.Drawing.Point(6, 77);
+			this.smitePatchesButton.Name = "smitePatchesButton";
+			this.smitePatchesButton.Size = new System.Drawing.Size(95, 23);
+			this.smitePatchesButton.TabIndex = 2;
+			this.smitePatchesButton.Tag = "http://forum.hirezstudios.com/phpbb/viewforum.php?f=336";
+			this.smitePatchesButton.Text = "Smite Patches";
+			this.smitePatchesButton.UseVisualStyleBackColor = true;
+			this.smitePatchesButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// tribesPatchesBtn
+			// tribesPatchesButton
 			// 
-			this.tribesPatchesBtn.Location = new System.Drawing.Point(6, 106);
-			this.tribesPatchesBtn.Name = "tribesPatchesBtn";
-			this.tribesPatchesBtn.Size = new System.Drawing.Size(95, 23);
-			this.tribesPatchesBtn.TabIndex = 3;
-			this.tribesPatchesBtn.Tag = "http://forum.hirezstudios.com/phpbb/viewforum.php?f=261";
-			this.tribesPatchesBtn.Text = "Tribes Patches";
-			this.tribesPatchesBtn.UseVisualStyleBackColor = true;
-			this.tribesPatchesBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.tribesPatchesButton.Location = new System.Drawing.Point(6, 106);
+			this.tribesPatchesButton.Name = "tribesPatchesButton";
+			this.tribesPatchesButton.Size = new System.Drawing.Size(95, 23);
+			this.tribesPatchesButton.TabIndex = 3;
+			this.tribesPatchesButton.Tag = "http://forum.hirezstudios.com/phpbb/viewforum.php?f=261";
+			this.tribesPatchesButton.Text = "Tribes Patches";
+			this.tribesPatchesButton.UseVisualStyleBackColor = true;
+			this.tribesPatchesButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// guideBtn
+			// guideButton
 			// 
-			this.guideBtn.Location = new System.Drawing.Point(6, 19);
-			this.guideBtn.Name = "guideBtn";
-			this.guideBtn.Size = new System.Drawing.Size(95, 23);
-			this.guideBtn.TabIndex = 0;
-			this.guideBtn.Tag = "http://forum.hirezstudios.com/phpbb/viewtopic.php?f=299&t=105789";
-			this.guideBtn.Text = "Guide";
-			this.guideBtn.UseVisualStyleBackColor = true;
-			this.guideBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.guideButton.Location = new System.Drawing.Point(6, 19);
+			this.guideButton.Name = "guideButton";
+			this.guideButton.Size = new System.Drawing.Size(95, 23);
+			this.guideButton.TabIndex = 0;
+			this.guideButton.Tag = "http://forum.hirezstudios.com/phpbb/viewtopic.php?f=299&t=105789";
+			this.guideButton.Text = "Guide";
+			this.guideButton.UseVisualStyleBackColor = true;
+			this.guideButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// troubleshootClb
+			// troubleshootCheckedListBox
 			// 
-			this.troubleshootClb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.troubleshootClb.FormattingEnabled = true;
-			this.troubleshootClb.Items.AddRange(new object[] {
+			this.troubleshootCheckedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.troubleshootCheckedListBox.FormattingEnabled = true;
+			this.troubleshootCheckedListBox.Items.AddRange(new object[] {
             "Connected to internet",
             "Running on an admin level account",
             "UAC is disabled (lowest)",
@@ -577,98 +577,98 @@
             "DirectX and PhysX are installed",
             "INI shows my native resX / resY",
             "Disable VOIP Overlays"});
-			this.troubleshootClb.Location = new System.Drawing.Point(234, 167);
-			this.troubleshootClb.Name = "troubleshootClb";
-			this.troubleshootClb.Size = new System.Drawing.Size(220, 132);
-			this.troubleshootClb.TabIndex = 7;
+			this.troubleshootCheckedListBox.Location = new System.Drawing.Point(234, 167);
+			this.troubleshootCheckedListBox.Name = "troubleshootCheckedListBox";
+			this.troubleshootCheckedListBox.Size = new System.Drawing.Size(220, 132);
+			this.troubleshootCheckedListBox.TabIndex = 7;
 			// 
-			// label1
+			// checklistLabel
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(237, 151);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(128, 13);
-			this.label1.TabIndex = 6;
-			this.label1.Text = "Troubleshooting checklist";
+			this.checklistLabel.AutoSize = true;
+			this.checklistLabel.Location = new System.Drawing.Point(237, 151);
+			this.checklistLabel.Name = "checklistLabel";
+			this.checklistLabel.Size = new System.Drawing.Size(128, 13);
+			this.checklistLabel.TabIndex = 6;
+			this.checklistLabel.Text = "Troubleshooting checklist";
 			// 
-			// supportTicketBtn
+			// supportTicketButton
 			// 
-			this.supportTicketBtn.Location = new System.Drawing.Point(328, 372);
-			this.supportTicketBtn.Name = "supportTicketBtn";
-			this.supportTicketBtn.Size = new System.Drawing.Size(126, 29);
-			this.supportTicketBtn.TabIndex = 9;
-			this.supportTicketBtn.Tag = "http://hi-rez.custhelp.com/app/utils/login_form/redirect/ask";
-			this.supportTicketBtn.Text = "Open a support ticket";
-			this.supportTicketBtn.UseVisualStyleBackColor = true;
-			this.supportTicketBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.supportTicketButton.Location = new System.Drawing.Point(328, 372);
+			this.supportTicketButton.Name = "supportTicketButton";
+			this.supportTicketButton.Size = new System.Drawing.Size(126, 29);
+			this.supportTicketButton.TabIndex = 9;
+			this.supportTicketButton.Tag = "http://hi-rez.custhelp.com/app/utils/login_form/redirect/ask";
+			this.supportTicketButton.Text = "Open a support ticket";
+			this.supportTicketButton.UseVisualStyleBackColor = true;
+			this.supportTicketButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// supportToolBtn
+			// supportToolButton
 			// 
-			this.supportToolBtn.Location = new System.Drawing.Point(328, 337);
-			this.supportToolBtn.Name = "supportToolBtn";
-			this.supportToolBtn.Size = new System.Drawing.Size(126, 29);
-			this.supportToolBtn.TabIndex = 8;
-			this.supportToolBtn.Tag = "C:\\Program Files\\Hi-Rez Studios\\HiRezGamesDiagAndSupport.exe^C:\\Program Files (x8" +
+			this.supportToolButton.Location = new System.Drawing.Point(328, 337);
+			this.supportToolButton.Name = "supportToolButton";
+			this.supportToolButton.Size = new System.Drawing.Size(126, 29);
+			this.supportToolButton.TabIndex = 8;
+			this.supportToolButton.Tag = "C:\\Program Files\\Hi-Rez Studios\\HiRezGamesDiagAndSupport.exe^C:\\Program Files (x8" +
     "6)\\Hi-Rez Studios\\HiRezGamesDiagAndSupport.exe";
-			this.supportToolBtn.Text = "Hi-Rez Support Tool";
-			this.supportToolBtn.UseVisualStyleBackColor = true;
-			this.supportToolBtn.Click += new System.EventHandler(this.startProcessBtn_Click);
+			this.supportToolButton.Text = "Hi-Rez Support Tool";
+			this.supportToolButton.UseVisualStyleBackColor = true;
+			this.supportToolButton.Click += new System.EventHandler(this.startProcessButton_Click);
 			// 
-			// label2
+			// disclaimerLabel
 			// 
-			this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(121, 315);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(201, 86);
-			this.label2.TabIndex = 3;
-			this.label2.Text = "This is a third party application and not endorsed by Hi-Rez Studios. The authors" +
-    " are not responsible for any damage or data loss of any kind caused by the use o" +
-    "f this app.";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.disclaimerLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.disclaimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.disclaimerLabel.Location = new System.Drawing.Point(121, 315);
+			this.disclaimerLabel.Name = "disclaimerLabel";
+			this.disclaimerLabel.Size = new System.Drawing.Size(201, 86);
+			this.disclaimerLabel.TabIndex = 3;
+			this.disclaimerLabel.Text = "This is a third party application and not endorsed by Hi-Rez Studios. The authors" +
+    " are not responsible for damage or data loss of any kind caused by the use of th" +
+    "is app.";
+			this.disclaimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// mainMenuStrip
 			// 
 			this.mainMenuStrip.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.fileMi,
-            this.editMi});
+            this.fileMenuItem,
+            this.editMenuItem});
 			// 
-			// fileMi
+			// fileMenuItem
 			// 
-			this.fileMi.Index = 0;
-			this.fileMi.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.exitMi});
-			this.fileMi.Text = "File";
+			this.fileMenuItem.Index = 0;
+			this.fileMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.exitMenuItem});
+			this.fileMenuItem.Text = "File";
 			// 
-			// exitMi
+			// exitMenuItem
 			// 
-			this.exitMi.Index = 0;
-			this.exitMi.Text = "Exit";
-			this.exitMi.Click += new System.EventHandler(this.exitMi_Click);
+			this.exitMenuItem.Index = 0;
+			this.exitMenuItem.Text = "Exit";
+			this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
 			// 
-			// editMi
+			// editMenuItem
 			// 
-			this.editMi.Index = 1;
-			this.editMi.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.settingsMi});
-			this.editMi.Text = "Edit";
+			this.editMenuItem.Index = 1;
+			this.editMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.settingsMenuItem});
+			this.editMenuItem.Text = "Edit";
 			// 
-			// settingsMi
+			// settingsMenuItem
 			// 
-			this.settingsMi.Index = 0;
-			this.settingsMi.Text = "Settings";
-			this.settingsMi.Click += new System.EventHandler(this.settingsMi_Click);
+			this.settingsMenuItem.Index = 0;
+			this.settingsMenuItem.Text = "Settings";
+			this.settingsMenuItem.Click += new System.EventHandler(this.settingsMenuItem_Click);
 			// 
-			// mainTc
+			// mainTabControl
 			// 
-			this.mainTc.Controls.Add(this.repairTab);
-			this.mainTc.Controls.Add(this.iniEditorTab);
-			this.mainTc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mainTc.Location = new System.Drawing.Point(0, 0);
-			this.mainTc.Name = "mainTc";
-			this.mainTc.SelectedIndex = 0;
-			this.mainTc.Size = new System.Drawing.Size(470, 435);
-			this.mainTc.TabIndex = 0;
+			this.mainTabControl.Controls.Add(this.repairTab);
+			this.mainTabControl.Controls.Add(this.configEditorTab);
+			this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mainTabControl.Location = new System.Drawing.Point(0, 0);
+			this.mainTabControl.Name = "mainTabControl";
+			this.mainTabControl.SelectedIndex = 0;
+			this.mainTabControl.Size = new System.Drawing.Size(470, 435);
+			this.mainTabControl.TabIndex = 0;
 			// 
 			// repairTab
 			// 
@@ -676,13 +676,13 @@
 			this.repairTab.Controls.Add(this.groupBox1);
 			this.repairTab.Controls.Add(this.groupBox2);
 			this.repairTab.Controls.Add(this.groupBox3);
-			this.repairTab.Controls.Add(this.label2);
+			this.repairTab.Controls.Add(this.disclaimerLabel);
 			this.repairTab.Controls.Add(this.groupBox4);
-			this.repairTab.Controls.Add(this.supportToolBtn);
+			this.repairTab.Controls.Add(this.supportToolButton);
 			this.repairTab.Controls.Add(this.groupBox5);
-			this.repairTab.Controls.Add(this.supportTicketBtn);
-			this.repairTab.Controls.Add(this.troubleshootClb);
-			this.repairTab.Controls.Add(this.label1);
+			this.repairTab.Controls.Add(this.supportTicketButton);
+			this.repairTab.Controls.Add(this.troubleshootCheckedListBox);
+			this.repairTab.Controls.Add(this.checklistLabel);
 			this.repairTab.Location = new System.Drawing.Point(4, 22);
 			this.repairTab.Name = "repairTab";
 			this.repairTab.Padding = new System.Windows.Forms.Padding(3);
@@ -690,1016 +690,1015 @@
 			this.repairTab.TabIndex = 0;
 			this.repairTab.Text = "Repair";
 			// 
-			// iniEditorTab
+			// configEditorTab
 			// 
-			this.iniEditorTab.BackColor = System.Drawing.SystemColors.Control;
-			this.iniEditorTab.Controls.Add(this.currentGameLbl);
-			this.iniEditorTab.Controls.Add(this.currentFileLbl);
-			this.iniEditorTab.Controls.Add(this.presetCbo);
-			this.iniEditorTab.Controls.Add(this.loadFileBtn);
-			this.iniEditorTab.Controls.Add(this.saveFileBtn);
-			this.iniEditorTab.Controls.Add(this.iniEditorPnl);
-			this.iniEditorTab.Location = new System.Drawing.Point(4, 22);
-			this.iniEditorTab.Name = "iniEditorTab";
-			this.iniEditorTab.Padding = new System.Windows.Forms.Padding(3);
-			this.iniEditorTab.Size = new System.Drawing.Size(462, 409);
-			this.iniEditorTab.TabIndex = 1;
-			this.iniEditorTab.Text = "INI Editor";
+			this.configEditorTab.BackColor = System.Drawing.SystemColors.Control;
+			this.configEditorTab.Controls.Add(this.currentGameLabel);
+			this.configEditorTab.Controls.Add(this.currentFileLabel);
+			this.configEditorTab.Controls.Add(this.presetComboBox);
+			this.configEditorTab.Controls.Add(this.loadFileButton);
+			this.configEditorTab.Controls.Add(this.saveFileButton);
+			this.configEditorTab.Controls.Add(this.iniEditorPanel);
+			this.configEditorTab.Location = new System.Drawing.Point(4, 22);
+			this.configEditorTab.Name = "configEditorTab";
+			this.configEditorTab.Padding = new System.Windows.Forms.Padding(3);
+			this.configEditorTab.Size = new System.Drawing.Size(462, 409);
+			this.configEditorTab.TabIndex = 1;
+			this.configEditorTab.Text = "Config Editor";
 			// 
-			// currentGameLbl
+			// currentGameLabel
 			// 
-			this.currentGameLbl.AutoSize = true;
-			this.currentGameLbl.BackColor = System.Drawing.Color.Transparent;
-			this.currentGameLbl.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.currentGameLbl.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.currentGameLbl.Location = new System.Drawing.Point(79, 376);
-			this.currentGameLbl.Name = "currentGameLbl";
-			this.currentGameLbl.Size = new System.Drawing.Size(77, 14);
-			this.currentGameLbl.TabIndex = 5;
-			this.currentGameLbl.Text = "Game Label";
-			this.currentGameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.currentGameLabel.AutoSize = true;
+			this.currentGameLabel.BackColor = System.Drawing.Color.Transparent;
+			this.currentGameLabel.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.currentGameLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.currentGameLabel.Location = new System.Drawing.Point(79, 376);
+			this.currentGameLabel.Name = "currentGameLabel";
+			this.currentGameLabel.Size = new System.Drawing.Size(77, 14);
+			this.currentGameLabel.TabIndex = 5;
+			this.currentGameLabel.Text = "Game Label";
+			this.currentGameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// currentFileLbl
+			// currentFileLabel
 			// 
-			this.currentFileLbl.AutoSize = true;
-			this.currentFileLbl.BackColor = System.Drawing.Color.Transparent;
-			this.currentFileLbl.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.currentFileLbl.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.currentFileLbl.Location = new System.Drawing.Point(79, 388);
-			this.currentFileLbl.Name = "currentFileLbl";
-			this.currentFileLbl.Size = new System.Drawing.Size(105, 14);
-			this.currentFileLbl.TabIndex = 2;
-			this.currentFileLbl.Text = "No File Loaded";
-			this.currentFileLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.currentFileLabel.AutoSize = true;
+			this.currentFileLabel.BackColor = System.Drawing.Color.Transparent;
+			this.currentFileLabel.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.currentFileLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.currentFileLabel.Location = new System.Drawing.Point(79, 388);
+			this.currentFileLabel.Name = "currentFileLabel";
+			this.currentFileLabel.Size = new System.Drawing.Size(105, 14);
+			this.currentFileLabel.TabIndex = 2;
+			this.currentFileLabel.Text = "No File Loaded";
+			this.currentFileLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// presetCbo
+			// presetComboBox
 			// 
-			this.presetCbo.DisplayMember = "Custom";
-			this.presetCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.presetCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.presetCbo.FormattingEnabled = true;
-			this.presetCbo.Items.AddRange(new object[] {
+			this.presetComboBox.DisplayMember = "Custom";
+			this.presetComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.presetComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.presetComboBox.FormattingEnabled = true;
+			this.presetComboBox.Items.AddRange(new object[] {
             "Custom",
             "Highest",
             "High",
             "Medium",
             "Low",
             "Lowest"});
-			this.presetCbo.Location = new System.Drawing.Point(3, 376);
-			this.presetCbo.Name = "presetCbo";
-			this.presetCbo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.presetCbo.Size = new System.Drawing.Size(70, 24);
-			this.presetCbo.TabIndex = 1;
-			// 
-			// loadFileBtn
-			// 
-			this.loadFileBtn.Location = new System.Drawing.Point(282, 371);
-			this.loadFileBtn.Name = "loadFileBtn";
-			this.loadFileBtn.Size = new System.Drawing.Size(84, 33);
-			this.loadFileBtn.TabIndex = 4;
-			this.loadFileBtn.Text = "Load File";
-			this.loadFileBtn.UseVisualStyleBackColor = true;
-			this.loadFileBtn.Click += new System.EventHandler(this.loadFileBtn_Click);
-			// 
-			// saveFileBtn
-			// 
-			this.saveFileBtn.Enabled = false;
-			this.saveFileBtn.Location = new System.Drawing.Point(372, 371);
-			this.saveFileBtn.Name = "saveFileBtn";
-			this.saveFileBtn.Size = new System.Drawing.Size(84, 33);
-			this.saveFileBtn.TabIndex = 3;
-			this.saveFileBtn.Text = "Save File";
-			this.saveFileBtn.UseVisualStyleBackColor = true;
-			this.saveFileBtn.Click += new System.EventHandler(this.saveFileBtn_Click);
-			// 
-			// iniEditorPnl
-			// 
-			this.iniEditorPnl.AutoScroll = true;
-			this.iniEditorPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.iniEditorPnl.Controls.Add(this.particleLodBiasCbo);
-			this.iniEditorPnl.Controls.Add(this.particleLodBiasLbl);
-			this.iniEditorPnl.Controls.Add(this.bShouldAllowRagdollingCbo);
-			this.iniEditorPnl.Controls.Add(this.bShouldAllowRagdollingLbl);
-			this.iniEditorPnl.Controls.Add(this.bForceStaticTerrainCbo);
-			this.iniEditorPnl.Controls.Add(this.bForceStaticTerrainLbl);
-			this.iniEditorPnl.Controls.Add(this.useVsyncCbo);
-			this.iniEditorPnl.Controls.Add(this.maxSmoothedFrameRateCbo);
-			this.iniEditorPnl.Controls.Add(this.minSmoothedFrameRateCbo);
-			this.iniEditorPnl.Controls.Add(this.bSmoothFrameRateCbo);
-			this.iniEditorPnl.Controls.Add(this.trilinearCbo);
-			this.iniEditorPnl.Controls.Add(this.maxAnisotropyCbo);
-			this.iniEditorPnl.Controls.Add(this.textureDetailCbo);
-			this.iniEditorPnl.Controls.Add(this.bAllowWholeSceneDominantShadowsCbo);
-			this.iniEditorPnl.Controls.Add(this.lightEnvironmentShadowsCbo);
-			this.iniEditorPnl.Controls.Add(this.textureDetailLbl);
-			this.iniEditorPnl.Controls.Add(this.bAllowWholeSceneDominantShadowsLbl);
-			this.iniEditorPnl.Controls.Add(this.label32);
-			this.iniEditorPnl.Controls.Add(this.maxAnisotropyLbl);
-			this.iniEditorPnl.Controls.Add(this.trilinearLbl);
-			this.iniEditorPnl.Controls.Add(this.label35);
-			this.iniEditorPnl.Controls.Add(this.minSmoothedFrameRateLbl);
-			this.iniEditorPnl.Controls.Add(this.maxSmoothedFrameRateLbl);
-			this.iniEditorPnl.Controls.Add(this.useVsyncLbl);
-			this.iniEditorPnl.Controls.Add(this.bSmoothFrameRateLbl);
-			this.iniEditorPnl.Controls.Add(this.lightEnvironmentShadowsLbl);
-			this.iniEditorPnl.Controls.Add(this.dynamicShadowsCbo);
-			this.iniEditorPnl.Controls.Add(this.oneFrameThreadLagCbo);
-			this.iniEditorPnl.Controls.Add(this.skeletalMeshLodBiasCbo);
-			this.iniEditorPnl.Controls.Add(this.detailModeCbo);
-			this.iniEditorPnl.Controls.Add(this.speedTreeFrondsCbo);
-			this.iniEditorPnl.Controls.Add(this.speedTreeLeavesCbo);
-			this.iniEditorPnl.Controls.Add(this.allowRadialBlurCbo);
-			this.iniEditorPnl.Controls.Add(this.motionBlurCbo);
-			this.iniEditorPnl.Controls.Add(this.lensFlaresCbo);
-			this.iniEditorPnl.Controls.Add(this.fogVolumesCbo);
-			this.iniEditorPnl.Controls.Add(this.dynamicShadowsLbl);
-			this.iniEditorPnl.Controls.Add(this.label7);
-			this.iniEditorPnl.Controls.Add(this.fogVolumesLbl);
-			this.iniEditorPnl.Controls.Add(this.lensFlaresLbl);
-			this.iniEditorPnl.Controls.Add(this.motionBlurLbl);
-			this.iniEditorPnl.Controls.Add(this.speedTreeLeavesLbl);
-			this.iniEditorPnl.Controls.Add(this.speedTreeFrondsLbl);
-			this.iniEditorPnl.Controls.Add(this.detailModeLbl);
-			this.iniEditorPnl.Controls.Add(this.skeletalMesLodBiasLbl);
-			this.iniEditorPnl.Controls.Add(this.oneFrameThreadLagLbl);
-			this.iniEditorPnl.Controls.Add(this.allowRadialBlurLbl);
-			this.iniEditorPnl.Controls.Add(this.distortionLbl);
-			this.iniEditorPnl.Controls.Add(this.distortionCbo);
-			this.iniEditorPnl.Controls.Add(this.depthOfFieldCbo);
-			this.iniEditorPnl.Controls.Add(this.depthOfFieldLbl);
-			this.iniEditorPnl.Controls.Add(this.bloomCbo);
-			this.iniEditorPnl.Controls.Add(this.ambientOcclusionCbo);
-			this.iniEditorPnl.Controls.Add(this.bAllowLightShaftsCbo);
-			this.iniEditorPnl.Controls.Add(this.staticDecalsCbo);
-			this.iniEditorPnl.Controls.Add(this.dynamicDecalsCbo);
-			this.iniEditorPnl.Controls.Add(this.directionalLightMapsCbo);
-			this.iniEditorPnl.Controls.Add(this.compositeDynamicLightsCbo);
-			this.iniEditorPnl.Controls.Add(this.dynamicLightsCbo);
-			this.iniEditorPnl.Controls.Add(this.bUseMaxQualityModeCbo);
-			this.iniEditorPnl.Controls.Add(this.screenResCbo);
-			this.iniEditorPnl.Controls.Add(this.screenTypeCbo);
-			this.iniEditorPnl.Controls.Add(this.infoLbl5);
-			this.iniEditorPnl.Controls.Add(this.screenTypeLbl);
-			this.iniEditorPnl.Controls.Add(this.screenResLbl);
-			this.iniEditorPnl.Controls.Add(this.bUseMaxQualityModeLbl);
-			this.iniEditorPnl.Controls.Add(this.dynamicLightsLbl);
-			this.iniEditorPnl.Controls.Add(this.compositeDynamicLightsLbl);
-			this.iniEditorPnl.Controls.Add(this.dynamicDecalsLbl);
-			this.iniEditorPnl.Controls.Add(this.staticDecalsLbl);
-			this.iniEditorPnl.Controls.Add(this.bAllowLightShaftsLbl);
-			this.iniEditorPnl.Controls.Add(this.ambientOcclusionLbl);
-			this.iniEditorPnl.Controls.Add(this.bloomLbl);
-			this.iniEditorPnl.Controls.Add(this.directionalLightMapsLbl);
-			this.iniEditorPnl.Controls.Add(this.infoLbl2);
-			this.iniEditorPnl.Location = new System.Drawing.Point(3, 3);
-			this.iniEditorPnl.Name = "iniEditorPnl";
-			this.iniEditorPnl.Size = new System.Drawing.Size(456, 359);
-			this.iniEditorPnl.TabIndex = 0;
-			// 
-			// particleLodBiasCbo
-			// 
-			this.particleLodBiasCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.particleLodBiasCbo.Enabled = false;
-			this.particleLodBiasCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.particleLodBiasCbo.FormattingEnabled = true;
-			this.particleLodBiasCbo.Location = new System.Drawing.Point(268, 556);
-			this.particleLodBiasCbo.Name = "particleLodBiasCbo";
-			this.particleLodBiasCbo.Size = new System.Drawing.Size(164, 23);
-			this.particleLodBiasCbo.TabIndex = 74;
-			this.particleLodBiasCbo.Tag = "Low,10|Medium,1|High,0";
-			// 
-			// particleLodBiasLbl
-			// 
-			this.particleLodBiasLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.particleLodBiasLbl.Location = new System.Drawing.Point(3, 559);
-			this.particleLodBiasLbl.Name = "particleLodBiasLbl";
-			this.particleLodBiasLbl.Size = new System.Drawing.Size(256, 17);
-			this.particleLodBiasLbl.TabIndex = 73;
-			this.particleLodBiasLbl.Text = "Particle LOD Bias";
-			// 
-			// bShouldAllowRagdollingCbo
-			// 
-			this.bShouldAllowRagdollingCbo.DisplayMember = "true";
-			this.bShouldAllowRagdollingCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.bShouldAllowRagdollingCbo.Enabled = false;
-			this.bShouldAllowRagdollingCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bShouldAllowRagdollingCbo.FormattingEnabled = true;
-			this.bShouldAllowRagdollingCbo.Location = new System.Drawing.Point(268, 981);
-			this.bShouldAllowRagdollingCbo.Name = "bShouldAllowRagdollingCbo";
-			this.bShouldAllowRagdollingCbo.Size = new System.Drawing.Size(164, 23);
-			this.bShouldAllowRagdollingCbo.TabIndex = 72;
-			this.bShouldAllowRagdollingCbo.Tag = "True,True|False,False";
-			this.bShouldAllowRagdollingCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// bShouldAllowRagdollingLbl
-			// 
-			this.bShouldAllowRagdollingLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bShouldAllowRagdollingLbl.Location = new System.Drawing.Point(3, 984);
-			this.bShouldAllowRagdollingLbl.Name = "bShouldAllowRagdollingLbl";
-			this.bShouldAllowRagdollingLbl.Size = new System.Drawing.Size(256, 17);
-			this.bShouldAllowRagdollingLbl.TabIndex = 71;
-			this.bShouldAllowRagdollingLbl.Text = "Allow Ragdolling";
-			// 
-			// bForceStaticTerrainCbo
-			// 
-			this.bForceStaticTerrainCbo.DisplayMember = "true";
-			this.bForceStaticTerrainCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.bForceStaticTerrainCbo.Enabled = false;
-			this.bForceStaticTerrainCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bForceStaticTerrainCbo.FormattingEnabled = true;
-			this.bForceStaticTerrainCbo.Location = new System.Drawing.Point(268, 956);
-			this.bForceStaticTerrainCbo.Name = "bForceStaticTerrainCbo";
-			this.bForceStaticTerrainCbo.Size = new System.Drawing.Size(164, 23);
-			this.bForceStaticTerrainCbo.TabIndex = 70;
-			this.bForceStaticTerrainCbo.Tag = "True,True|False,False";
-			this.bForceStaticTerrainCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// bForceStaticTerrainLbl
-			// 
-			this.bForceStaticTerrainLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bForceStaticTerrainLbl.Location = new System.Drawing.Point(3, 959);
-			this.bForceStaticTerrainLbl.Name = "bForceStaticTerrainLbl";
-			this.bForceStaticTerrainLbl.Size = new System.Drawing.Size(256, 17);
-			this.bForceStaticTerrainLbl.TabIndex = 69;
-			this.bForceStaticTerrainLbl.Text = "Force Static Terrain";
-			// 
-			// useVsyncCbo
-			// 
-			this.useVsyncCbo.DisplayMember = "true";
-			this.useVsyncCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.useVsyncCbo.Enabled = false;
-			this.useVsyncCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.useVsyncCbo.FormattingEnabled = true;
-			this.useVsyncCbo.Location = new System.Drawing.Point(268, 931);
-			this.useVsyncCbo.Name = "useVsyncCbo";
-			this.useVsyncCbo.Size = new System.Drawing.Size(164, 23);
-			this.useVsyncCbo.TabIndex = 68;
-			this.useVsyncCbo.Tag = "True,True|False,False";
-			this.useVsyncCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// maxSmoothedFrameRateCbo
-			// 
-			this.maxSmoothedFrameRateCbo.DisplayMember = "true";
-			this.maxSmoothedFrameRateCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.maxSmoothedFrameRateCbo.Enabled = false;
-			this.maxSmoothedFrameRateCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maxSmoothedFrameRateCbo.FormattingEnabled = true;
-			this.maxSmoothedFrameRateCbo.Location = new System.Drawing.Point(268, 906);
-			this.maxSmoothedFrameRateCbo.Name = "maxSmoothedFrameRateCbo";
-			this.maxSmoothedFrameRateCbo.Size = new System.Drawing.Size(164, 23);
-			this.maxSmoothedFrameRateCbo.TabIndex = 66;
-			this.maxSmoothedFrameRateCbo.Tag = "30 FPS,32|60 FPS,62|90 FPS,92|120 FPS,122";
-			this.maxSmoothedFrameRateCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// minSmoothedFrameRateCbo
-			// 
-			this.minSmoothedFrameRateCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.minSmoothedFrameRateCbo.Enabled = false;
-			this.minSmoothedFrameRateCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.minSmoothedFrameRateCbo.FormattingEnabled = true;
-			this.minSmoothedFrameRateCbo.Location = new System.Drawing.Point(268, 881);
-			this.minSmoothedFrameRateCbo.Name = "minSmoothedFrameRateCbo";
-			this.minSmoothedFrameRateCbo.Size = new System.Drawing.Size(164, 23);
-			this.minSmoothedFrameRateCbo.TabIndex = 64;
-			this.minSmoothedFrameRateCbo.Tag = "15 FPS, 17|20 FPS,22|30 FPS,32";
-			this.minSmoothedFrameRateCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// bSmoothFrameRateCbo
-			// 
-			this.bSmoothFrameRateCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.bSmoothFrameRateCbo.Enabled = false;
-			this.bSmoothFrameRateCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bSmoothFrameRateCbo.FormattingEnabled = true;
-			this.bSmoothFrameRateCbo.Location = new System.Drawing.Point(268, 856);
-			this.bSmoothFrameRateCbo.Name = "bSmoothFrameRateCbo";
-			this.bSmoothFrameRateCbo.Size = new System.Drawing.Size(164, 23);
-			this.bSmoothFrameRateCbo.TabIndex = 62;
-			this.bSmoothFrameRateCbo.Tag = "True,True|False,False";
-			this.bSmoothFrameRateCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// trilinearCbo
-			// 
-			this.trilinearCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.trilinearCbo.Enabled = false;
-			this.trilinearCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.trilinearCbo.FormattingEnabled = true;
-			this.trilinearCbo.Location = new System.Drawing.Point(268, 806);
-			this.trilinearCbo.Name = "trilinearCbo";
-			this.trilinearCbo.Size = new System.Drawing.Size(164, 23);
-			this.trilinearCbo.TabIndex = 59;
-			this.trilinearCbo.Tag = "True,True|False,False";
-			this.trilinearCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// maxAnisotropyCbo
-			// 
-			this.maxAnisotropyCbo.DisplayMember = "true";
-			this.maxAnisotropyCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.maxAnisotropyCbo.Enabled = false;
-			this.maxAnisotropyCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maxAnisotropyCbo.FormattingEnabled = true;
-			this.maxAnisotropyCbo.Location = new System.Drawing.Point(268, 781);
-			this.maxAnisotropyCbo.Name = "maxAnisotropyCbo";
-			this.maxAnisotropyCbo.Size = new System.Drawing.Size(164, 23);
-			this.maxAnisotropyCbo.TabIndex = 57;
-			this.maxAnisotropyCbo.Tag = "Off,0|1x,1|2x,2|4x,4|8x,8|16x,16";
-			this.maxAnisotropyCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// textureDetailCbo
-			// 
-			this.textureDetailCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.textureDetailCbo.Enabled = false;
-			this.textureDetailCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textureDetailCbo.FormattingEnabled = true;
-			this.textureDetailCbo.Location = new System.Drawing.Point(268, 756);
-			this.textureDetailCbo.Name = "textureDetailCbo";
-			this.textureDetailCbo.Size = new System.Drawing.Size(164, 23);
-			this.textureDetailCbo.TabIndex = 55;
-			this.textureDetailCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// bAllowWholeSceneDominantShadowsCbo
-			// 
-			this.bAllowWholeSceneDominantShadowsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.bAllowWholeSceneDominantShadowsCbo.Enabled = false;
-			this.bAllowWholeSceneDominantShadowsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bAllowWholeSceneDominantShadowsCbo.FormattingEnabled = true;
-			this.bAllowWholeSceneDominantShadowsCbo.Location = new System.Drawing.Point(268, 706);
-			this.bAllowWholeSceneDominantShadowsCbo.Name = "bAllowWholeSceneDominantShadowsCbo";
-			this.bAllowWholeSceneDominantShadowsCbo.Size = new System.Drawing.Size(164, 23);
-			this.bAllowWholeSceneDominantShadowsCbo.TabIndex = 52;
-			this.bAllowWholeSceneDominantShadowsCbo.Tag = "True,True|False,False";
-			this.bAllowWholeSceneDominantShadowsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// lightEnvironmentShadowsCbo
-			// 
-			this.lightEnvironmentShadowsCbo.DisplayMember = "true";
-			this.lightEnvironmentShadowsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.lightEnvironmentShadowsCbo.Enabled = false;
-			this.lightEnvironmentShadowsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lightEnvironmentShadowsCbo.FormattingEnabled = true;
-			this.lightEnvironmentShadowsCbo.Location = new System.Drawing.Point(268, 681);
-			this.lightEnvironmentShadowsCbo.Name = "lightEnvironmentShadowsCbo";
-			this.lightEnvironmentShadowsCbo.Size = new System.Drawing.Size(164, 23);
-			this.lightEnvironmentShadowsCbo.TabIndex = 50;
-			this.lightEnvironmentShadowsCbo.Tag = "True,True|False,False";
-			this.lightEnvironmentShadowsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// textureDetailLbl
-			// 
-			this.textureDetailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textureDetailLbl.Location = new System.Drawing.Point(3, 759);
-			this.textureDetailLbl.Name = "textureDetailLbl";
-			this.textureDetailLbl.Size = new System.Drawing.Size(256, 17);
-			this.textureDetailLbl.TabIndex = 54;
-			this.textureDetailLbl.Text = "Texture Detail";
-			// 
-			// bAllowWholeSceneDominantShadowsLbl
-			// 
-			this.bAllowWholeSceneDominantShadowsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bAllowWholeSceneDominantShadowsLbl.Location = new System.Drawing.Point(3, 709);
-			this.bAllowWholeSceneDominantShadowsLbl.Name = "bAllowWholeSceneDominantShadowsLbl";
-			this.bAllowWholeSceneDominantShadowsLbl.Size = new System.Drawing.Size(256, 17);
-			this.bAllowWholeSceneDominantShadowsLbl.TabIndex = 51;
-			this.bAllowWholeSceneDominantShadowsLbl.Text = "Allow Whole Scene Dominant Shadows";
-			// 
-			// label32
-			// 
-			this.label32.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-			this.label32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label32.Location = new System.Drawing.Point(3, 734);
-			this.label32.Name = "label32";
-			this.label32.Size = new System.Drawing.Size(429, 19);
-			this.label32.TabIndex = 53;
-			this.label32.Text = "Texture Detail";
-			this.label32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// maxAnisotropyLbl
-			// 
-			this.maxAnisotropyLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maxAnisotropyLbl.Location = new System.Drawing.Point(3, 784);
-			this.maxAnisotropyLbl.Name = "maxAnisotropyLbl";
-			this.maxAnisotropyLbl.Size = new System.Drawing.Size(256, 17);
-			this.maxAnisotropyLbl.TabIndex = 56;
-			this.maxAnisotropyLbl.Text = "Max Anisotropy";
-			// 
-			// trilinearLbl
-			// 
-			this.trilinearLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.trilinearLbl.Location = new System.Drawing.Point(3, 809);
-			this.trilinearLbl.Name = "trilinearLbl";
-			this.trilinearLbl.Size = new System.Drawing.Size(256, 17);
-			this.trilinearLbl.TabIndex = 58;
-			this.trilinearLbl.Text = "Trilinear Filtering";
-			// 
-			// label35
-			// 
-			this.label35.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-			this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label35.Location = new System.Drawing.Point(3, 834);
-			this.label35.Name = "label35";
-			this.label35.Size = new System.Drawing.Size(429, 19);
-			this.label35.TabIndex = 60;
-			this.label35.Text = "Extra";
-			this.label35.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// minSmoothedFrameRateLbl
-			// 
-			this.minSmoothedFrameRateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.minSmoothedFrameRateLbl.Location = new System.Drawing.Point(3, 884);
-			this.minSmoothedFrameRateLbl.Name = "minSmoothedFrameRateLbl";
-			this.minSmoothedFrameRateLbl.Size = new System.Drawing.Size(256, 17);
-			this.minSmoothedFrameRateLbl.TabIndex = 63;
-			this.minSmoothedFrameRateLbl.Text = "Min Smoothed Frame Rate";
-			// 
-			// maxSmoothedFrameRateLbl
-			// 
-			this.maxSmoothedFrameRateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maxSmoothedFrameRateLbl.Location = new System.Drawing.Point(3, 909);
-			this.maxSmoothedFrameRateLbl.Name = "maxSmoothedFrameRateLbl";
-			this.maxSmoothedFrameRateLbl.Size = new System.Drawing.Size(256, 17);
-			this.maxSmoothedFrameRateLbl.TabIndex = 65;
-			this.maxSmoothedFrameRateLbl.Text = "Max Smoothed Frame Rate";
-			// 
-			// useVsyncLbl
-			// 
-			this.useVsyncLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.useVsyncLbl.Location = new System.Drawing.Point(3, 934);
-			this.useVsyncLbl.Name = "useVsyncLbl";
-			this.useVsyncLbl.Size = new System.Drawing.Size(256, 17);
-			this.useVsyncLbl.TabIndex = 67;
-			this.useVsyncLbl.Text = "Use Vsync";
-			// 
-			// bSmoothFrameRateLbl
-			// 
-			this.bSmoothFrameRateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bSmoothFrameRateLbl.Location = new System.Drawing.Point(3, 859);
-			this.bSmoothFrameRateLbl.Name = "bSmoothFrameRateLbl";
-			this.bSmoothFrameRateLbl.Size = new System.Drawing.Size(256, 17);
-			this.bSmoothFrameRateLbl.TabIndex = 61;
-			this.bSmoothFrameRateLbl.Text = "Smooth Frame Rate";
-			// 
-			// lightEnvironmentShadowsLbl
-			// 
-			this.lightEnvironmentShadowsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lightEnvironmentShadowsLbl.Location = new System.Drawing.Point(3, 684);
-			this.lightEnvironmentShadowsLbl.Name = "lightEnvironmentShadowsLbl";
-			this.lightEnvironmentShadowsLbl.Size = new System.Drawing.Size(256, 17);
-			this.lightEnvironmentShadowsLbl.TabIndex = 49;
-			this.lightEnvironmentShadowsLbl.Text = "Light EnvironmentShadows";
-			// 
-			// dynamicShadowsCbo
-			// 
-			this.dynamicShadowsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.dynamicShadowsCbo.Enabled = false;
-			this.dynamicShadowsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dynamicShadowsCbo.FormattingEnabled = true;
-			this.dynamicShadowsCbo.Location = new System.Drawing.Point(268, 656);
-			this.dynamicShadowsCbo.Name = "dynamicShadowsCbo";
-			this.dynamicShadowsCbo.Size = new System.Drawing.Size(164, 23);
-			this.dynamicShadowsCbo.TabIndex = 48;
-			this.dynamicShadowsCbo.Tag = "True,True|False,False";
-			this.dynamicShadowsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// oneFrameThreadLagCbo
-			// 
-			this.oneFrameThreadLagCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.oneFrameThreadLagCbo.Enabled = false;
-			this.oneFrameThreadLagCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.oneFrameThreadLagCbo.FormattingEnabled = true;
-			this.oneFrameThreadLagCbo.Location = new System.Drawing.Point(268, 606);
-			this.oneFrameThreadLagCbo.Name = "oneFrameThreadLagCbo";
-			this.oneFrameThreadLagCbo.Size = new System.Drawing.Size(164, 23);
-			this.oneFrameThreadLagCbo.TabIndex = 45;
-			this.oneFrameThreadLagCbo.Tag = "True,True|False,False";
-			this.oneFrameThreadLagCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// skeletalMeshLodBiasCbo
-			// 
-			this.skeletalMeshLodBiasCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.skeletalMeshLodBiasCbo.Enabled = false;
-			this.skeletalMeshLodBiasCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.skeletalMeshLodBiasCbo.FormattingEnabled = true;
-			this.skeletalMeshLodBiasCbo.Location = new System.Drawing.Point(268, 581);
-			this.skeletalMeshLodBiasCbo.Name = "skeletalMeshLodBiasCbo";
-			this.skeletalMeshLodBiasCbo.Size = new System.Drawing.Size(164, 23);
-			this.skeletalMeshLodBiasCbo.TabIndex = 43;
-			this.skeletalMeshLodBiasCbo.Tag = "Low,10|Medium,1|High,0";
-			this.skeletalMeshLodBiasCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// detailModeCbo
-			// 
-			this.detailModeCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.detailModeCbo.Enabled = false;
-			this.detailModeCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.detailModeCbo.FormattingEnabled = true;
-			this.detailModeCbo.Location = new System.Drawing.Point(268, 531);
-			this.detailModeCbo.Name = "detailModeCbo";
-			this.detailModeCbo.Size = new System.Drawing.Size(164, 23);
-			this.detailModeCbo.TabIndex = 41;
-			this.detailModeCbo.Tag = "Off,0|Low,1|Medium,2|High,3|Maximum,4";
-			this.detailModeCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// speedTreeFrondsCbo
-			// 
-			this.speedTreeFrondsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.speedTreeFrondsCbo.Enabled = false;
-			this.speedTreeFrondsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.speedTreeFrondsCbo.FormattingEnabled = true;
-			this.speedTreeFrondsCbo.Location = new System.Drawing.Point(268, 506);
-			this.speedTreeFrondsCbo.Name = "speedTreeFrondsCbo";
-			this.speedTreeFrondsCbo.Size = new System.Drawing.Size(164, 23);
-			this.speedTreeFrondsCbo.TabIndex = 39;
-			this.speedTreeFrondsCbo.Tag = "True,True|False,False";
-			this.speedTreeFrondsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// speedTreeLeavesCbo
-			// 
-			this.speedTreeLeavesCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.speedTreeLeavesCbo.Enabled = false;
-			this.speedTreeLeavesCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.speedTreeLeavesCbo.FormattingEnabled = true;
-			this.speedTreeLeavesCbo.Location = new System.Drawing.Point(268, 481);
-			this.speedTreeLeavesCbo.Name = "speedTreeLeavesCbo";
-			this.speedTreeLeavesCbo.Size = new System.Drawing.Size(164, 23);
-			this.speedTreeLeavesCbo.TabIndex = 37;
-			this.speedTreeLeavesCbo.Tag = "True,True|False,False";
-			this.speedTreeLeavesCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// allowRadialBlurCbo
-			// 
-			this.allowRadialBlurCbo.DisplayMember = "true";
-			this.allowRadialBlurCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.allowRadialBlurCbo.Enabled = false;
-			this.allowRadialBlurCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.allowRadialBlurCbo.FormattingEnabled = true;
-			this.allowRadialBlurCbo.Location = new System.Drawing.Point(268, 456);
-			this.allowRadialBlurCbo.Name = "allowRadialBlurCbo";
-			this.allowRadialBlurCbo.Size = new System.Drawing.Size(164, 23);
-			this.allowRadialBlurCbo.TabIndex = 35;
-			this.allowRadialBlurCbo.Tag = "True,True|False,False";
-			this.allowRadialBlurCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// motionBlurCbo
-			// 
-			this.motionBlurCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.motionBlurCbo.Enabled = false;
-			this.motionBlurCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.motionBlurCbo.FormattingEnabled = true;
-			this.motionBlurCbo.Location = new System.Drawing.Point(268, 431);
-			this.motionBlurCbo.Name = "motionBlurCbo";
-			this.motionBlurCbo.Size = new System.Drawing.Size(164, 23);
-			this.motionBlurCbo.TabIndex = 33;
-			this.motionBlurCbo.Tag = "True,True|False,False";
-			this.motionBlurCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// lensFlaresCbo
-			// 
-			this.lensFlaresCbo.DisplayMember = "true";
-			this.lensFlaresCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.lensFlaresCbo.Enabled = false;
-			this.lensFlaresCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lensFlaresCbo.FormattingEnabled = true;
-			this.lensFlaresCbo.Location = new System.Drawing.Point(268, 406);
-			this.lensFlaresCbo.Name = "lensFlaresCbo";
-			this.lensFlaresCbo.Size = new System.Drawing.Size(164, 23);
-			this.lensFlaresCbo.TabIndex = 31;
-			this.lensFlaresCbo.Tag = "True,True|False,False";
-			this.lensFlaresCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// fogVolumesCbo
-			// 
-			this.fogVolumesCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.fogVolumesCbo.Enabled = false;
-			this.fogVolumesCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.fogVolumesCbo.FormattingEnabled = true;
-			this.fogVolumesCbo.Location = new System.Drawing.Point(268, 381);
-			this.fogVolumesCbo.Name = "fogVolumesCbo";
-			this.fogVolumesCbo.Size = new System.Drawing.Size(164, 23);
-			this.fogVolumesCbo.TabIndex = 29;
-			this.fogVolumesCbo.Tag = "True,True|False,False";
-			this.fogVolumesCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// dynamicShadowsLbl
-			// 
-			this.dynamicShadowsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dynamicShadowsLbl.Location = new System.Drawing.Point(3, 659);
-			this.dynamicShadowsLbl.Name = "dynamicShadowsLbl";
-			this.dynamicShadowsLbl.Size = new System.Drawing.Size(256, 17);
-			this.dynamicShadowsLbl.TabIndex = 47;
-			this.dynamicShadowsLbl.Text = "Dynamic Shadows";
-			// 
-			// label7
-			// 
-			this.label7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-			this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label7.Location = new System.Drawing.Point(3, 634);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(429, 19);
-			this.label7.TabIndex = 46;
-			this.label7.Text = "Shadow Detail";
-			this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// fogVolumesLbl
-			// 
-			this.fogVolumesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.fogVolumesLbl.Location = new System.Drawing.Point(3, 384);
-			this.fogVolumesLbl.Name = "fogVolumesLbl";
-			this.fogVolumesLbl.Size = new System.Drawing.Size(256, 17);
-			this.fogVolumesLbl.TabIndex = 28;
-			this.fogVolumesLbl.Text = "Fog Volumes";
-			// 
-			// lensFlaresLbl
-			// 
-			this.lensFlaresLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lensFlaresLbl.Location = new System.Drawing.Point(3, 409);
-			this.lensFlaresLbl.Name = "lensFlaresLbl";
-			this.lensFlaresLbl.Size = new System.Drawing.Size(256, 17);
-			this.lensFlaresLbl.TabIndex = 30;
-			this.lensFlaresLbl.Text = "Lens Flares";
-			// 
-			// motionBlurLbl
-			// 
-			this.motionBlurLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.motionBlurLbl.Location = new System.Drawing.Point(3, 434);
-			this.motionBlurLbl.Name = "motionBlurLbl";
-			this.motionBlurLbl.Size = new System.Drawing.Size(256, 17);
-			this.motionBlurLbl.TabIndex = 32;
-			this.motionBlurLbl.Text = "Motion Blur";
-			// 
-			// speedTreeLeavesLbl
-			// 
-			this.speedTreeLeavesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.speedTreeLeavesLbl.Location = new System.Drawing.Point(3, 484);
-			this.speedTreeLeavesLbl.Name = "speedTreeLeavesLbl";
-			this.speedTreeLeavesLbl.Size = new System.Drawing.Size(256, 17);
-			this.speedTreeLeavesLbl.TabIndex = 36;
-			this.speedTreeLeavesLbl.Text = "Speed Tree Leaves";
-			// 
-			// speedTreeFrondsLbl
-			// 
-			this.speedTreeFrondsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.speedTreeFrondsLbl.Location = new System.Drawing.Point(3, 509);
-			this.speedTreeFrondsLbl.Name = "speedTreeFrondsLbl";
-			this.speedTreeFrondsLbl.Size = new System.Drawing.Size(256, 17);
-			this.speedTreeFrondsLbl.TabIndex = 38;
-			this.speedTreeFrondsLbl.Text = "Speed Tree Fronds";
-			// 
-			// detailModeLbl
-			// 
-			this.detailModeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.detailModeLbl.Location = new System.Drawing.Point(3, 534);
-			this.detailModeLbl.Name = "detailModeLbl";
-			this.detailModeLbl.Size = new System.Drawing.Size(256, 17);
-			this.detailModeLbl.TabIndex = 40;
-			this.detailModeLbl.Text = "Detail Mode";
-			// 
-			// skeletalMesLodBiasLbl
-			// 
-			this.skeletalMesLodBiasLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.skeletalMesLodBiasLbl.Location = new System.Drawing.Point(3, 584);
-			this.skeletalMesLodBiasLbl.Name = "skeletalMesLodBiasLbl";
-			this.skeletalMesLodBiasLbl.Size = new System.Drawing.Size(256, 17);
-			this.skeletalMesLodBiasLbl.TabIndex = 42;
-			this.skeletalMesLodBiasLbl.Text = "Skeletal Mesh LOD Bias";
-			// 
-			// oneFrameThreadLagLbl
-			// 
-			this.oneFrameThreadLagLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.oneFrameThreadLagLbl.Location = new System.Drawing.Point(3, 609);
-			this.oneFrameThreadLagLbl.Name = "oneFrameThreadLagLbl";
-			this.oneFrameThreadLagLbl.Size = new System.Drawing.Size(256, 17);
-			this.oneFrameThreadLagLbl.TabIndex = 44;
-			this.oneFrameThreadLagLbl.Text = "One Frame Thread Lag";
-			// 
-			// allowRadialBlurLbl
-			// 
-			this.allowRadialBlurLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.allowRadialBlurLbl.Location = new System.Drawing.Point(3, 459);
-			this.allowRadialBlurLbl.Name = "allowRadialBlurLbl";
-			this.allowRadialBlurLbl.Size = new System.Drawing.Size(256, 17);
-			this.allowRadialBlurLbl.TabIndex = 34;
-			this.allowRadialBlurLbl.Text = "Allow Radial Blur";
-			// 
-			// distortionLbl
-			// 
-			this.distortionLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.distortionLbl.Location = new System.Drawing.Point(3, 359);
-			this.distortionLbl.Name = "distortionLbl";
-			this.distortionLbl.Size = new System.Drawing.Size(256, 17);
-			this.distortionLbl.TabIndex = 26;
-			this.distortionLbl.Text = "Distortion";
-			// 
-			// distortionCbo
-			// 
-			this.distortionCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.distortionCbo.Enabled = false;
-			this.distortionCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.distortionCbo.FormattingEnabled = true;
-			this.distortionCbo.Location = new System.Drawing.Point(268, 356);
-			this.distortionCbo.Name = "distortionCbo";
-			this.distortionCbo.Size = new System.Drawing.Size(164, 23);
-			this.distortionCbo.TabIndex = 27;
-			this.distortionCbo.Tag = "True,True|False,False";
-			this.distortionCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// depthOfFieldCbo
-			// 
-			this.depthOfFieldCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.depthOfFieldCbo.Enabled = false;
-			this.depthOfFieldCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.depthOfFieldCbo.FormattingEnabled = true;
-			this.depthOfFieldCbo.Location = new System.Drawing.Point(268, 331);
-			this.depthOfFieldCbo.Name = "depthOfFieldCbo";
-			this.depthOfFieldCbo.Size = new System.Drawing.Size(164, 23);
-			this.depthOfFieldCbo.TabIndex = 25;
-			this.depthOfFieldCbo.Tag = "True,True|False,False";
-			this.depthOfFieldCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// depthOfFieldLbl
-			// 
-			this.depthOfFieldLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.depthOfFieldLbl.Location = new System.Drawing.Point(3, 334);
-			this.depthOfFieldLbl.Name = "depthOfFieldLbl";
-			this.depthOfFieldLbl.Size = new System.Drawing.Size(256, 17);
-			this.depthOfFieldLbl.TabIndex = 24;
-			this.depthOfFieldLbl.Text = "Depth of Field";
-			// 
-			// bloomCbo
-			// 
-			this.bloomCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.bloomCbo.Enabled = false;
-			this.bloomCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bloomCbo.FormattingEnabled = true;
-			this.bloomCbo.Location = new System.Drawing.Point(268, 306);
-			this.bloomCbo.Name = "bloomCbo";
-			this.bloomCbo.Size = new System.Drawing.Size(164, 23);
-			this.bloomCbo.TabIndex = 23;
-			this.bloomCbo.Tag = "True,True|False,False";
-			this.bloomCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// ambientOcclusionCbo
-			// 
-			this.ambientOcclusionCbo.DisplayMember = "true";
-			this.ambientOcclusionCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.ambientOcclusionCbo.Enabled = false;
-			this.ambientOcclusionCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.ambientOcclusionCbo.FormattingEnabled = true;
-			this.ambientOcclusionCbo.Location = new System.Drawing.Point(268, 281);
-			this.ambientOcclusionCbo.Name = "ambientOcclusionCbo";
-			this.ambientOcclusionCbo.Size = new System.Drawing.Size(164, 23);
-			this.ambientOcclusionCbo.TabIndex = 21;
-			this.ambientOcclusionCbo.Tag = "True,True|False,False";
-			this.ambientOcclusionCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// bAllowLightShaftsCbo
-			// 
-			this.bAllowLightShaftsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.bAllowLightShaftsCbo.Enabled = false;
-			this.bAllowLightShaftsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bAllowLightShaftsCbo.FormattingEnabled = true;
-			this.bAllowLightShaftsCbo.Location = new System.Drawing.Point(268, 256);
-			this.bAllowLightShaftsCbo.Name = "bAllowLightShaftsCbo";
-			this.bAllowLightShaftsCbo.Size = new System.Drawing.Size(164, 23);
-			this.bAllowLightShaftsCbo.TabIndex = 19;
-			this.bAllowLightShaftsCbo.Tag = "True,True|False,False";
-			this.bAllowLightShaftsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// staticDecalsCbo
-			// 
-			this.staticDecalsCbo.DisplayMember = "true";
-			this.staticDecalsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.staticDecalsCbo.Enabled = false;
-			this.staticDecalsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.staticDecalsCbo.FormattingEnabled = true;
-			this.staticDecalsCbo.Location = new System.Drawing.Point(268, 231);
-			this.staticDecalsCbo.Name = "staticDecalsCbo";
-			this.staticDecalsCbo.Size = new System.Drawing.Size(164, 23);
-			this.staticDecalsCbo.TabIndex = 17;
-			this.staticDecalsCbo.Tag = "True,True|False,False";
-			this.staticDecalsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// dynamicDecalsCbo
-			// 
-			this.dynamicDecalsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.dynamicDecalsCbo.Enabled = false;
-			this.dynamicDecalsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dynamicDecalsCbo.FormattingEnabled = true;
-			this.dynamicDecalsCbo.Location = new System.Drawing.Point(268, 206);
-			this.dynamicDecalsCbo.Name = "dynamicDecalsCbo";
-			this.dynamicDecalsCbo.Size = new System.Drawing.Size(164, 23);
-			this.dynamicDecalsCbo.TabIndex = 15;
-			this.dynamicDecalsCbo.Tag = "True,True|False,False";
-			this.dynamicDecalsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// directionalLightMapsCbo
-			// 
-			this.directionalLightMapsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.directionalLightMapsCbo.Enabled = false;
-			this.directionalLightMapsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.directionalLightMapsCbo.FormattingEnabled = true;
-			this.directionalLightMapsCbo.Location = new System.Drawing.Point(268, 181);
-			this.directionalLightMapsCbo.Name = "directionalLightMapsCbo";
-			this.directionalLightMapsCbo.Size = new System.Drawing.Size(164, 23);
-			this.directionalLightMapsCbo.TabIndex = 13;
-			this.directionalLightMapsCbo.Tag = "True,True|False,False";
-			this.directionalLightMapsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// compositeDynamicLightsCbo
-			// 
-			this.compositeDynamicLightsCbo.DisplayMember = "true";
-			this.compositeDynamicLightsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.compositeDynamicLightsCbo.Enabled = false;
-			this.compositeDynamicLightsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.compositeDynamicLightsCbo.FormattingEnabled = true;
-			this.compositeDynamicLightsCbo.Location = new System.Drawing.Point(268, 156);
-			this.compositeDynamicLightsCbo.Name = "compositeDynamicLightsCbo";
-			this.compositeDynamicLightsCbo.Size = new System.Drawing.Size(164, 23);
-			this.compositeDynamicLightsCbo.TabIndex = 11;
-			this.compositeDynamicLightsCbo.Tag = "True,True|False,False";
-			this.compositeDynamicLightsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// dynamicLightsCbo
-			// 
-			this.dynamicLightsCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.dynamicLightsCbo.Enabled = false;
-			this.dynamicLightsCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dynamicLightsCbo.FormattingEnabled = true;
-			this.dynamicLightsCbo.Location = new System.Drawing.Point(268, 131);
-			this.dynamicLightsCbo.Name = "dynamicLightsCbo";
-			this.dynamicLightsCbo.Size = new System.Drawing.Size(164, 23);
-			this.dynamicLightsCbo.TabIndex = 9;
-			this.dynamicLightsCbo.Tag = "True,True|False,False";
-			this.dynamicLightsCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// bUseMaxQualityModeCbo
-			// 
-			this.bUseMaxQualityModeCbo.DisplayMember = "true";
-			this.bUseMaxQualityModeCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.bUseMaxQualityModeCbo.Enabled = false;
-			this.bUseMaxQualityModeCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bUseMaxQualityModeCbo.FormattingEnabled = true;
-			this.bUseMaxQualityModeCbo.Location = new System.Drawing.Point(268, 106);
-			this.bUseMaxQualityModeCbo.Name = "bUseMaxQualityModeCbo";
-			this.bUseMaxQualityModeCbo.Size = new System.Drawing.Size(164, 23);
-			this.bUseMaxQualityModeCbo.TabIndex = 7;
-			this.bUseMaxQualityModeCbo.Tag = "True,True|False,False";
-			this.bUseMaxQualityModeCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// screenResCbo
-			// 
-			this.screenResCbo.DisplayMember = "true";
-			this.screenResCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.screenResCbo.Enabled = false;
-			this.screenResCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.screenResCbo.FormattingEnabled = true;
-			this.screenResCbo.Location = new System.Drawing.Point(268, 56);
-			this.screenResCbo.Name = "screenResCbo";
-			this.screenResCbo.Size = new System.Drawing.Size(164, 23);
-			this.screenResCbo.TabIndex = 4;
-			this.screenResCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// screenTypeCbo
-			// 
-			this.screenTypeCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.screenTypeCbo.Enabled = false;
-			this.screenTypeCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.screenTypeCbo.FormattingEnabled = true;
-			this.screenTypeCbo.Location = new System.Drawing.Point(268, 31);
-			this.screenTypeCbo.Name = "screenTypeCbo";
-			this.screenTypeCbo.Size = new System.Drawing.Size(164, 23);
-			this.screenTypeCbo.TabIndex = 2;
-			this.screenTypeCbo.Tag = "Fullscreen;True,False|Borderless;False,True|Windowed;False,False";
-			this.screenTypeCbo.SelectedValueChanged += new System.EventHandler(this.iniSettingsCbo_SelectedValueChanged);
-			// 
-			// infoLbl5
-			// 
-			this.infoLbl5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-			this.infoLbl5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.infoLbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.infoLbl5.Location = new System.Drawing.Point(3, 84);
-			this.infoLbl5.Name = "infoLbl5";
-			this.infoLbl5.Size = new System.Drawing.Size(429, 19);
-			this.infoLbl5.TabIndex = 5;
-			this.infoLbl5.Text = "World Detail";
-			this.infoLbl5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// screenTypeLbl
-			// 
-			this.screenTypeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.screenTypeLbl.Location = new System.Drawing.Point(3, 34);
-			this.screenTypeLbl.Name = "screenTypeLbl";
-			this.screenTypeLbl.Size = new System.Drawing.Size(256, 17);
-			this.screenTypeLbl.TabIndex = 1;
-			this.screenTypeLbl.Text = "Screen Type";
-			// 
-			// screenResLbl
-			// 
-			this.screenResLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.screenResLbl.Location = new System.Drawing.Point(3, 59);
-			this.screenResLbl.Name = "screenResLbl";
-			this.screenResLbl.Size = new System.Drawing.Size(256, 17);
-			this.screenResLbl.TabIndex = 3;
-			this.screenResLbl.Text = "Screen Resolution";
-			// 
-			// bUseMaxQualityModeLbl
-			// 
-			this.bUseMaxQualityModeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bUseMaxQualityModeLbl.Location = new System.Drawing.Point(3, 109);
-			this.bUseMaxQualityModeLbl.Name = "bUseMaxQualityModeLbl";
-			this.bUseMaxQualityModeLbl.Size = new System.Drawing.Size(256, 17);
-			this.bUseMaxQualityModeLbl.TabIndex = 6;
-			this.bUseMaxQualityModeLbl.Text = "Use Max Quality Mode";
-			// 
-			// dynamicLightsLbl
-			// 
-			this.dynamicLightsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dynamicLightsLbl.Location = new System.Drawing.Point(3, 134);
-			this.dynamicLightsLbl.Name = "dynamicLightsLbl";
-			this.dynamicLightsLbl.Size = new System.Drawing.Size(256, 17);
-			this.dynamicLightsLbl.TabIndex = 8;
-			this.dynamicLightsLbl.Text = "Dynamic Lights";
-			// 
-			// compositeDynamicLightsLbl
-			// 
-			this.compositeDynamicLightsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.compositeDynamicLightsLbl.Location = new System.Drawing.Point(3, 159);
-			this.compositeDynamicLightsLbl.Name = "compositeDynamicLightsLbl";
-			this.compositeDynamicLightsLbl.Size = new System.Drawing.Size(256, 17);
-			this.compositeDynamicLightsLbl.TabIndex = 10;
-			this.compositeDynamicLightsLbl.Text = "Composite Dynamic Lights";
-			// 
-			// dynamicDecalsLbl
-			// 
-			this.dynamicDecalsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dynamicDecalsLbl.Location = new System.Drawing.Point(3, 209);
-			this.dynamicDecalsLbl.Name = "dynamicDecalsLbl";
-			this.dynamicDecalsLbl.Size = new System.Drawing.Size(256, 17);
-			this.dynamicDecalsLbl.TabIndex = 14;
-			this.dynamicDecalsLbl.Text = "Dynamic Decals";
-			// 
-			// staticDecalsLbl
-			// 
-			this.staticDecalsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.staticDecalsLbl.Location = new System.Drawing.Point(3, 234);
-			this.staticDecalsLbl.Name = "staticDecalsLbl";
-			this.staticDecalsLbl.Size = new System.Drawing.Size(256, 17);
-			this.staticDecalsLbl.TabIndex = 16;
-			this.staticDecalsLbl.Text = "Static Decals";
-			// 
-			// bAllowLightShaftsLbl
-			// 
-			this.bAllowLightShaftsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bAllowLightShaftsLbl.Location = new System.Drawing.Point(3, 259);
-			this.bAllowLightShaftsLbl.Name = "bAllowLightShaftsLbl";
-			this.bAllowLightShaftsLbl.Size = new System.Drawing.Size(256, 17);
-			this.bAllowLightShaftsLbl.TabIndex = 18;
-			this.bAllowLightShaftsLbl.Text = "Allow Light Shafts";
-			// 
-			// ambientOcclusionLbl
-			// 
-			this.ambientOcclusionLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.ambientOcclusionLbl.Location = new System.Drawing.Point(3, 284);
-			this.ambientOcclusionLbl.Name = "ambientOcclusionLbl";
-			this.ambientOcclusionLbl.Size = new System.Drawing.Size(256, 17);
-			this.ambientOcclusionLbl.TabIndex = 20;
-			this.ambientOcclusionLbl.Text = "Ambient Occlusion";
-			// 
-			// bloomLbl
-			// 
-			this.bloomLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bloomLbl.Location = new System.Drawing.Point(3, 309);
-			this.bloomLbl.Name = "bloomLbl";
-			this.bloomLbl.Size = new System.Drawing.Size(256, 17);
-			this.bloomLbl.TabIndex = 22;
-			this.bloomLbl.Text = "Bloom";
-			// 
-			// directionalLightMapsLbl
-			// 
-			this.directionalLightMapsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.directionalLightMapsLbl.Location = new System.Drawing.Point(3, 184);
-			this.directionalLightMapsLbl.Name = "directionalLightMapsLbl";
-			this.directionalLightMapsLbl.Size = new System.Drawing.Size(256, 17);
-			this.directionalLightMapsLbl.TabIndex = 12;
-			this.directionalLightMapsLbl.Text = "Directional Light Maps";
-			// 
-			// infoLbl2
-			// 
-			this.infoLbl2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-			this.infoLbl2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.infoLbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.infoLbl2.Location = new System.Drawing.Point(3, 9);
-			this.infoLbl2.Name = "infoLbl2";
-			this.infoLbl2.Size = new System.Drawing.Size(429, 19);
-			this.infoLbl2.TabIndex = 0;
-			this.infoLbl2.Text = "Screen Settings";
-			this.infoLbl2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.presetComboBox.Location = new System.Drawing.Point(3, 376);
+			this.presetComboBox.Name = "presetComboBox";
+			this.presetComboBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.presetComboBox.Size = new System.Drawing.Size(70, 24);
+			this.presetComboBox.TabIndex = 1;
+			// 
+			// loadFileButton
+			// 
+			this.loadFileButton.Location = new System.Drawing.Point(282, 371);
+			this.loadFileButton.Name = "loadFileButton";
+			this.loadFileButton.Size = new System.Drawing.Size(84, 33);
+			this.loadFileButton.TabIndex = 4;
+			this.loadFileButton.Text = "Load File";
+			this.loadFileButton.UseVisualStyleBackColor = true;
+			this.loadFileButton.Click += new System.EventHandler(this.loadFileButton_Click);
+			// 
+			// saveFileButton
+			// 
+			this.saveFileButton.Enabled = false;
+			this.saveFileButton.Location = new System.Drawing.Point(372, 371);
+			this.saveFileButton.Name = "saveFileButton";
+			this.saveFileButton.Size = new System.Drawing.Size(84, 33);
+			this.saveFileButton.TabIndex = 3;
+			this.saveFileButton.Text = "Save File";
+			this.saveFileButton.UseVisualStyleBackColor = true;
+			this.saveFileButton.Click += new System.EventHandler(this.saveFileButton_Click);
+			// 
+			// iniEditorPanel
+			// 
+			this.iniEditorPanel.AutoScroll = true;
+			this.iniEditorPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.iniEditorPanel.Controls.Add(this.particleLodBiasComboBox);
+			this.iniEditorPanel.Controls.Add(this.particleLodBiasLabel);
+			this.iniEditorPanel.Controls.Add(this.bShouldAllowRagdollingComboBox);
+			this.iniEditorPanel.Controls.Add(this.bShouldAllowRagdollingLabel);
+			this.iniEditorPanel.Controls.Add(this.bForceStaticTerrainComboBox);
+			this.iniEditorPanel.Controls.Add(this.bForceStaticTerrainLabel);
+			this.iniEditorPanel.Controls.Add(this.useVsyncComboBox);
+			this.iniEditorPanel.Controls.Add(this.maxSmoothedFrameRateComboBox);
+			this.iniEditorPanel.Controls.Add(this.minSmoothedFrameRateComboBox);
+			this.iniEditorPanel.Controls.Add(this.bSmoothFrameRateComboBox);
+			this.iniEditorPanel.Controls.Add(this.trilinearComboBox);
+			this.iniEditorPanel.Controls.Add(this.maxAnisotropyComboBox);
+			this.iniEditorPanel.Controls.Add(this.textureDetailComboBox);
+			this.iniEditorPanel.Controls.Add(this.bAllowWholeSceneDominantShadowsComboBox);
+			this.iniEditorPanel.Controls.Add(this.lightEnvironmentShadowsComboBox);
+			this.iniEditorPanel.Controls.Add(this.textureDetailLabel);
+			this.iniEditorPanel.Controls.Add(this.bAllowWholeSceneDominantShadowsLabel);
+			this.iniEditorPanel.Controls.Add(this.textureDetailHeaderLabel);
+			this.iniEditorPanel.Controls.Add(this.maxAnisotropyLabel);
+			this.iniEditorPanel.Controls.Add(this.trilinearLabel);
+			this.iniEditorPanel.Controls.Add(this.extraHeaderLabel);
+			this.iniEditorPanel.Controls.Add(this.minSmoothedFrameRateLabel);
+			this.iniEditorPanel.Controls.Add(this.maxSmoothedFrameRateLabel);
+			this.iniEditorPanel.Controls.Add(this.useVsyncLabel);
+			this.iniEditorPanel.Controls.Add(this.bSmoothFrameRateLabel);
+			this.iniEditorPanel.Controls.Add(this.lightEnvironmentShadowsLabel);
+			this.iniEditorPanel.Controls.Add(this.dynamicShadowsComboBox);
+			this.iniEditorPanel.Controls.Add(this.oneFrameThreadLagComboBox);
+			this.iniEditorPanel.Controls.Add(this.skeletalMeshLodBiasComboBox);
+			this.iniEditorPanel.Controls.Add(this.detailModeComboBox);
+			this.iniEditorPanel.Controls.Add(this.speedTreeFrondsComboBox);
+			this.iniEditorPanel.Controls.Add(this.speedTreeLeavesComboBox);
+			this.iniEditorPanel.Controls.Add(this.allowRadialBlurComboBox);
+			this.iniEditorPanel.Controls.Add(this.motionBlurComboBox);
+			this.iniEditorPanel.Controls.Add(this.lensFlaresComboBox);
+			this.iniEditorPanel.Controls.Add(this.fogVolumesComboBox);
+			this.iniEditorPanel.Controls.Add(this.dynamicShadowsLabel);
+			this.iniEditorPanel.Controls.Add(this.shadowDetailHeaderLabel);
+			this.iniEditorPanel.Controls.Add(this.fogVolumesLabel);
+			this.iniEditorPanel.Controls.Add(this.lensFlaresLabel);
+			this.iniEditorPanel.Controls.Add(this.motionBlurLabel);
+			this.iniEditorPanel.Controls.Add(this.speedTreeLeavesLabel);
+			this.iniEditorPanel.Controls.Add(this.speedTreeFrondsLabel);
+			this.iniEditorPanel.Controls.Add(this.detailModeLabel);
+			this.iniEditorPanel.Controls.Add(this.skeletalMesLodBiasLabel);
+			this.iniEditorPanel.Controls.Add(this.oneFrameThreadLagLabel);
+			this.iniEditorPanel.Controls.Add(this.allowRadialBlurLabel);
+			this.iniEditorPanel.Controls.Add(this.distortionLabel);
+			this.iniEditorPanel.Controls.Add(this.distortionComboBox);
+			this.iniEditorPanel.Controls.Add(this.depthOfFieldComboBox);
+			this.iniEditorPanel.Controls.Add(this.depthOfFieldLabel);
+			this.iniEditorPanel.Controls.Add(this.bloomComboBox);
+			this.iniEditorPanel.Controls.Add(this.ambientOcclusionComboBox);
+			this.iniEditorPanel.Controls.Add(this.bAllowLightShaftsComboBox);
+			this.iniEditorPanel.Controls.Add(this.staticDecalsComboBox);
+			this.iniEditorPanel.Controls.Add(this.dynamicDecalsComboBox);
+			this.iniEditorPanel.Controls.Add(this.directionalLightMapsComboBox);
+			this.iniEditorPanel.Controls.Add(this.compositeDynamicLightsComboBox);
+			this.iniEditorPanel.Controls.Add(this.dynamicLightsComboBox);
+			this.iniEditorPanel.Controls.Add(this.bUseMaxQualityModeComboBox);
+			this.iniEditorPanel.Controls.Add(this.screenResComboBox);
+			this.iniEditorPanel.Controls.Add(this.screenTypeComboBox);
+			this.iniEditorPanel.Controls.Add(this.worldDetailHeaderLabel);
+			this.iniEditorPanel.Controls.Add(this.screenTypeLabel);
+			this.iniEditorPanel.Controls.Add(this.screenResLabel);
+			this.iniEditorPanel.Controls.Add(this.bUseMaxQualityModeLabel);
+			this.iniEditorPanel.Controls.Add(this.dynamicLightsLabel);
+			this.iniEditorPanel.Controls.Add(this.compositeDynamicLightsLabel);
+			this.iniEditorPanel.Controls.Add(this.dynamicDecalsLabel);
+			this.iniEditorPanel.Controls.Add(this.staticDecalsLabel);
+			this.iniEditorPanel.Controls.Add(this.bAllowLightShaftsLabel);
+			this.iniEditorPanel.Controls.Add(this.ambientOcclusionLabel);
+			this.iniEditorPanel.Controls.Add(this.bloomLabel);
+			this.iniEditorPanel.Controls.Add(this.directionalLightMapsLabel);
+			this.iniEditorPanel.Controls.Add(this.screenSettingsHeaderLabel);
+			this.iniEditorPanel.Location = new System.Drawing.Point(3, 3);
+			this.iniEditorPanel.Name = "iniEditorPanel";
+			this.iniEditorPanel.Size = new System.Drawing.Size(456, 359);
+			this.iniEditorPanel.TabIndex = 0;
+			// 
+			// particleLodBiasComboBox
+			// 
+			this.particleLodBiasComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.particleLodBiasComboBox.Enabled = false;
+			this.particleLodBiasComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.particleLodBiasComboBox.FormattingEnabled = true;
+			this.particleLodBiasComboBox.Location = new System.Drawing.Point(268, 556);
+			this.particleLodBiasComboBox.Name = "particleLodBiasComboBox";
+			this.particleLodBiasComboBox.Size = new System.Drawing.Size(164, 23);
+			this.particleLodBiasComboBox.TabIndex = 74;
+			this.particleLodBiasComboBox.Tag = "Low,10|Medium,1|High,0";
+			// 
+			// particleLodBiasLabel
+			// 
+			this.particleLodBiasLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.particleLodBiasLabel.Location = new System.Drawing.Point(3, 559);
+			this.particleLodBiasLabel.Name = "particleLodBiasLabel";
+			this.particleLodBiasLabel.Size = new System.Drawing.Size(256, 17);
+			this.particleLodBiasLabel.TabIndex = 73;
+			this.particleLodBiasLabel.Text = "Particle LOD Bias";
+			// 
+			// bShouldAllowRagdollingComboBox
+			// 
+			this.bShouldAllowRagdollingComboBox.DisplayMember = "true";
+			this.bShouldAllowRagdollingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.bShouldAllowRagdollingComboBox.Enabled = false;
+			this.bShouldAllowRagdollingComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bShouldAllowRagdollingComboBox.FormattingEnabled = true;
+			this.bShouldAllowRagdollingComboBox.Location = new System.Drawing.Point(268, 981);
+			this.bShouldAllowRagdollingComboBox.Name = "bShouldAllowRagdollingComboBox";
+			this.bShouldAllowRagdollingComboBox.Size = new System.Drawing.Size(164, 23);
+			this.bShouldAllowRagdollingComboBox.TabIndex = 72;
+			this.bShouldAllowRagdollingComboBox.Tag = "True,True|False,False";
+			this.bShouldAllowRagdollingComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// bShouldAllowRagdollingLabel
+			// 
+			this.bShouldAllowRagdollingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bShouldAllowRagdollingLabel.Location = new System.Drawing.Point(3, 984);
+			this.bShouldAllowRagdollingLabel.Name = "bShouldAllowRagdollingLabel";
+			this.bShouldAllowRagdollingLabel.Size = new System.Drawing.Size(256, 17);
+			this.bShouldAllowRagdollingLabel.TabIndex = 71;
+			this.bShouldAllowRagdollingLabel.Text = "Allow Ragdolling";
+			// 
+			// bForceStaticTerrainComboBox
+			// 
+			this.bForceStaticTerrainComboBox.DisplayMember = "true";
+			this.bForceStaticTerrainComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.bForceStaticTerrainComboBox.Enabled = false;
+			this.bForceStaticTerrainComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bForceStaticTerrainComboBox.FormattingEnabled = true;
+			this.bForceStaticTerrainComboBox.Location = new System.Drawing.Point(268, 956);
+			this.bForceStaticTerrainComboBox.Name = "bForceStaticTerrainComboBox";
+			this.bForceStaticTerrainComboBox.Size = new System.Drawing.Size(164, 23);
+			this.bForceStaticTerrainComboBox.TabIndex = 70;
+			this.bForceStaticTerrainComboBox.Tag = "True,True|False,False";
+			this.bForceStaticTerrainComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// bForceStaticTerrainLabel
+			// 
+			this.bForceStaticTerrainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bForceStaticTerrainLabel.Location = new System.Drawing.Point(3, 959);
+			this.bForceStaticTerrainLabel.Name = "bForceStaticTerrainLabel";
+			this.bForceStaticTerrainLabel.Size = new System.Drawing.Size(256, 17);
+			this.bForceStaticTerrainLabel.TabIndex = 69;
+			this.bForceStaticTerrainLabel.Text = "Force Static Terrain";
+			// 
+			// useVsyncComboBox
+			// 
+			this.useVsyncComboBox.DisplayMember = "true";
+			this.useVsyncComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.useVsyncComboBox.Enabled = false;
+			this.useVsyncComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.useVsyncComboBox.FormattingEnabled = true;
+			this.useVsyncComboBox.Location = new System.Drawing.Point(268, 931);
+			this.useVsyncComboBox.Name = "useVsyncComboBox";
+			this.useVsyncComboBox.Size = new System.Drawing.Size(164, 23);
+			this.useVsyncComboBox.TabIndex = 68;
+			this.useVsyncComboBox.Tag = "True,True|False,False";
+			this.useVsyncComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// maxSmoothedFrameRateComboBox
+			// 
+			this.maxSmoothedFrameRateComboBox.DisplayMember = "true";
+			this.maxSmoothedFrameRateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.maxSmoothedFrameRateComboBox.Enabled = false;
+			this.maxSmoothedFrameRateComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maxSmoothedFrameRateComboBox.FormattingEnabled = true;
+			this.maxSmoothedFrameRateComboBox.Location = new System.Drawing.Point(268, 906);
+			this.maxSmoothedFrameRateComboBox.Name = "maxSmoothedFrameRateComboBox";
+			this.maxSmoothedFrameRateComboBox.Size = new System.Drawing.Size(164, 23);
+			this.maxSmoothedFrameRateComboBox.TabIndex = 66;
+			this.maxSmoothedFrameRateComboBox.Tag = "30 FPS,32|60 FPS,62|90 FPS,92|120 FPS,122";
+			this.maxSmoothedFrameRateComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// minSmoothedFrameRateComboBox
+			// 
+			this.minSmoothedFrameRateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.minSmoothedFrameRateComboBox.Enabled = false;
+			this.minSmoothedFrameRateComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.minSmoothedFrameRateComboBox.FormattingEnabled = true;
+			this.minSmoothedFrameRateComboBox.Location = new System.Drawing.Point(268, 881);
+			this.minSmoothedFrameRateComboBox.Name = "minSmoothedFrameRateComboBox";
+			this.minSmoothedFrameRateComboBox.Size = new System.Drawing.Size(164, 23);
+			this.minSmoothedFrameRateComboBox.TabIndex = 64;
+			this.minSmoothedFrameRateComboBox.Tag = "15 FPS, 17|20 FPS,22|30 FPS,32";
+			this.minSmoothedFrameRateComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// bSmoothFrameRateComboBox
+			// 
+			this.bSmoothFrameRateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.bSmoothFrameRateComboBox.Enabled = false;
+			this.bSmoothFrameRateComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bSmoothFrameRateComboBox.FormattingEnabled = true;
+			this.bSmoothFrameRateComboBox.Location = new System.Drawing.Point(268, 856);
+			this.bSmoothFrameRateComboBox.Name = "bSmoothFrameRateComboBox";
+			this.bSmoothFrameRateComboBox.Size = new System.Drawing.Size(164, 23);
+			this.bSmoothFrameRateComboBox.TabIndex = 62;
+			this.bSmoothFrameRateComboBox.Tag = "True,True|False,False";
+			this.bSmoothFrameRateComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// trilinearComboBox
+			// 
+			this.trilinearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.trilinearComboBox.Enabled = false;
+			this.trilinearComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.trilinearComboBox.FormattingEnabled = true;
+			this.trilinearComboBox.Location = new System.Drawing.Point(268, 806);
+			this.trilinearComboBox.Name = "trilinearComboBox";
+			this.trilinearComboBox.Size = new System.Drawing.Size(164, 23);
+			this.trilinearComboBox.TabIndex = 59;
+			this.trilinearComboBox.Tag = "True,True|False,False";
+			this.trilinearComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// maxAnisotropyComboBox
+			// 
+			this.maxAnisotropyComboBox.DisplayMember = "true";
+			this.maxAnisotropyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.maxAnisotropyComboBox.Enabled = false;
+			this.maxAnisotropyComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maxAnisotropyComboBox.FormattingEnabled = true;
+			this.maxAnisotropyComboBox.Location = new System.Drawing.Point(268, 781);
+			this.maxAnisotropyComboBox.Name = "maxAnisotropyComboBox";
+			this.maxAnisotropyComboBox.Size = new System.Drawing.Size(164, 23);
+			this.maxAnisotropyComboBox.TabIndex = 57;
+			this.maxAnisotropyComboBox.Tag = "Off,0|1x,1|2x,2|4x,4|8x,8|16x,16";
+			this.maxAnisotropyComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// textureDetailComboBox
+			// 
+			this.textureDetailComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.textureDetailComboBox.Enabled = false;
+			this.textureDetailComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textureDetailComboBox.FormattingEnabled = true;
+			this.textureDetailComboBox.Location = new System.Drawing.Point(268, 756);
+			this.textureDetailComboBox.Name = "textureDetailComboBox";
+			this.textureDetailComboBox.Size = new System.Drawing.Size(164, 23);
+			this.textureDetailComboBox.TabIndex = 55;
+			this.textureDetailComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// bAllowWholeSceneDominantShadowsComboBox
+			// 
+			this.bAllowWholeSceneDominantShadowsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.bAllowWholeSceneDominantShadowsComboBox.Enabled = false;
+			this.bAllowWholeSceneDominantShadowsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bAllowWholeSceneDominantShadowsComboBox.FormattingEnabled = true;
+			this.bAllowWholeSceneDominantShadowsComboBox.Location = new System.Drawing.Point(268, 706);
+			this.bAllowWholeSceneDominantShadowsComboBox.Name = "bAllowWholeSceneDominantShadowsComboBox";
+			this.bAllowWholeSceneDominantShadowsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.bAllowWholeSceneDominantShadowsComboBox.TabIndex = 52;
+			this.bAllowWholeSceneDominantShadowsComboBox.Tag = "True,True|False,False";
+			this.bAllowWholeSceneDominantShadowsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// lightEnvironmentShadowsComboBox
+			// 
+			this.lightEnvironmentShadowsComboBox.DisplayMember = "true";
+			this.lightEnvironmentShadowsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.lightEnvironmentShadowsComboBox.Enabled = false;
+			this.lightEnvironmentShadowsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lightEnvironmentShadowsComboBox.FormattingEnabled = true;
+			this.lightEnvironmentShadowsComboBox.Location = new System.Drawing.Point(268, 681);
+			this.lightEnvironmentShadowsComboBox.Name = "lightEnvironmentShadowsComboBox";
+			this.lightEnvironmentShadowsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.lightEnvironmentShadowsComboBox.TabIndex = 50;
+			this.lightEnvironmentShadowsComboBox.Tag = "True,True|False,False";
+			this.lightEnvironmentShadowsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// textureDetailLabel
+			// 
+			this.textureDetailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textureDetailLabel.Location = new System.Drawing.Point(3, 759);
+			this.textureDetailLabel.Name = "textureDetailLabel";
+			this.textureDetailLabel.Size = new System.Drawing.Size(256, 17);
+			this.textureDetailLabel.TabIndex = 54;
+			this.textureDetailLabel.Text = "Texture Detail";
+			// 
+			// bAllowWholeSceneDominantShadowsLabel
+			// 
+			this.bAllowWholeSceneDominantShadowsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bAllowWholeSceneDominantShadowsLabel.Location = new System.Drawing.Point(3, 709);
+			this.bAllowWholeSceneDominantShadowsLabel.Name = "bAllowWholeSceneDominantShadowsLabel";
+			this.bAllowWholeSceneDominantShadowsLabel.Size = new System.Drawing.Size(256, 17);
+			this.bAllowWholeSceneDominantShadowsLabel.TabIndex = 51;
+			this.bAllowWholeSceneDominantShadowsLabel.Text = "Allow Whole Scene Dominant Shadows";
+			// 
+			// textureDetailHeaderLabel
+			// 
+			this.textureDetailHeaderLabel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.textureDetailHeaderLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.textureDetailHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textureDetailHeaderLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.textureDetailHeaderLabel.Location = new System.Drawing.Point(3, 734);
+			this.textureDetailHeaderLabel.Name = "textureDetailHeaderLabel";
+			this.textureDetailHeaderLabel.Size = new System.Drawing.Size(429, 19);
+			this.textureDetailHeaderLabel.TabIndex = 53;
+			this.textureDetailHeaderLabel.Text = "Texture Detail";
+			this.textureDetailHeaderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// maxAnisotropyLabel
+			// 
+			this.maxAnisotropyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maxAnisotropyLabel.Location = new System.Drawing.Point(3, 784);
+			this.maxAnisotropyLabel.Name = "maxAnisotropyLabel";
+			this.maxAnisotropyLabel.Size = new System.Drawing.Size(256, 17);
+			this.maxAnisotropyLabel.TabIndex = 56;
+			this.maxAnisotropyLabel.Text = "Max Anisotropy";
+			// 
+			// trilinearLabel
+			// 
+			this.trilinearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.trilinearLabel.Location = new System.Drawing.Point(3, 809);
+			this.trilinearLabel.Name = "trilinearLabel";
+			this.trilinearLabel.Size = new System.Drawing.Size(256, 17);
+			this.trilinearLabel.TabIndex = 58;
+			this.trilinearLabel.Text = "Trilinear Filtering";
+			// 
+			// extraHeaderLabel
+			// 
+			this.extraHeaderLabel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.extraHeaderLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.extraHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.extraHeaderLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.extraHeaderLabel.Location = new System.Drawing.Point(3, 834);
+			this.extraHeaderLabel.Name = "extraHeaderLabel";
+			this.extraHeaderLabel.Size = new System.Drawing.Size(429, 19);
+			this.extraHeaderLabel.TabIndex = 60;
+			this.extraHeaderLabel.Text = "Extra";
+			this.extraHeaderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// minSmoothedFrameRateLabel
+			// 
+			this.minSmoothedFrameRateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.minSmoothedFrameRateLabel.Location = new System.Drawing.Point(3, 884);
+			this.minSmoothedFrameRateLabel.Name = "minSmoothedFrameRateLabel";
+			this.minSmoothedFrameRateLabel.Size = new System.Drawing.Size(256, 17);
+			this.minSmoothedFrameRateLabel.TabIndex = 63;
+			this.minSmoothedFrameRateLabel.Text = "Min Smoothed Frame Rate";
+			// 
+			// maxSmoothedFrameRateLabel
+			// 
+			this.maxSmoothedFrameRateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maxSmoothedFrameRateLabel.Location = new System.Drawing.Point(3, 909);
+			this.maxSmoothedFrameRateLabel.Name = "maxSmoothedFrameRateLabel";
+			this.maxSmoothedFrameRateLabel.Size = new System.Drawing.Size(256, 17);
+			this.maxSmoothedFrameRateLabel.TabIndex = 65;
+			this.maxSmoothedFrameRateLabel.Text = "Max Smoothed Frame Rate";
+			// 
+			// useVsyncLabel
+			// 
+			this.useVsyncLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.useVsyncLabel.Location = new System.Drawing.Point(3, 934);
+			this.useVsyncLabel.Name = "useVsyncLabel";
+			this.useVsyncLabel.Size = new System.Drawing.Size(256, 17);
+			this.useVsyncLabel.TabIndex = 67;
+			this.useVsyncLabel.Text = "Use Vsync";
+			// 
+			// bSmoothFrameRateLabel
+			// 
+			this.bSmoothFrameRateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bSmoothFrameRateLabel.Location = new System.Drawing.Point(3, 859);
+			this.bSmoothFrameRateLabel.Name = "bSmoothFrameRateLabel";
+			this.bSmoothFrameRateLabel.Size = new System.Drawing.Size(256, 17);
+			this.bSmoothFrameRateLabel.TabIndex = 61;
+			this.bSmoothFrameRateLabel.Text = "Smooth Frame Rate";
+			// 
+			// lightEnvironmentShadowsLabel
+			// 
+			this.lightEnvironmentShadowsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lightEnvironmentShadowsLabel.Location = new System.Drawing.Point(3, 684);
+			this.lightEnvironmentShadowsLabel.Name = "lightEnvironmentShadowsLabel";
+			this.lightEnvironmentShadowsLabel.Size = new System.Drawing.Size(256, 17);
+			this.lightEnvironmentShadowsLabel.TabIndex = 49;
+			this.lightEnvironmentShadowsLabel.Text = "Light EnvironmentShadows";
+			// 
+			// dynamicShadowsComboBox
+			// 
+			this.dynamicShadowsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.dynamicShadowsComboBox.Enabled = false;
+			this.dynamicShadowsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dynamicShadowsComboBox.FormattingEnabled = true;
+			this.dynamicShadowsComboBox.Location = new System.Drawing.Point(268, 656);
+			this.dynamicShadowsComboBox.Name = "dynamicShadowsComboBox";
+			this.dynamicShadowsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.dynamicShadowsComboBox.TabIndex = 48;
+			this.dynamicShadowsComboBox.Tag = "True,True|False,False";
+			this.dynamicShadowsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// oneFrameThreadLagComboBox
+			// 
+			this.oneFrameThreadLagComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.oneFrameThreadLagComboBox.Enabled = false;
+			this.oneFrameThreadLagComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.oneFrameThreadLagComboBox.FormattingEnabled = true;
+			this.oneFrameThreadLagComboBox.Location = new System.Drawing.Point(268, 606);
+			this.oneFrameThreadLagComboBox.Name = "oneFrameThreadLagComboBox";
+			this.oneFrameThreadLagComboBox.Size = new System.Drawing.Size(164, 23);
+			this.oneFrameThreadLagComboBox.TabIndex = 45;
+			this.oneFrameThreadLagComboBox.Tag = "True,True|False,False";
+			this.oneFrameThreadLagComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// skeletalMeshLodBiasComboBox
+			// 
+			this.skeletalMeshLodBiasComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.skeletalMeshLodBiasComboBox.Enabled = false;
+			this.skeletalMeshLodBiasComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.skeletalMeshLodBiasComboBox.FormattingEnabled = true;
+			this.skeletalMeshLodBiasComboBox.Location = new System.Drawing.Point(268, 581);
+			this.skeletalMeshLodBiasComboBox.Name = "skeletalMeshLodBiasComboBox";
+			this.skeletalMeshLodBiasComboBox.Size = new System.Drawing.Size(164, 23);
+			this.skeletalMeshLodBiasComboBox.TabIndex = 43;
+			this.skeletalMeshLodBiasComboBox.Tag = "Low,10|Medium,1|High,0";
+			this.skeletalMeshLodBiasComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// detailModeComboBox
+			// 
+			this.detailModeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.detailModeComboBox.Enabled = false;
+			this.detailModeComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.detailModeComboBox.FormattingEnabled = true;
+			this.detailModeComboBox.Location = new System.Drawing.Point(268, 531);
+			this.detailModeComboBox.Name = "detailModeComboBox";
+			this.detailModeComboBox.Size = new System.Drawing.Size(164, 23);
+			this.detailModeComboBox.TabIndex = 41;
+			this.detailModeComboBox.Tag = "Off,0|Low,1|Medium,2|High,3|Maximum,4";
+			this.detailModeComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// speedTreeFrondsComboBox
+			// 
+			this.speedTreeFrondsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.speedTreeFrondsComboBox.Enabled = false;
+			this.speedTreeFrondsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.speedTreeFrondsComboBox.FormattingEnabled = true;
+			this.speedTreeFrondsComboBox.Location = new System.Drawing.Point(268, 506);
+			this.speedTreeFrondsComboBox.Name = "speedTreeFrondsComboBox";
+			this.speedTreeFrondsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.speedTreeFrondsComboBox.TabIndex = 39;
+			this.speedTreeFrondsComboBox.Tag = "True,True|False,False";
+			this.speedTreeFrondsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// speedTreeLeavesComboBox
+			// 
+			this.speedTreeLeavesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.speedTreeLeavesComboBox.Enabled = false;
+			this.speedTreeLeavesComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.speedTreeLeavesComboBox.FormattingEnabled = true;
+			this.speedTreeLeavesComboBox.Location = new System.Drawing.Point(268, 481);
+			this.speedTreeLeavesComboBox.Name = "speedTreeLeavesComboBox";
+			this.speedTreeLeavesComboBox.Size = new System.Drawing.Size(164, 23);
+			this.speedTreeLeavesComboBox.TabIndex = 37;
+			this.speedTreeLeavesComboBox.Tag = "True,True|False,False";
+			this.speedTreeLeavesComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// allowRadialBlurComboBox
+			// 
+			this.allowRadialBlurComboBox.DisplayMember = "true";
+			this.allowRadialBlurComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.allowRadialBlurComboBox.Enabled = false;
+			this.allowRadialBlurComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.allowRadialBlurComboBox.FormattingEnabled = true;
+			this.allowRadialBlurComboBox.Location = new System.Drawing.Point(268, 456);
+			this.allowRadialBlurComboBox.Name = "allowRadialBlurComboBox";
+			this.allowRadialBlurComboBox.Size = new System.Drawing.Size(164, 23);
+			this.allowRadialBlurComboBox.TabIndex = 35;
+			this.allowRadialBlurComboBox.Tag = "True,True|False,False";
+			// 
+			// motionBlurComboBox
+			// 
+			this.motionBlurComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.motionBlurComboBox.Enabled = false;
+			this.motionBlurComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.motionBlurComboBox.FormattingEnabled = true;
+			this.motionBlurComboBox.Location = new System.Drawing.Point(268, 431);
+			this.motionBlurComboBox.Name = "motionBlurComboBox";
+			this.motionBlurComboBox.Size = new System.Drawing.Size(164, 23);
+			this.motionBlurComboBox.TabIndex = 33;
+			this.motionBlurComboBox.Tag = "True,True|False,False";
+			this.motionBlurComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// lensFlaresComboBox
+			// 
+			this.lensFlaresComboBox.DisplayMember = "true";
+			this.lensFlaresComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.lensFlaresComboBox.Enabled = false;
+			this.lensFlaresComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lensFlaresComboBox.FormattingEnabled = true;
+			this.lensFlaresComboBox.Location = new System.Drawing.Point(268, 406);
+			this.lensFlaresComboBox.Name = "lensFlaresComboBox";
+			this.lensFlaresComboBox.Size = new System.Drawing.Size(164, 23);
+			this.lensFlaresComboBox.TabIndex = 31;
+			this.lensFlaresComboBox.Tag = "True,True|False,False";
+			this.lensFlaresComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// fogVolumesComboBox
+			// 
+			this.fogVolumesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.fogVolumesComboBox.Enabled = false;
+			this.fogVolumesComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.fogVolumesComboBox.FormattingEnabled = true;
+			this.fogVolumesComboBox.Location = new System.Drawing.Point(268, 381);
+			this.fogVolumesComboBox.Name = "fogVolumesComboBox";
+			this.fogVolumesComboBox.Size = new System.Drawing.Size(164, 23);
+			this.fogVolumesComboBox.TabIndex = 29;
+			this.fogVolumesComboBox.Tag = "True,True|False,False";
+			this.fogVolumesComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// dynamicShadowsLabel
+			// 
+			this.dynamicShadowsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dynamicShadowsLabel.Location = new System.Drawing.Point(3, 659);
+			this.dynamicShadowsLabel.Name = "dynamicShadowsLabel";
+			this.dynamicShadowsLabel.Size = new System.Drawing.Size(256, 17);
+			this.dynamicShadowsLabel.TabIndex = 47;
+			this.dynamicShadowsLabel.Text = "Dynamic Shadows";
+			// 
+			// shadowDetailHeaderLabel
+			// 
+			this.shadowDetailHeaderLabel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.shadowDetailHeaderLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.shadowDetailHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.shadowDetailHeaderLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.shadowDetailHeaderLabel.Location = new System.Drawing.Point(3, 634);
+			this.shadowDetailHeaderLabel.Name = "shadowDetailHeaderLabel";
+			this.shadowDetailHeaderLabel.Size = new System.Drawing.Size(429, 19);
+			this.shadowDetailHeaderLabel.TabIndex = 46;
+			this.shadowDetailHeaderLabel.Text = "Shadow Detail";
+			this.shadowDetailHeaderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// fogVolumesLabel
+			// 
+			this.fogVolumesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.fogVolumesLabel.Location = new System.Drawing.Point(3, 384);
+			this.fogVolumesLabel.Name = "fogVolumesLabel";
+			this.fogVolumesLabel.Size = new System.Drawing.Size(256, 17);
+			this.fogVolumesLabel.TabIndex = 28;
+			this.fogVolumesLabel.Text = "Fog Volumes";
+			// 
+			// lensFlaresLabel
+			// 
+			this.lensFlaresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lensFlaresLabel.Location = new System.Drawing.Point(3, 409);
+			this.lensFlaresLabel.Name = "lensFlaresLabel";
+			this.lensFlaresLabel.Size = new System.Drawing.Size(256, 17);
+			this.lensFlaresLabel.TabIndex = 30;
+			this.lensFlaresLabel.Text = "Lens Flares";
+			// 
+			// motionBlurLabel
+			// 
+			this.motionBlurLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.motionBlurLabel.Location = new System.Drawing.Point(3, 434);
+			this.motionBlurLabel.Name = "motionBlurLabel";
+			this.motionBlurLabel.Size = new System.Drawing.Size(256, 17);
+			this.motionBlurLabel.TabIndex = 32;
+			this.motionBlurLabel.Text = "Motion Blur";
+			// 
+			// speedTreeLeavesLabel
+			// 
+			this.speedTreeLeavesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.speedTreeLeavesLabel.Location = new System.Drawing.Point(3, 484);
+			this.speedTreeLeavesLabel.Name = "speedTreeLeavesLabel";
+			this.speedTreeLeavesLabel.Size = new System.Drawing.Size(256, 17);
+			this.speedTreeLeavesLabel.TabIndex = 36;
+			this.speedTreeLeavesLabel.Text = "Speed Tree Leaves";
+			// 
+			// speedTreeFrondsLabel
+			// 
+			this.speedTreeFrondsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.speedTreeFrondsLabel.Location = new System.Drawing.Point(3, 509);
+			this.speedTreeFrondsLabel.Name = "speedTreeFrondsLabel";
+			this.speedTreeFrondsLabel.Size = new System.Drawing.Size(256, 17);
+			this.speedTreeFrondsLabel.TabIndex = 38;
+			this.speedTreeFrondsLabel.Text = "Speed Tree Fronds";
+			// 
+			// detailModeLabel
+			// 
+			this.detailModeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.detailModeLabel.Location = new System.Drawing.Point(3, 534);
+			this.detailModeLabel.Name = "detailModeLabel";
+			this.detailModeLabel.Size = new System.Drawing.Size(256, 17);
+			this.detailModeLabel.TabIndex = 40;
+			this.detailModeLabel.Text = "Detail Mode";
+			// 
+			// skeletalMesLodBiasLabel
+			// 
+			this.skeletalMesLodBiasLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.skeletalMesLodBiasLabel.Location = new System.Drawing.Point(3, 584);
+			this.skeletalMesLodBiasLabel.Name = "skeletalMesLodBiasLabel";
+			this.skeletalMesLodBiasLabel.Size = new System.Drawing.Size(256, 17);
+			this.skeletalMesLodBiasLabel.TabIndex = 42;
+			this.skeletalMesLodBiasLabel.Text = "Skeletal Mesh LOD Bias";
+			// 
+			// oneFrameThreadLagLabel
+			// 
+			this.oneFrameThreadLagLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.oneFrameThreadLagLabel.Location = new System.Drawing.Point(3, 609);
+			this.oneFrameThreadLagLabel.Name = "oneFrameThreadLagLabel";
+			this.oneFrameThreadLagLabel.Size = new System.Drawing.Size(256, 17);
+			this.oneFrameThreadLagLabel.TabIndex = 44;
+			this.oneFrameThreadLagLabel.Text = "One Frame Thread Lag";
+			// 
+			// allowRadialBlurLabel
+			// 
+			this.allowRadialBlurLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.allowRadialBlurLabel.Location = new System.Drawing.Point(3, 459);
+			this.allowRadialBlurLabel.Name = "allowRadialBlurLabel";
+			this.allowRadialBlurLabel.Size = new System.Drawing.Size(256, 17);
+			this.allowRadialBlurLabel.TabIndex = 34;
+			this.allowRadialBlurLabel.Text = "Allow Radial Blur";
+			// 
+			// distortionLabel
+			// 
+			this.distortionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.distortionLabel.Location = new System.Drawing.Point(3, 359);
+			this.distortionLabel.Name = "distortionLabel";
+			this.distortionLabel.Size = new System.Drawing.Size(256, 17);
+			this.distortionLabel.TabIndex = 26;
+			this.distortionLabel.Text = "Distortion";
+			// 
+			// distortionComboBox
+			// 
+			this.distortionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.distortionComboBox.Enabled = false;
+			this.distortionComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.distortionComboBox.FormattingEnabled = true;
+			this.distortionComboBox.Location = new System.Drawing.Point(268, 356);
+			this.distortionComboBox.Name = "distortionComboBox";
+			this.distortionComboBox.Size = new System.Drawing.Size(164, 23);
+			this.distortionComboBox.TabIndex = 27;
+			this.distortionComboBox.Tag = "True,True|False,False";
+			this.distortionComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// depthOfFieldComboBox
+			// 
+			this.depthOfFieldComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.depthOfFieldComboBox.Enabled = false;
+			this.depthOfFieldComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.depthOfFieldComboBox.FormattingEnabled = true;
+			this.depthOfFieldComboBox.Location = new System.Drawing.Point(268, 331);
+			this.depthOfFieldComboBox.Name = "depthOfFieldComboBox";
+			this.depthOfFieldComboBox.Size = new System.Drawing.Size(164, 23);
+			this.depthOfFieldComboBox.TabIndex = 25;
+			this.depthOfFieldComboBox.Tag = "True,True|False,False";
+			this.depthOfFieldComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// depthOfFieldLabel
+			// 
+			this.depthOfFieldLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.depthOfFieldLabel.Location = new System.Drawing.Point(3, 334);
+			this.depthOfFieldLabel.Name = "depthOfFieldLabel";
+			this.depthOfFieldLabel.Size = new System.Drawing.Size(256, 17);
+			this.depthOfFieldLabel.TabIndex = 24;
+			this.depthOfFieldLabel.Text = "Depth of Field";
+			// 
+			// bloomComboBox
+			// 
+			this.bloomComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.bloomComboBox.Enabled = false;
+			this.bloomComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bloomComboBox.FormattingEnabled = true;
+			this.bloomComboBox.Location = new System.Drawing.Point(268, 306);
+			this.bloomComboBox.Name = "bloomComboBox";
+			this.bloomComboBox.Size = new System.Drawing.Size(164, 23);
+			this.bloomComboBox.TabIndex = 23;
+			this.bloomComboBox.Tag = "True,True|False,False";
+			this.bloomComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// ambientOcclusionComboBox
+			// 
+			this.ambientOcclusionComboBox.DisplayMember = "true";
+			this.ambientOcclusionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.ambientOcclusionComboBox.Enabled = false;
+			this.ambientOcclusionComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ambientOcclusionComboBox.FormattingEnabled = true;
+			this.ambientOcclusionComboBox.Location = new System.Drawing.Point(268, 281);
+			this.ambientOcclusionComboBox.Name = "ambientOcclusionComboBox";
+			this.ambientOcclusionComboBox.Size = new System.Drawing.Size(164, 23);
+			this.ambientOcclusionComboBox.TabIndex = 21;
+			this.ambientOcclusionComboBox.Tag = "True,True|False,False";
+			this.ambientOcclusionComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// bAllowLightShaftsComboBox
+			// 
+			this.bAllowLightShaftsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.bAllowLightShaftsComboBox.Enabled = false;
+			this.bAllowLightShaftsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bAllowLightShaftsComboBox.FormattingEnabled = true;
+			this.bAllowLightShaftsComboBox.Location = new System.Drawing.Point(268, 256);
+			this.bAllowLightShaftsComboBox.Name = "bAllowLightShaftsComboBox";
+			this.bAllowLightShaftsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.bAllowLightShaftsComboBox.TabIndex = 19;
+			this.bAllowLightShaftsComboBox.Tag = "True,True|False,False";
+			this.bAllowLightShaftsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// staticDecalsComboBox
+			// 
+			this.staticDecalsComboBox.DisplayMember = "true";
+			this.staticDecalsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.staticDecalsComboBox.Enabled = false;
+			this.staticDecalsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.staticDecalsComboBox.FormattingEnabled = true;
+			this.staticDecalsComboBox.Location = new System.Drawing.Point(268, 231);
+			this.staticDecalsComboBox.Name = "staticDecalsComboBox";
+			this.staticDecalsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.staticDecalsComboBox.TabIndex = 17;
+			this.staticDecalsComboBox.Tag = "True,True|False,False";
+			this.staticDecalsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// dynamicDecalsComboBox
+			// 
+			this.dynamicDecalsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.dynamicDecalsComboBox.Enabled = false;
+			this.dynamicDecalsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dynamicDecalsComboBox.FormattingEnabled = true;
+			this.dynamicDecalsComboBox.Location = new System.Drawing.Point(268, 206);
+			this.dynamicDecalsComboBox.Name = "dynamicDecalsComboBox";
+			this.dynamicDecalsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.dynamicDecalsComboBox.TabIndex = 15;
+			this.dynamicDecalsComboBox.Tag = "True,True|False,False";
+			this.dynamicDecalsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// directionalLightMapsComboBox
+			// 
+			this.directionalLightMapsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.directionalLightMapsComboBox.Enabled = false;
+			this.directionalLightMapsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.directionalLightMapsComboBox.FormattingEnabled = true;
+			this.directionalLightMapsComboBox.Location = new System.Drawing.Point(268, 181);
+			this.directionalLightMapsComboBox.Name = "directionalLightMapsComboBox";
+			this.directionalLightMapsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.directionalLightMapsComboBox.TabIndex = 13;
+			this.directionalLightMapsComboBox.Tag = "True,True|False,False";
+			this.directionalLightMapsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// compositeDynamicLightsComboBox
+			// 
+			this.compositeDynamicLightsComboBox.DisplayMember = "true";
+			this.compositeDynamicLightsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.compositeDynamicLightsComboBox.Enabled = false;
+			this.compositeDynamicLightsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.compositeDynamicLightsComboBox.FormattingEnabled = true;
+			this.compositeDynamicLightsComboBox.Location = new System.Drawing.Point(268, 156);
+			this.compositeDynamicLightsComboBox.Name = "compositeDynamicLightsComboBox";
+			this.compositeDynamicLightsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.compositeDynamicLightsComboBox.TabIndex = 11;
+			this.compositeDynamicLightsComboBox.Tag = "True,True|False,False";
+			this.compositeDynamicLightsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// dynamicLightsComboBox
+			// 
+			this.dynamicLightsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.dynamicLightsComboBox.Enabled = false;
+			this.dynamicLightsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dynamicLightsComboBox.FormattingEnabled = true;
+			this.dynamicLightsComboBox.Location = new System.Drawing.Point(268, 131);
+			this.dynamicLightsComboBox.Name = "dynamicLightsComboBox";
+			this.dynamicLightsComboBox.Size = new System.Drawing.Size(164, 23);
+			this.dynamicLightsComboBox.TabIndex = 9;
+			this.dynamicLightsComboBox.Tag = "True,True|False,False";
+			this.dynamicLightsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// bUseMaxQualityModeComboBox
+			// 
+			this.bUseMaxQualityModeComboBox.DisplayMember = "true";
+			this.bUseMaxQualityModeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.bUseMaxQualityModeComboBox.Enabled = false;
+			this.bUseMaxQualityModeComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bUseMaxQualityModeComboBox.FormattingEnabled = true;
+			this.bUseMaxQualityModeComboBox.Location = new System.Drawing.Point(268, 106);
+			this.bUseMaxQualityModeComboBox.Name = "bUseMaxQualityModeComboBox";
+			this.bUseMaxQualityModeComboBox.Size = new System.Drawing.Size(164, 23);
+			this.bUseMaxQualityModeComboBox.TabIndex = 7;
+			this.bUseMaxQualityModeComboBox.Tag = "True,True|False,False";
+			this.bUseMaxQualityModeComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// screenResComboBox
+			// 
+			this.screenResComboBox.DisplayMember = "true";
+			this.screenResComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.screenResComboBox.Enabled = false;
+			this.screenResComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.screenResComboBox.FormattingEnabled = true;
+			this.screenResComboBox.Location = new System.Drawing.Point(268, 56);
+			this.screenResComboBox.Name = "screenResComboBox";
+			this.screenResComboBox.Size = new System.Drawing.Size(164, 23);
+			this.screenResComboBox.TabIndex = 4;
+			this.screenResComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// screenTypeComboBox
+			// 
+			this.screenTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.screenTypeComboBox.Enabled = false;
+			this.screenTypeComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.screenTypeComboBox.FormattingEnabled = true;
+			this.screenTypeComboBox.Location = new System.Drawing.Point(268, 31);
+			this.screenTypeComboBox.Name = "screenTypeComboBox";
+			this.screenTypeComboBox.Size = new System.Drawing.Size(164, 23);
+			this.screenTypeComboBox.TabIndex = 2;
+			this.screenTypeComboBox.Tag = "Fullscreen;True,False|Borderless;False,True|Windowed;False,False";
+			this.screenTypeComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
+			// 
+			// worldDetailHeaderLabel
+			// 
+			this.worldDetailHeaderLabel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.worldDetailHeaderLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.worldDetailHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.worldDetailHeaderLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.worldDetailHeaderLabel.Location = new System.Drawing.Point(3, 84);
+			this.worldDetailHeaderLabel.Name = "worldDetailHeaderLabel";
+			this.worldDetailHeaderLabel.Size = new System.Drawing.Size(429, 19);
+			this.worldDetailHeaderLabel.TabIndex = 5;
+			this.worldDetailHeaderLabel.Text = "World Detail";
+			this.worldDetailHeaderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// screenTypeLabel
+			// 
+			this.screenTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.screenTypeLabel.Location = new System.Drawing.Point(3, 34);
+			this.screenTypeLabel.Name = "screenTypeLabel";
+			this.screenTypeLabel.Size = new System.Drawing.Size(256, 17);
+			this.screenTypeLabel.TabIndex = 1;
+			this.screenTypeLabel.Text = "Screen Type";
+			// 
+			// screenResLabel
+			// 
+			this.screenResLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.screenResLabel.Location = new System.Drawing.Point(3, 59);
+			this.screenResLabel.Name = "screenResLabel";
+			this.screenResLabel.Size = new System.Drawing.Size(256, 17);
+			this.screenResLabel.TabIndex = 3;
+			this.screenResLabel.Text = "Screen Resolution";
+			// 
+			// bUseMaxQualityModeLabel
+			// 
+			this.bUseMaxQualityModeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bUseMaxQualityModeLabel.Location = new System.Drawing.Point(3, 109);
+			this.bUseMaxQualityModeLabel.Name = "bUseMaxQualityModeLabel";
+			this.bUseMaxQualityModeLabel.Size = new System.Drawing.Size(256, 17);
+			this.bUseMaxQualityModeLabel.TabIndex = 6;
+			this.bUseMaxQualityModeLabel.Text = "Use Max Quality Mode";
+			// 
+			// dynamicLightsLabel
+			// 
+			this.dynamicLightsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dynamicLightsLabel.Location = new System.Drawing.Point(3, 134);
+			this.dynamicLightsLabel.Name = "dynamicLightsLabel";
+			this.dynamicLightsLabel.Size = new System.Drawing.Size(256, 17);
+			this.dynamicLightsLabel.TabIndex = 8;
+			this.dynamicLightsLabel.Text = "Dynamic Lights";
+			// 
+			// compositeDynamicLightsLabel
+			// 
+			this.compositeDynamicLightsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.compositeDynamicLightsLabel.Location = new System.Drawing.Point(3, 159);
+			this.compositeDynamicLightsLabel.Name = "compositeDynamicLightsLabel";
+			this.compositeDynamicLightsLabel.Size = new System.Drawing.Size(256, 17);
+			this.compositeDynamicLightsLabel.TabIndex = 10;
+			this.compositeDynamicLightsLabel.Text = "Composite Dynamic Lights";
+			// 
+			// dynamicDecalsLabel
+			// 
+			this.dynamicDecalsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dynamicDecalsLabel.Location = new System.Drawing.Point(3, 209);
+			this.dynamicDecalsLabel.Name = "dynamicDecalsLabel";
+			this.dynamicDecalsLabel.Size = new System.Drawing.Size(256, 17);
+			this.dynamicDecalsLabel.TabIndex = 14;
+			this.dynamicDecalsLabel.Text = "Dynamic Decals";
+			// 
+			// staticDecalsLabel
+			// 
+			this.staticDecalsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.staticDecalsLabel.Location = new System.Drawing.Point(3, 234);
+			this.staticDecalsLabel.Name = "staticDecalsLabel";
+			this.staticDecalsLabel.Size = new System.Drawing.Size(256, 17);
+			this.staticDecalsLabel.TabIndex = 16;
+			this.staticDecalsLabel.Text = "Static Decals";
+			// 
+			// bAllowLightShaftsLabel
+			// 
+			this.bAllowLightShaftsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bAllowLightShaftsLabel.Location = new System.Drawing.Point(3, 259);
+			this.bAllowLightShaftsLabel.Name = "bAllowLightShaftsLabel";
+			this.bAllowLightShaftsLabel.Size = new System.Drawing.Size(256, 17);
+			this.bAllowLightShaftsLabel.TabIndex = 18;
+			this.bAllowLightShaftsLabel.Text = "Allow Light Shafts";
+			// 
+			// ambientOcclusionLabel
+			// 
+			this.ambientOcclusionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ambientOcclusionLabel.Location = new System.Drawing.Point(3, 284);
+			this.ambientOcclusionLabel.Name = "ambientOcclusionLabel";
+			this.ambientOcclusionLabel.Size = new System.Drawing.Size(256, 17);
+			this.ambientOcclusionLabel.TabIndex = 20;
+			this.ambientOcclusionLabel.Text = "Ambient Occlusion";
+			// 
+			// bloomLabel
+			// 
+			this.bloomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bloomLabel.Location = new System.Drawing.Point(3, 309);
+			this.bloomLabel.Name = "bloomLabel";
+			this.bloomLabel.Size = new System.Drawing.Size(256, 17);
+			this.bloomLabel.TabIndex = 22;
+			this.bloomLabel.Text = "Bloom";
+			// 
+			// directionalLightMapsLabel
+			// 
+			this.directionalLightMapsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.directionalLightMapsLabel.Location = new System.Drawing.Point(3, 184);
+			this.directionalLightMapsLabel.Name = "directionalLightMapsLabel";
+			this.directionalLightMapsLabel.Size = new System.Drawing.Size(256, 17);
+			this.directionalLightMapsLabel.TabIndex = 12;
+			this.directionalLightMapsLabel.Text = "Directional Light Maps";
+			// 
+			// screenSettingsHeaderLabel
+			// 
+			this.screenSettingsHeaderLabel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.screenSettingsHeaderLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.screenSettingsHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.screenSettingsHeaderLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.screenSettingsHeaderLabel.Location = new System.Drawing.Point(3, 9);
+			this.screenSettingsHeaderLabel.Name = "screenSettingsHeaderLabel";
+			this.screenSettingsHeaderLabel.Size = new System.Drawing.Size(429, 19);
+			this.screenSettingsHeaderLabel.TabIndex = 0;
+			this.screenSettingsHeaderLabel.Text = "Screen Settings";
+			this.screenSettingsHeaderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// openFileDialog
 			// 
@@ -1710,26 +1709,27 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(470, 435);
-			this.Controls.Add(this.mainTc);
+			this.Controls.Add(this.mainTabControl);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.Menu = this.mainMenuStrip;
 			this.Name = "MainMenu";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-			this.Text = "C.A.T. - CyberAssistTool v1.0.3.0";
+			this.Text = "C.A.T. - CyberAssistTool v1.0.4.0";
+			this.Activated += new System.EventHandler(this.MainMenu_Activated);
 			this.Load += new System.EventHandler(this.MainMenu_Load);
-			this.Click += new System.EventHandler(this.settingsMi_Click);
+			this.Click += new System.EventHandler(this.settingsMenuItem_Click);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox4.ResumeLayout(false);
 			this.groupBox5.ResumeLayout(false);
-			this.mainTc.ResumeLayout(false);
+			this.mainTabControl.ResumeLayout(false);
 			this.repairTab.ResumeLayout(false);
 			this.repairTab.PerformLayout();
-			this.iniEditorTab.ResumeLayout(false);
-			this.iniEditorTab.PerformLayout();
-			this.iniEditorPnl.ResumeLayout(false);
+			this.configEditorTab.ResumeLayout(false);
+			this.configEditorTab.PerformLayout();
+			this.iniEditorPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -1737,134 +1737,133 @@
 		#endregion
 
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.Button installerBtn;
-		private System.Windows.Forms.Button directXBtn;
-		private System.Windows.Forms.Button ccleanerBtn;
-		private System.Windows.Forms.Button trebuchetFontBtn;
-		private System.Windows.Forms.Button arialFontBtn;
-		private System.Windows.Forms.Button physXBtn;
-		private System.Windows.Forms.Button atiDriversBtn;
-		private System.Windows.Forms.Button fwRuleBtn;
-		private System.Windows.Forms.Button dxDiagBtn;
+		private System.Windows.Forms.Button installerButton;
+		private System.Windows.Forms.Button directXButton;
+		private System.Windows.Forms.Button ccleanerButton;
+		private System.Windows.Forms.Button trebuchetFontButton;
+		private System.Windows.Forms.Button arialFontButton;
+		private System.Windows.Forms.Button physXButton;
+		private System.Windows.Forms.Button atiDriversButton;
+		private System.Windows.Forms.Button fwRuleButton;
+		private System.Windows.Forms.Button dxDiagButton;
 		private System.Windows.Forms.Button uacButton;
-		private System.Windows.Forms.Button lruBtn;
-		private System.Windows.Forms.Button timeDateBtn;
-		private System.Windows.Forms.Button nvidiaDriversBtn;
+		private System.Windows.Forms.Button lruButton;
+		private System.Windows.Forms.Button timeDateButton;
+		private System.Windows.Forms.Button nvidiaDriversButton;
 		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.Button smiteLoopBtn;
-		private System.Windows.Forms.Button tribesLoopBtn;
-		private System.Windows.Forms.Button cacheBtn;
-		private System.Windows.Forms.Button playBtn;
-		private System.Windows.Forms.Button dotNetCheckBtn;
+		private System.Windows.Forms.Button smiteLoopButton;
+		private System.Windows.Forms.Button tribesLoopButton;
+		private System.Windows.Forms.Button cacheButton;
+		private System.Windows.Forms.Button playButton;
+		private System.Windows.Forms.Button dotNetCheckButton;
 		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.Button resetTribesIniBtn;
-		private System.Windows.Forms.Button smiteIniBtn;
-		private System.Windows.Forms.Button resetSmiteIniBtn;
-		private System.Windows.Forms.Button tribesIniBtn;
+		private System.Windows.Forms.Button resetTribesIniButton;
+		private System.Windows.Forms.Button smiteConfigButton;
+		private System.Windows.Forms.Button resetSmiteConfigButton;
+		private System.Windows.Forms.Button tribesConfigButton;
 		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.Button stopServiceBtn;
-		private System.Windows.Forms.Button uninstallServiceBtn;
-		private System.Windows.Forms.Button startServiceBtn;
+		private System.Windows.Forms.Button stopServiceButton;
+		private System.Windows.Forms.Button uninstallServiceButton;
+		private System.Windows.Forms.Button startServiceButton;
 		private System.Windows.Forms.GroupBox groupBox5;
-		private System.Windows.Forms.Button bigFixPostBtn;
-		private System.Windows.Forms.Button smitePatchesBtn;
-		private System.Windows.Forms.Button tribesPatchesBtn;
-		private System.Windows.Forms.Button guideBtn;
-		private System.Windows.Forms.CheckedListBox troubleshootClb;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button supportTicketBtn;
-		private System.Windows.Forms.Button supportToolBtn;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Button bigFixPostButton;
+		private System.Windows.Forms.Button smitePatchesButton;
+		private System.Windows.Forms.Button tribesPatchesButton;
+		private System.Windows.Forms.Button guideButton;
+		private System.Windows.Forms.CheckedListBox troubleshootCheckedListBox;
+		private System.Windows.Forms.Label checklistLabel;
+		private System.Windows.Forms.Button supportTicketButton;
+		private System.Windows.Forms.Button supportToolButton;
+		private System.Windows.Forms.Label disclaimerLabel;
 		private System.Windows.Forms.MainMenu mainMenuStrip;
-		private System.Windows.Forms.MenuItem fileMi;
-		private System.Windows.Forms.MenuItem editMi;
-		private System.Windows.Forms.TabControl mainTc;
+		private System.Windows.Forms.MenuItem fileMenuItem;
+		private System.Windows.Forms.MenuItem editMenuItem;
+		private System.Windows.Forms.TabControl mainTabControl;
 		private System.Windows.Forms.TabPage repairTab;
-		private System.Windows.Forms.TabPage iniEditorTab;
-		private System.Windows.Forms.Button loadFileBtn;
-		private System.Windows.Forms.Button saveFileBtn;
-		private System.Windows.Forms.Panel iniEditorPnl;
-		private System.Windows.Forms.Label infoLbl5;
-		private System.Windows.Forms.Label screenTypeLbl;
-		private System.Windows.Forms.Label screenResLbl;
-		private System.Windows.Forms.Label bUseMaxQualityModeLbl;
-		private System.Windows.Forms.Label dynamicLightsLbl;
-		private System.Windows.Forms.Label compositeDynamicLightsLbl;
-		private System.Windows.Forms.Label dynamicDecalsLbl;
-		private System.Windows.Forms.Label staticDecalsLbl;
-		private System.Windows.Forms.Label bAllowLightShaftsLbl;
-		private System.Windows.Forms.Label ambientOcclusionLbl;
-		private System.Windows.Forms.Label bloomLbl;
-		private System.Windows.Forms.Label directionalLightMapsLbl;
-		private System.Windows.Forms.Label infoLbl2;
-		private System.Windows.Forms.ComboBox screenTypeCbo;
-		private System.Windows.Forms.ComboBox depthOfFieldCbo;
-		private System.Windows.Forms.Label depthOfFieldLbl;
-		private System.Windows.Forms.ComboBox bloomCbo;
-		private System.Windows.Forms.ComboBox ambientOcclusionCbo;
-		private System.Windows.Forms.ComboBox bAllowLightShaftsCbo;
-		private System.Windows.Forms.ComboBox staticDecalsCbo;
-		private System.Windows.Forms.ComboBox dynamicDecalsCbo;
-		private System.Windows.Forms.ComboBox directionalLightMapsCbo;
-		private System.Windows.Forms.ComboBox compositeDynamicLightsCbo;
-		private System.Windows.Forms.ComboBox dynamicLightsCbo;
-		private System.Windows.Forms.ComboBox bUseMaxQualityModeCbo;
-		private System.Windows.Forms.ComboBox screenResCbo;
-		private System.Windows.Forms.Label distortionLbl;
-		private System.Windows.Forms.ComboBox distortionCbo;
-		private System.Windows.Forms.ComboBox dynamicShadowsCbo;
-		private System.Windows.Forms.ComboBox oneFrameThreadLagCbo;
-		private System.Windows.Forms.ComboBox skeletalMeshLodBiasCbo;
-		private System.Windows.Forms.ComboBox detailModeCbo;
-		private System.Windows.Forms.ComboBox speedTreeFrondsCbo;
-		private System.Windows.Forms.ComboBox speedTreeLeavesCbo;
-		private System.Windows.Forms.ComboBox allowRadialBlurCbo;
-		private System.Windows.Forms.ComboBox motionBlurCbo;
-		private System.Windows.Forms.ComboBox lensFlaresCbo;
-		private System.Windows.Forms.ComboBox fogVolumesCbo;
-		private System.Windows.Forms.Label dynamicShadowsLbl;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label fogVolumesLbl;
-		private System.Windows.Forms.Label lensFlaresLbl;
-		private System.Windows.Forms.Label motionBlurLbl;
-		private System.Windows.Forms.Label speedTreeLeavesLbl;
-		private System.Windows.Forms.Label speedTreeFrondsLbl;
-		private System.Windows.Forms.Label detailModeLbl;
-		private System.Windows.Forms.Label skeletalMesLodBiasLbl;
-		private System.Windows.Forms.Label oneFrameThreadLagLbl;
-		private System.Windows.Forms.Label allowRadialBlurLbl;
-		private System.Windows.Forms.ComboBox maxSmoothedFrameRateCbo;
-		private System.Windows.Forms.ComboBox minSmoothedFrameRateCbo;
-		private System.Windows.Forms.ComboBox bSmoothFrameRateCbo;
-		private System.Windows.Forms.ComboBox trilinearCbo;
-		private System.Windows.Forms.ComboBox maxAnisotropyCbo;
-		private System.Windows.Forms.ComboBox textureDetailCbo;
-		private System.Windows.Forms.ComboBox bAllowWholeSceneDominantShadowsCbo;
-		private System.Windows.Forms.ComboBox lightEnvironmentShadowsCbo;
-		private System.Windows.Forms.Label textureDetailLbl;
-		private System.Windows.Forms.Label bAllowWholeSceneDominantShadowsLbl;
-		private System.Windows.Forms.Label label32;
-		private System.Windows.Forms.Label maxAnisotropyLbl;
-		private System.Windows.Forms.Label trilinearLbl;
-		private System.Windows.Forms.Label label35;
-		private System.Windows.Forms.Label minSmoothedFrameRateLbl;
-		private System.Windows.Forms.Label maxSmoothedFrameRateLbl;
-		private System.Windows.Forms.Label useVsyncLbl;
-		private System.Windows.Forms.Label bSmoothFrameRateLbl;
-		private System.Windows.Forms.Label lightEnvironmentShadowsLbl;
-		private System.Windows.Forms.ComboBox bShouldAllowRagdollingCbo;
-		private System.Windows.Forms.Label bShouldAllowRagdollingLbl;
-		private System.Windows.Forms.ComboBox bForceStaticTerrainCbo;
-		private System.Windows.Forms.Label bForceStaticTerrainLbl;
-		private System.Windows.Forms.ComboBox useVsyncCbo;
-		private System.Windows.Forms.ComboBox presetCbo;
-		private System.Windows.Forms.Label currentFileLbl;
-		private System.Windows.Forms.Label currentGameLbl;
+		private System.Windows.Forms.TabPage configEditorTab;
+		private System.Windows.Forms.Button loadFileButton;
+		private System.Windows.Forms.Button saveFileButton;
+		private System.Windows.Forms.Panel iniEditorPanel;
+		private System.Windows.Forms.Label worldDetailHeaderLabel;
+		private System.Windows.Forms.Label screenTypeLabel;
+		private System.Windows.Forms.Label screenResLabel;
+		private System.Windows.Forms.Label bUseMaxQualityModeLabel;
+		private System.Windows.Forms.Label dynamicLightsLabel;
+		private System.Windows.Forms.Label compositeDynamicLightsLabel;
+		private System.Windows.Forms.Label dynamicDecalsLabel;
+		private System.Windows.Forms.Label staticDecalsLabel;
+		private System.Windows.Forms.Label bAllowLightShaftsLabel;
+		private System.Windows.Forms.Label ambientOcclusionLabel;
+		private System.Windows.Forms.Label bloomLabel;
+		private System.Windows.Forms.Label directionalLightMapsLabel;
+		private System.Windows.Forms.Label screenSettingsHeaderLabel;
+		private System.Windows.Forms.ComboBox screenTypeComboBox;
+		private System.Windows.Forms.ComboBox depthOfFieldComboBox;
+		private System.Windows.Forms.Label depthOfFieldLabel;
+		private System.Windows.Forms.ComboBox bloomComboBox;
+		private System.Windows.Forms.ComboBox ambientOcclusionComboBox;
+		private System.Windows.Forms.ComboBox bAllowLightShaftsComboBox;
+		private System.Windows.Forms.ComboBox staticDecalsComboBox;
+		private System.Windows.Forms.ComboBox dynamicDecalsComboBox;
+		private System.Windows.Forms.ComboBox directionalLightMapsComboBox;
+		private System.Windows.Forms.ComboBox compositeDynamicLightsComboBox;
+		private System.Windows.Forms.ComboBox dynamicLightsComboBox;
+		private System.Windows.Forms.ComboBox bUseMaxQualityModeComboBox;
+		private System.Windows.Forms.ComboBox screenResComboBox;
+		private System.Windows.Forms.Label distortionLabel;
+		private System.Windows.Forms.ComboBox distortionComboBox;
+		private System.Windows.Forms.ComboBox dynamicShadowsComboBox;
+		private System.Windows.Forms.ComboBox oneFrameThreadLagComboBox;
+		private System.Windows.Forms.ComboBox skeletalMeshLodBiasComboBox;
+		private System.Windows.Forms.ComboBox detailModeComboBox;
+		private System.Windows.Forms.ComboBox speedTreeFrondsComboBox;
+		private System.Windows.Forms.ComboBox speedTreeLeavesComboBox;
+		private System.Windows.Forms.ComboBox allowRadialBlurComboBox;
+		private System.Windows.Forms.ComboBox motionBlurComboBox;
+		private System.Windows.Forms.ComboBox lensFlaresComboBox;
+		private System.Windows.Forms.ComboBox fogVolumesComboBox;
+		private System.Windows.Forms.Label dynamicShadowsLabel;
+		private System.Windows.Forms.Label shadowDetailHeaderLabel;
+		private System.Windows.Forms.Label fogVolumesLabel;
+		private System.Windows.Forms.Label lensFlaresLabel;
+		private System.Windows.Forms.Label motionBlurLabel;
+		private System.Windows.Forms.Label speedTreeLeavesLabel;
+		private System.Windows.Forms.Label speedTreeFrondsLabel;
+		private System.Windows.Forms.Label detailModeLabel;
+		private System.Windows.Forms.Label skeletalMesLodBiasLabel;
+		private System.Windows.Forms.Label oneFrameThreadLagLabel;
+		private System.Windows.Forms.Label allowRadialBlurLabel;
+		private System.Windows.Forms.ComboBox maxSmoothedFrameRateComboBox;
+		private System.Windows.Forms.ComboBox minSmoothedFrameRateComboBox;
+		private System.Windows.Forms.ComboBox bSmoothFrameRateComboBox;
+		private System.Windows.Forms.ComboBox trilinearComboBox;
+		private System.Windows.Forms.ComboBox maxAnisotropyComboBox;
+		private System.Windows.Forms.ComboBox textureDetailComboBox;
+		private System.Windows.Forms.ComboBox bAllowWholeSceneDominantShadowsComboBox;
+		private System.Windows.Forms.ComboBox lightEnvironmentShadowsComboBox;
+		private System.Windows.Forms.Label textureDetailLabel;
+		private System.Windows.Forms.Label bAllowWholeSceneDominantShadowsLabel;
+		private System.Windows.Forms.Label textureDetailHeaderLabel;
+		private System.Windows.Forms.Label maxAnisotropyLabel;
+		private System.Windows.Forms.Label trilinearLabel;
+		private System.Windows.Forms.Label extraHeaderLabel;
+		private System.Windows.Forms.Label minSmoothedFrameRateLabel;
+		private System.Windows.Forms.Label maxSmoothedFrameRateLabel;
+		private System.Windows.Forms.Label useVsyncLabel;
+		private System.Windows.Forms.Label bSmoothFrameRateLabel;
+		private System.Windows.Forms.Label lightEnvironmentShadowsLabel;
+		private System.Windows.Forms.ComboBox bShouldAllowRagdollingComboBox;
+		private System.Windows.Forms.Label bShouldAllowRagdollingLabel;
+		private System.Windows.Forms.ComboBox bForceStaticTerrainComboBox;
+		private System.Windows.Forms.Label bForceStaticTerrainLabel;
+		private System.Windows.Forms.ComboBox useVsyncComboBox;
+		private System.Windows.Forms.ComboBox presetComboBox;
+		private System.Windows.Forms.Label currentFileLabel;
+		private System.Windows.Forms.Label currentGameLabel;
 		private System.Windows.Forms.OpenFileDialog openFileDialog;
-		private System.Windows.Forms.ComboBox particleLodBiasCbo;
-		private System.Windows.Forms.Label particleLodBiasLbl;
-		private System.Windows.Forms.MenuItem exitMi;
-		private System.Windows.Forms.MenuItem settingsMi;
+		private System.Windows.Forms.ComboBox particleLodBiasComboBox;
+		private System.Windows.Forms.Label particleLodBiasLabel;
+		private System.Windows.Forms.MenuItem exitMenuItem;
+		private System.Windows.Forms.MenuItem settingsMenuItem;
 	}
 }
-

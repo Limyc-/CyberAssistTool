@@ -28,47 +28,47 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.repairBtn = new System.Windows.Forms.Button();
+			this.repairButton = new System.Windows.Forms.Button();
 			this.progressBar = new System.Windows.Forms.ProgressBar();
-			this.infoLbl1 = new System.Windows.Forms.Label();
-			this.infoLbl2 = new System.Windows.Forms.Label();
-			this.infoLbl9 = new System.Windows.Forms.Label();
-			this.infoLbl14 = new System.Windows.Forms.Label();
-			this.infoLbl13 = new System.Windows.Forms.Label();
-			this.infoLbl12 = new System.Windows.Forms.Label();
-			this.infoLbl11 = new System.Windows.Forms.Label();
-			this.infoLbl10 = new System.Windows.Forms.Label();
-			this.infoLbl8 = new System.Windows.Forms.Label();
-			this.infoLbl7 = new System.Windows.Forms.Label();
-			this.infoLbl6 = new System.Windows.Forms.Label();
-			this.infoLbl4 = new System.Windows.Forms.Label();
-			this.infoLbl3 = new System.Windows.Forms.Label();
-			this.infoLbl5 = new System.Windows.Forms.Label();
-			this.waitLbl1 = new System.Windows.Forms.Label();
-			this.waitLbl2 = new System.Windows.Forms.Label();
-			this.waitLbl3 = new System.Windows.Forms.Label();
-			this.waitLbl4 = new System.Windows.Forms.Label();
-			this.waitLbl5 = new System.Windows.Forms.Label();
-			this.waitLbl6 = new System.Windows.Forms.Label();
-			this.waitLbl7 = new System.Windows.Forms.Label();
-			this.waitLbl8 = new System.Windows.Forms.Label();
-			this.waitLbl9 = new System.Windows.Forms.Label();
-			this.waitLbl10 = new System.Windows.Forms.Label();
-			this.waitLbl14 = new System.Windows.Forms.Label();
-			this.waitLbl11 = new System.Windows.Forms.Label();
-			this.waitLbl12 = new System.Windows.Forms.Label();
-			this.waitLbl13 = new System.Windows.Forms.Label();
+			this.infoLabel1 = new System.Windows.Forms.Label();
+			this.infoLabel2 = new System.Windows.Forms.Label();
+			this.infoLabel9 = new System.Windows.Forms.Label();
+			this.infoLabel14 = new System.Windows.Forms.Label();
+			this.infoLabel13 = new System.Windows.Forms.Label();
+			this.infoLabel12 = new System.Windows.Forms.Label();
+			this.infoLabel11 = new System.Windows.Forms.Label();
+			this.infoLabel10 = new System.Windows.Forms.Label();
+			this.infoLabel8 = new System.Windows.Forms.Label();
+			this.infoLabel7 = new System.Windows.Forms.Label();
+			this.infoLabel6 = new System.Windows.Forms.Label();
+			this.infoLabel4 = new System.Windows.Forms.Label();
+			this.infoLabel3 = new System.Windows.Forms.Label();
+			this.infoLabel5 = new System.Windows.Forms.Label();
+			this.waitLabel1 = new System.Windows.Forms.Label();
+			this.waitLabel2 = new System.Windows.Forms.Label();
+			this.waitLabel3 = new System.Windows.Forms.Label();
+			this.waitLabel4 = new System.Windows.Forms.Label();
+			this.waitLabel5 = new System.Windows.Forms.Label();
+			this.waitLabel6 = new System.Windows.Forms.Label();
+			this.waitLabel7 = new System.Windows.Forms.Label();
+			this.waitLabel8 = new System.Windows.Forms.Label();
+			this.waitLabel9 = new System.Windows.Forms.Label();
+			this.waitLabel10 = new System.Windows.Forms.Label();
+			this.waitLabel14 = new System.Windows.Forms.Label();
+			this.waitLabel11 = new System.Windows.Forms.Label();
+			this.waitLabel12 = new System.Windows.Forms.Label();
+			this.waitLabel13 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
-			// repairBtn
+			// repairButton
 			// 
-			this.repairBtn.Location = new System.Drawing.Point(12, 12);
-			this.repairBtn.Name = "repairBtn";
-			this.repairBtn.Size = new System.Drawing.Size(75, 26);
-			this.repairBtn.TabIndex = 0;
-			this.repairBtn.Text = "Repair";
-			this.repairBtn.UseVisualStyleBackColor = true;
-			this.repairBtn.Click += new System.EventHandler(this.repairBtn_Click);
+			this.repairButton.Location = new System.Drawing.Point(12, 12);
+			this.repairButton.Name = "repairButton";
+			this.repairButton.Size = new System.Drawing.Size(75, 26);
+			this.repairButton.TabIndex = 0;
+			this.repairButton.Text = "Repair";
+			this.repairButton.UseVisualStyleBackColor = true;
+			this.repairButton.Click += new System.EventHandler(this.repairButton_Click);
 			// 
 			// progressBar
 			// 
@@ -77,293 +77,293 @@
 			this.progressBar.Size = new System.Drawing.Size(409, 23);
 			this.progressBar.TabIndex = 1;
 			// 
-			// infoLbl1
+			// infoLabel1
 			// 
-			this.infoLbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl1.Location = new System.Drawing.Point(9, 87);
-			this.infoLbl1.Name = "infoLbl1";
-			this.infoLbl1.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl1.TabIndex = 2;
-			this.infoLbl1.Text = "Shutting Down Hi-Rez Service";
+			this.infoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel1.Location = new System.Drawing.Point(9, 87);
+			this.infoLabel1.Name = "infoLabel1";
+			this.infoLabel1.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel1.TabIndex = 2;
+			this.infoLabel1.Text = "Shutting Down Hi-Rez Service";
 			// 
-			// infoLbl2
+			// infoLabel2
 			// 
-			this.infoLbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl2.Location = new System.Drawing.Point(9, 104);
-			this.infoLbl2.Name = "infoLbl2";
-			this.infoLbl2.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl2.TabIndex = 4;
-			this.infoLbl2.Text = "Shutting Down Hi-Rez Launcher UI Process";
+			this.infoLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel2.Location = new System.Drawing.Point(9, 104);
+			this.infoLabel2.Name = "infoLabel2";
+			this.infoLabel2.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel2.TabIndex = 4;
+			this.infoLabel2.Text = "Shutting Down Hi-Rez Launcher UI Process";
 			// 
-			// infoLbl9
+			// infoLabel9
 			// 
-			this.infoLbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl9.Location = new System.Drawing.Point(9, 223);
-			this.infoLbl9.Name = "infoLbl9";
-			this.infoLbl9.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl9.TabIndex = 18;
-			this.infoLbl9.Text = "Waiting for Server Connection";
+			this.infoLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel9.Location = new System.Drawing.Point(9, 223);
+			this.infoLabel9.Name = "infoLabel9";
+			this.infoLabel9.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel9.TabIndex = 18;
+			this.infoLabel9.Text = "Waiting for Server Connection";
 			// 
-			// infoLbl14
+			// infoLabel14
 			// 
-			this.infoLbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl14.Location = new System.Drawing.Point(9, 308);
-			this.infoLbl14.Name = "infoLbl14";
-			this.infoLbl14.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl14.TabIndex = 28;
-			this.infoLbl14.Text = "Launching Game Client";
+			this.infoLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel14.Location = new System.Drawing.Point(9, 308);
+			this.infoLabel14.Name = "infoLabel14";
+			this.infoLabel14.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel14.TabIndex = 28;
+			this.infoLabel14.Text = "Launching Game Client";
 			// 
-			// infoLbl13
+			// infoLabel13
 			// 
-			this.infoLbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl13.Location = new System.Drawing.Point(9, 291);
-			this.infoLbl13.Name = "infoLbl13";
-			this.infoLbl13.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl13.TabIndex = 26;
-			this.infoLbl13.Text = "Starting Hi-Rez Service";
+			this.infoLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel13.Location = new System.Drawing.Point(9, 291);
+			this.infoLabel13.Name = "infoLabel13";
+			this.infoLabel13.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel13.TabIndex = 26;
+			this.infoLabel13.Text = "Starting Hi-Rez Service";
 			// 
-			// infoLbl12
+			// infoLabel12
 			// 
-			this.infoLbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl12.Location = new System.Drawing.Point(9, 274);
-			this.infoLbl12.Name = "infoLbl12";
-			this.infoLbl12.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl12.TabIndex = 24;
-			this.infoLbl12.Text = "Copying Game Data Contents from Temp Folder";
+			this.infoLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel12.Location = new System.Drawing.Point(9, 274);
+			this.infoLabel12.Name = "infoLabel12";
+			this.infoLabel12.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel12.TabIndex = 24;
+			this.infoLabel12.Text = "Copying Game Data Contents from Temp Folder";
 			// 
-			// infoLbl11
+			// infoLabel11
 			// 
-			this.infoLbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl11.Location = new System.Drawing.Point(9, 257);
-			this.infoLbl11.Name = "infoLbl11";
-			this.infoLbl11.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl11.TabIndex = 22;
-			this.infoLbl11.Text = "Shutting Down Hi-Rez Service";
+			this.infoLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel11.Location = new System.Drawing.Point(9, 257);
+			this.infoLabel11.Name = "infoLabel11";
+			this.infoLabel11.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel11.TabIndex = 22;
+			this.infoLabel11.Text = "Shutting Down Hi-Rez Service";
 			// 
-			// infoLbl10
+			// infoLabel10
 			// 
-			this.infoLbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl10.Location = new System.Drawing.Point(9, 240);
-			this.infoLbl10.Name = "infoLbl10";
-			this.infoLbl10.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl10.TabIndex = 20;
-			this.infoLbl10.Text = "Shutting Down Hi-Rez Launcher UI Process";
+			this.infoLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel10.Location = new System.Drawing.Point(9, 240);
+			this.infoLabel10.Name = "infoLabel10";
+			this.infoLabel10.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel10.TabIndex = 20;
+			this.infoLabel10.Text = "Shutting Down Hi-Rez Launcher UI Process";
 			// 
-			// infoLbl8
+			// infoLabel8
 			// 
-			this.infoLbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl8.Location = new System.Drawing.Point(9, 206);
-			this.infoLbl8.Name = "infoLbl8";
-			this.infoLbl8.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl8.TabIndex = 16;
-			this.infoLbl8.Text = "Launching Game Client";
+			this.infoLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel8.Location = new System.Drawing.Point(9, 206);
+			this.infoLabel8.Name = "infoLabel8";
+			this.infoLabel8.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel8.TabIndex = 16;
+			this.infoLabel8.Text = "Launching Game Client";
 			// 
-			// infoLbl7
+			// infoLabel7
 			// 
-			this.infoLbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl7.Location = new System.Drawing.Point(9, 189);
-			this.infoLbl7.Name = "infoLbl7";
-			this.infoLbl7.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl7.TabIndex = 14;
-			this.infoLbl7.Text = "Starting Hi-Rez Service";
+			this.infoLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel7.Location = new System.Drawing.Point(9, 189);
+			this.infoLabel7.Name = "infoLabel7";
+			this.infoLabel7.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel7.TabIndex = 14;
+			this.infoLabel7.Text = "Starting Hi-Rez Service";
 			// 
-			// infoLbl6
+			// infoLabel6
 			// 
-			this.infoLbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl6.Location = new System.Drawing.Point(9, 172);
-			this.infoLbl6.Name = "infoLbl6";
-			this.infoLbl6.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl6.TabIndex = 12;
-			this.infoLbl6.Text = "Purging Contents of Primary Folder";
+			this.infoLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel6.Location = new System.Drawing.Point(9, 172);
+			this.infoLabel6.Name = "infoLabel6";
+			this.infoLabel6.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel6.TabIndex = 12;
+			this.infoLabel6.Text = "Purging Contents of Primary Folder";
 			// 
-			// infoLbl4
+			// infoLabel4
 			// 
-			this.infoLbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl4.Location = new System.Drawing.Point(9, 138);
-			this.infoLbl4.Name = "infoLbl4";
-			this.infoLbl4.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl4.TabIndex = 8;
-			this.infoLbl4.Text = "Shutting Down Smite Game Process";
+			this.infoLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel4.Location = new System.Drawing.Point(9, 138);
+			this.infoLabel4.Name = "infoLabel4";
+			this.infoLabel4.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel4.TabIndex = 8;
+			this.infoLabel4.Text = "Shutting Down Smite Game Process";
 			// 
-			// infoLbl3
+			// infoLabel3
 			// 
-			this.infoLbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl3.Location = new System.Drawing.Point(9, 121);
-			this.infoLbl3.Name = "infoLbl3";
-			this.infoLbl3.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl3.TabIndex = 6;
-			this.infoLbl3.Text = "Shutting Down Hi-Rez Game Notifier Process";
+			this.infoLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel3.Location = new System.Drawing.Point(9, 121);
+			this.infoLabel3.Name = "infoLabel3";
+			this.infoLabel3.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel3.TabIndex = 6;
+			this.infoLabel3.Text = "Shutting Down Hi-Rez Game Notifier Process";
 			// 
-			// infoLbl5
+			// infoLabel5
 			// 
-			this.infoLbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.infoLbl5.Location = new System.Drawing.Point(9, 155);
-			this.infoLbl5.Name = "infoLbl5";
-			this.infoLbl5.Size = new System.Drawing.Size(329, 17);
-			this.infoLbl5.TabIndex = 10;
-			this.infoLbl5.Text = "Copying Game Data to Temp Folder";
+			this.infoLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel5.Location = new System.Drawing.Point(9, 155);
+			this.infoLabel5.Name = "infoLabel5";
+			this.infoLabel5.Size = new System.Drawing.Size(329, 17);
+			this.infoLabel5.TabIndex = 10;
+			this.infoLabel5.Text = "Copying Game Data to Temp Folder";
 			// 
-			// waitLbl1
+			// waitLabel1
 			// 
-			this.waitLbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl1.Location = new System.Drawing.Point(344, 87);
-			this.waitLbl1.Name = "waitLbl1";
-			this.waitLbl1.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl1.TabIndex = 3;
-			this.waitLbl1.Text = "Waiting...";
+			this.waitLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel1.Location = new System.Drawing.Point(344, 87);
+			this.waitLabel1.Name = "waitLabel1";
+			this.waitLabel1.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel1.TabIndex = 3;
+			this.waitLabel1.Text = "Waiting...";
 			// 
-			// waitLbl2
+			// waitLabel2
 			// 
-			this.waitLbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl2.Location = new System.Drawing.Point(344, 104);
-			this.waitLbl2.Name = "waitLbl2";
-			this.waitLbl2.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl2.TabIndex = 5;
-			this.waitLbl2.Text = "Waiting...";
+			this.waitLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel2.Location = new System.Drawing.Point(344, 104);
+			this.waitLabel2.Name = "waitLabel2";
+			this.waitLabel2.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel2.TabIndex = 5;
+			this.waitLabel2.Text = "Waiting...";
 			// 
-			// waitLbl3
+			// waitLabel3
 			// 
-			this.waitLbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl3.Location = new System.Drawing.Point(344, 121);
-			this.waitLbl3.Name = "waitLbl3";
-			this.waitLbl3.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl3.TabIndex = 7;
-			this.waitLbl3.Text = "Waiting...";
+			this.waitLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel3.Location = new System.Drawing.Point(344, 121);
+			this.waitLabel3.Name = "waitLabel3";
+			this.waitLabel3.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel3.TabIndex = 7;
+			this.waitLabel3.Text = "Waiting...";
 			// 
-			// waitLbl4
+			// waitLabel4
 			// 
-			this.waitLbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl4.Location = new System.Drawing.Point(344, 138);
-			this.waitLbl4.Name = "waitLbl4";
-			this.waitLbl4.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl4.TabIndex = 9;
-			this.waitLbl4.Text = "Waiting...";
+			this.waitLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel4.Location = new System.Drawing.Point(344, 138);
+			this.waitLabel4.Name = "waitLabel4";
+			this.waitLabel4.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel4.TabIndex = 9;
+			this.waitLabel4.Text = "Waiting...";
 			// 
-			// waitLbl5
+			// waitLabel5
 			// 
-			this.waitLbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl5.Location = new System.Drawing.Point(344, 155);
-			this.waitLbl5.Name = "waitLbl5";
-			this.waitLbl5.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl5.TabIndex = 11;
-			this.waitLbl5.Text = "Waiting...";
+			this.waitLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel5.Location = new System.Drawing.Point(344, 155);
+			this.waitLabel5.Name = "waitLabel5";
+			this.waitLabel5.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel5.TabIndex = 11;
+			this.waitLabel5.Text = "Waiting...";
 			// 
-			// waitLbl6
+			// waitLabel6
 			// 
-			this.waitLbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl6.Location = new System.Drawing.Point(344, 172);
-			this.waitLbl6.Name = "waitLbl6";
-			this.waitLbl6.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl6.TabIndex = 13;
-			this.waitLbl6.Text = "Waiting...";
+			this.waitLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel6.Location = new System.Drawing.Point(344, 172);
+			this.waitLabel6.Name = "waitLabel6";
+			this.waitLabel6.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel6.TabIndex = 13;
+			this.waitLabel6.Text = "Waiting...";
 			// 
-			// waitLbl7
+			// waitLabel7
 			// 
-			this.waitLbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl7.Location = new System.Drawing.Point(344, 189);
-			this.waitLbl7.Name = "waitLbl7";
-			this.waitLbl7.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl7.TabIndex = 15;
-			this.waitLbl7.Text = "Waiting...";
+			this.waitLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel7.Location = new System.Drawing.Point(344, 189);
+			this.waitLabel7.Name = "waitLabel7";
+			this.waitLabel7.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel7.TabIndex = 15;
+			this.waitLabel7.Text = "Waiting...";
 			// 
-			// waitLbl8
+			// waitLabel8
 			// 
-			this.waitLbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl8.Location = new System.Drawing.Point(344, 206);
-			this.waitLbl8.Name = "waitLbl8";
-			this.waitLbl8.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl8.TabIndex = 17;
-			this.waitLbl8.Text = "Waiting...";
+			this.waitLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel8.Location = new System.Drawing.Point(344, 206);
+			this.waitLabel8.Name = "waitLabel8";
+			this.waitLabel8.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel8.TabIndex = 17;
+			this.waitLabel8.Text = "Waiting...";
 			// 
-			// waitLbl9
+			// waitLabel9
 			// 
-			this.waitLbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl9.Location = new System.Drawing.Point(344, 222);
-			this.waitLbl9.Name = "waitLbl9";
-			this.waitLbl9.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl9.TabIndex = 19;
-			this.waitLbl9.Text = "Waiting...";
+			this.waitLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel9.Location = new System.Drawing.Point(344, 222);
+			this.waitLabel9.Name = "waitLabel9";
+			this.waitLabel9.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel9.TabIndex = 19;
+			this.waitLabel9.Text = "Waiting...";
 			// 
-			// waitLbl10
+			// waitLabel10
 			// 
-			this.waitLbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl10.Location = new System.Drawing.Point(344, 240);
-			this.waitLbl10.Name = "waitLbl10";
-			this.waitLbl10.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl10.TabIndex = 21;
-			this.waitLbl10.Text = "Waiting...";
+			this.waitLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel10.Location = new System.Drawing.Point(344, 240);
+			this.waitLabel10.Name = "waitLabel10";
+			this.waitLabel10.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel10.TabIndex = 21;
+			this.waitLabel10.Text = "Waiting...";
 			// 
-			// waitLbl14
+			// waitLabel14
 			// 
-			this.waitLbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl14.Location = new System.Drawing.Point(344, 307);
-			this.waitLbl14.Name = "waitLbl14";
-			this.waitLbl14.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl14.TabIndex = 29;
-			this.waitLbl14.Text = "Waiting...";
+			this.waitLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel14.Location = new System.Drawing.Point(344, 307);
+			this.waitLabel14.Name = "waitLabel14";
+			this.waitLabel14.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel14.TabIndex = 29;
+			this.waitLabel14.Text = "Waiting...";
 			// 
-			// waitLbl11
+			// waitLabel11
 			// 
-			this.waitLbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl11.Location = new System.Drawing.Point(344, 257);
-			this.waitLbl11.Name = "waitLbl11";
-			this.waitLbl11.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl11.TabIndex = 23;
-			this.waitLbl11.Text = "Waiting...";
+			this.waitLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel11.Location = new System.Drawing.Point(344, 257);
+			this.waitLabel11.Name = "waitLabel11";
+			this.waitLabel11.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel11.TabIndex = 23;
+			this.waitLabel11.Text = "Waiting...";
 			// 
-			// waitLbl12
+			// waitLabel12
 			// 
-			this.waitLbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl12.Location = new System.Drawing.Point(344, 274);
-			this.waitLbl12.Name = "waitLbl12";
-			this.waitLbl12.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl12.TabIndex = 25;
-			this.waitLbl12.Text = "Waiting...";
+			this.waitLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel12.Location = new System.Drawing.Point(344, 274);
+			this.waitLabel12.Name = "waitLabel12";
+			this.waitLabel12.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel12.TabIndex = 25;
+			this.waitLabel12.Text = "Waiting...";
 			// 
-			// waitLbl13
+			// waitLabel13
 			// 
-			this.waitLbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.waitLbl13.Location = new System.Drawing.Point(344, 291);
-			this.waitLbl13.Name = "waitLbl13";
-			this.waitLbl13.Size = new System.Drawing.Size(77, 17);
-			this.waitLbl13.TabIndex = 27;
-			this.waitLbl13.Text = "Waiting...";
+			this.waitLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.waitLabel13.Location = new System.Drawing.Point(344, 291);
+			this.waitLabel13.Name = "waitLabel13";
+			this.waitLabel13.Size = new System.Drawing.Size(77, 17);
+			this.waitLabel13.TabIndex = 27;
+			this.waitLabel13.Text = "Waiting...";
 			// 
 			// RepairProgress
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(434, 333);
-			this.Controls.Add(this.waitLbl13);
-			this.Controls.Add(this.waitLbl12);
-			this.Controls.Add(this.waitLbl11);
-			this.Controls.Add(this.waitLbl14);
-			this.Controls.Add(this.waitLbl10);
-			this.Controls.Add(this.waitLbl9);
-			this.Controls.Add(this.waitLbl8);
-			this.Controls.Add(this.waitLbl7);
-			this.Controls.Add(this.waitLbl6);
-			this.Controls.Add(this.waitLbl5);
-			this.Controls.Add(this.waitLbl4);
-			this.Controls.Add(this.waitLbl3);
-			this.Controls.Add(this.waitLbl2);
-			this.Controls.Add(this.waitLbl1);
-			this.Controls.Add(this.infoLbl5);
-			this.Controls.Add(this.infoLbl3);
-			this.Controls.Add(this.infoLbl4);
-			this.Controls.Add(this.infoLbl6);
-			this.Controls.Add(this.infoLbl7);
-			this.Controls.Add(this.infoLbl8);
-			this.Controls.Add(this.infoLbl10);
-			this.Controls.Add(this.infoLbl11);
-			this.Controls.Add(this.infoLbl12);
-			this.Controls.Add(this.infoLbl13);
-			this.Controls.Add(this.infoLbl14);
-			this.Controls.Add(this.infoLbl9);
-			this.Controls.Add(this.infoLbl2);
-			this.Controls.Add(this.infoLbl1);
+			this.Controls.Add(this.waitLabel13);
+			this.Controls.Add(this.waitLabel12);
+			this.Controls.Add(this.waitLabel11);
+			this.Controls.Add(this.waitLabel14);
+			this.Controls.Add(this.waitLabel10);
+			this.Controls.Add(this.waitLabel9);
+			this.Controls.Add(this.waitLabel8);
+			this.Controls.Add(this.waitLabel7);
+			this.Controls.Add(this.waitLabel6);
+			this.Controls.Add(this.waitLabel5);
+			this.Controls.Add(this.waitLabel4);
+			this.Controls.Add(this.waitLabel3);
+			this.Controls.Add(this.waitLabel2);
+			this.Controls.Add(this.waitLabel1);
+			this.Controls.Add(this.infoLabel5);
+			this.Controls.Add(this.infoLabel3);
+			this.Controls.Add(this.infoLabel4);
+			this.Controls.Add(this.infoLabel6);
+			this.Controls.Add(this.infoLabel7);
+			this.Controls.Add(this.infoLabel8);
+			this.Controls.Add(this.infoLabel10);
+			this.Controls.Add(this.infoLabel11);
+			this.Controls.Add(this.infoLabel12);
+			this.Controls.Add(this.infoLabel13);
+			this.Controls.Add(this.infoLabel14);
+			this.Controls.Add(this.infoLabel9);
+			this.Controls.Add(this.infoLabel2);
+			this.Controls.Add(this.infoLabel1);
 			this.Controls.Add(this.progressBar);
-			this.Controls.Add(this.repairBtn);
+			this.Controls.Add(this.repairButton);
 			this.Name = "RepairProgress";
 			this.Text = "Repair";
 			this.ResumeLayout(false);
@@ -372,35 +372,35 @@
 
 		#endregion
 
-		private System.Windows.Forms.Button repairBtn;
+		private System.Windows.Forms.Button repairButton;
 		private System.Windows.Forms.ProgressBar progressBar;
-		private System.Windows.Forms.Label infoLbl1;
-		private System.Windows.Forms.Label infoLbl2;
-		private System.Windows.Forms.Label infoLbl9;
-		private System.Windows.Forms.Label infoLbl14;
-		private System.Windows.Forms.Label infoLbl13;
-		private System.Windows.Forms.Label infoLbl12;
-		private System.Windows.Forms.Label infoLbl11;
-		private System.Windows.Forms.Label infoLbl10;
-		private System.Windows.Forms.Label infoLbl8;
-		private System.Windows.Forms.Label infoLbl7;
-		private System.Windows.Forms.Label infoLbl6;
-		private System.Windows.Forms.Label infoLbl4;
-		private System.Windows.Forms.Label infoLbl3;
-		private System.Windows.Forms.Label infoLbl5;
-		private System.Windows.Forms.Label waitLbl1;
-		private System.Windows.Forms.Label waitLbl2;
-		private System.Windows.Forms.Label waitLbl3;
-		private System.Windows.Forms.Label waitLbl4;
-		private System.Windows.Forms.Label waitLbl5;
-		private System.Windows.Forms.Label waitLbl6;
-		private System.Windows.Forms.Label waitLbl7;
-		private System.Windows.Forms.Label waitLbl8;
-		private System.Windows.Forms.Label waitLbl9;
-		private System.Windows.Forms.Label waitLbl10;
-		private System.Windows.Forms.Label waitLbl14;
-		private System.Windows.Forms.Label waitLbl11;
-		private System.Windows.Forms.Label waitLbl12;
-		private System.Windows.Forms.Label waitLbl13;
+		private System.Windows.Forms.Label infoLabel1;
+		private System.Windows.Forms.Label infoLabel2;
+		private System.Windows.Forms.Label infoLabel9;
+		private System.Windows.Forms.Label infoLabel14;
+		private System.Windows.Forms.Label infoLabel13;
+		private System.Windows.Forms.Label infoLabel12;
+		private System.Windows.Forms.Label infoLabel11;
+		private System.Windows.Forms.Label infoLabel10;
+		private System.Windows.Forms.Label infoLabel8;
+		private System.Windows.Forms.Label infoLabel7;
+		private System.Windows.Forms.Label infoLabel6;
+		private System.Windows.Forms.Label infoLabel4;
+		private System.Windows.Forms.Label infoLabel3;
+		private System.Windows.Forms.Label infoLabel5;
+		private System.Windows.Forms.Label waitLabel1;
+		private System.Windows.Forms.Label waitLabel2;
+		private System.Windows.Forms.Label waitLabel3;
+		private System.Windows.Forms.Label waitLabel4;
+		private System.Windows.Forms.Label waitLabel5;
+		private System.Windows.Forms.Label waitLabel6;
+		private System.Windows.Forms.Label waitLabel7;
+		private System.Windows.Forms.Label waitLabel8;
+		private System.Windows.Forms.Label waitLabel9;
+		private System.Windows.Forms.Label waitLabel10;
+		private System.Windows.Forms.Label waitLabel14;
+		private System.Windows.Forms.Label waitLabel11;
+		private System.Windows.Forms.Label waitLabel12;
+		private System.Windows.Forms.Label waitLabel13;
 	}
 }

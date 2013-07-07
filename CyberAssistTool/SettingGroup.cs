@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CyberAssistTool
 {
-	[Serializable()]
+	[Serializable]
 	public class SettingGroup
 	{
 		public List<TextureGroup> TextureGroups { get; set; }
