@@ -20,8 +20,9 @@ namespace CyberAssistTool
 {
 	public partial class MainMenu : Form
 	{
-		private Dictionary<String, Dictionary<String, String>> configSections = new Dictionary<String, Dictionary<String, String>>();
-		private Dictionary<String, Dictionary<String, String>> TgSettings = new Dictionary<String, Dictionary<String, String>>();
+		private Dictionary<String, Dictionary<String, String>> userConfigSections = new Dictionary<String, Dictionary<String, String>>();
+		private Dictionary<String, Dictionary<String, String>> presetTextureGroups = new Dictionary<String, Dictionary<String, String>>();
+		private Dictionary<String, List<DataSource>> presetOptions = new Dictionary<String, List<DataSource>>();
 		private IniFile ini;
 		private List<DataSource> screenResList;
 		private String comboBoxSuffix = "ComboBox";
@@ -36,6 +37,7 @@ namespace CyberAssistTool
 			this.CenterToScreen();
 			currentGameLabel.Text = "";
 			saveFileButton.Enabled = false;
+			LoadConfigOptions();
 			LoadTextureGroups();
 			RetrieveScreenResList();
 			//FirstTimeSetup();
@@ -289,8 +291,23 @@ namespace CyberAssistTool
 
 		private void LoadConfigOptions()
 		{
-			var test = new Dictionary<String, List<DataSource>>();
-			test = test.FromJson("test");
+			var assembly = Assembly.GetExecutingAssembly();
+			var resourceName = "CyberAssistTool.Resources.options.json";
+
+			try
+			{
+				using (var stream = assembly.GetManifestResourceStream(resourceName))
+				using (var reader = new StreamReader(stream))
+				{
+					var json = reader.ReadToEnd();
+					presetOptions = presetOptions.FromJson(json);
+				}
+			}
+			catch
+			{
+				MessageBox.Show("Could not load config options.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			}
+			
 		}
 
 		private void LoadTextureGroups()
@@ -313,8 +330,9 @@ namespace CyberAssistTool
 					}
 				}
 			}
-			catch (IOException)
+			catch
 			{
+
 			}
 		}
 
@@ -347,7 +365,7 @@ namespace CyberAssistTool
 													tg.MipGenSettings));
 				}
 			}
-			TgSettings.Add(setting.GameName + "," + setting.SettingName, textureGroups);
+			presetTextureGroups.Add(setting.GameName + "," + setting.SettingName, textureGroups);
 		}
 
 		private List<DataSource> CompareTgSettings(Dictionary<String, String> dict, out String initialValue)
@@ -371,7 +389,7 @@ namespace CyberAssistTool
 
 			initialValue = "Custom";
 			//for each value in tgsettings where the key contains the gameName
-			foreach (var other in TgSettings.Where(x => x.Key.Split(',')[0] == gameName))
+			foreach (var other in presetTextureGroups.Where(x => x.Key.Split(',')[0] == gameName))
 			{
 				data.Add(new DataSource(other.Key.Split(',')[1], other.Key));
 				if (initialValue == "Custom")
@@ -392,7 +410,7 @@ namespace CyberAssistTool
 					}
 				}
 
-				if (TgSettings[other.Key].Count == j)
+				if (presetTextureGroups[other.Key].Count == j)
 				{
 					initialValue = other.Key;
 					j = 0;
@@ -461,19 +479,19 @@ namespace CyberAssistTool
 			ini = new IniFile(path);
 			//systemSettings = new Dictionary<String, String>();
 			//engineSettings = new Dictionary<String, String>();
-			configSections.Clear();
+			userConfigSections.Clear();
 
-			configSections.Add("SystemSettings", FillDictionary("SystemSettings"));
+			userConfigSections.Add("SystemSettings", FillDictionary("SystemSettings"));
 
 			try
 			{
 				if (path.Contains("tribes.ini"))
 				{
-					configSections.Add("TribesGame.TrGameEngine", FillDictionary("TribesGame.TrGameEngine"));
+					userConfigSections.Add("TribesGame.TrGameEngine", FillDictionary("TribesGame.TrGameEngine"));
 				}
 				else
 				{
-					configSections.Add("Engine.Engine", FillDictionary("Engine.Engine"));
+					userConfigSections.Add("Engine.Engine", FillDictionary("Engine.Engine"));
 				}
 			}
 			catch
@@ -517,7 +535,7 @@ namespace CyberAssistTool
 		{
 			foreach (ComboBox cbo in iniEditorPanel.Controls.OfType<ComboBox>())
 			{
-				foreach (var dict in configSections.Values)
+				foreach (var dict in userConfigSections.Values)
 				{
 					String key = cbo.Name.Substring(0, cbo.Name.Length - comboBoxSuffix.Length).ToLower();
 					if (dict.ContainsKey(key))
@@ -525,32 +543,40 @@ namespace CyberAssistTool
 						try
 						{
 							//Get Text and data from combobox's tag
-							String[] pairs = cbo.Tag.ToString().Split('|').ToArray();
-							Dictionary<String, String> options = pairs.ToDictionary(s => s.Split(',')[0], s => s.Split(',')[1]);
+							//String[] pairs = cbo.Tag.ToString().Split('|').ToArray();
+							//Dictionary<String, String> options = pairs.ToDictionary(s => s.Split(',')[0], s => s.Split(',')[1]);
 
-							List<DataSource> data = new List<DataSource>();
+							var data = presetOptions[key].ToList();
+							var currentValue = dict[key];
 
-							double temp;
-							if (double.TryParse(dict[key], out temp))
+							//double temp;
+							//if (double.TryParse(currentValue, out temp))
+							//{
+							//	currentValue = temp.ToString("0");
+							//}
+
+
+							//if (!options.Values.Contains<String>(dict[key], StringComparer.OrdinalIgnoreCase))
+							//{
+							//	data.Insert(0, new DataSource("User Defined", dict[key]));
+							//	//Debug.WriteLine(key + "=" + dict[key] + " not found");
+
+							//}			
+							
+							// If none of the presets are equal to the current value, add a custom preset
+							if (presetOptions[key].TrueForAll(x => x.Value.ToString() != currentValue))
 							{
-								dict[key] = temp.ToString("0");
-							}
-
-
-							if (!options.Values.Contains<String>(dict[key], StringComparer.OrdinalIgnoreCase))
-							{
-
-								data.Add(new DataSource("User Defined", dict[key]));
+								data.Insert(0, new DataSource("User Defined", currentValue));
 								//Debug.WriteLine(key + "=" + dict[key] + " not found");
 
 							}
 
-							foreach (var pair in options)
-							{
-								data.Add(new DataSource(pair.Key, pair.Value));
-							}
+							//foreach (var pair in options)
+							//{
+							//	data.Add(new DataSource(pair.Key, pair.Value));
+							//}
 
-							PopulateComboBox(cbo, data, "Name", "Value", dict[key]);
+							PopulateComboBox(cbo, data, "Name", "Value", currentValue);
 
 							cbo.Enabled = true;
 
@@ -635,7 +661,7 @@ namespace CyberAssistTool
 			{
 				String key = cbo.Name.Substring(0, cbo.Name.Length - comboBoxSuffix.Length).ToLower();
 
-				foreach (var dict in configSections.Values)
+				foreach (var dict in userConfigSections.Values)
 				{
 					if (key == "screentype")
 					{
@@ -669,7 +695,7 @@ namespace CyberAssistTool
 						{
 							try
 							{
-								Dictionary<String, String> other = TgSettings[cbo.SelectedValue.ToString()];
+								Dictionary<String, String> other = presetTextureGroups[cbo.SelectedValue.ToString()];
 
 								foreach (var pair in dict.ToList())
 								{
@@ -707,7 +733,7 @@ namespace CyberAssistTool
 		private void SaveIniFile()
 		{
 			//For every iniSection in the main array, and for every keyValuePair in each section, write to the ini file.
-			foreach (var section in configSections)
+			foreach (var section in userConfigSections)
 			{
 				foreach (var pair in section.Value)
 				{

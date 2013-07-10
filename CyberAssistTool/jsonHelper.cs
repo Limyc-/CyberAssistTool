@@ -9,7 +9,7 @@ namespace CyberAssistTool
 {
 	public static class JsonHelper
 	{
-		private static String ToJson<T>(this T obj) where T : class
+		public static String ToJson<T>(this T obj) where T : class
 		{
 			using (var ms = new MemoryStream())
 			{

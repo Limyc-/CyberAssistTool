@@ -139,7 +139,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\options.json" />
+    <EmbeddedResource Include="Resources\options.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Rage_Icon.ico" />
