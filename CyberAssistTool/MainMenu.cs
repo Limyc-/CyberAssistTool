@@ -293,6 +293,27 @@ namespace CyberAssistTool
 			//}
 		}
 
+		private void FirstTimeSetup()
+		{
+			if (Properties.Settings.Default.FirstUse)
+			{
+				Properties.Settings.Default.MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+				Properties.Settings.Default.ProgramDataPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
+				Properties.Settings.Default.FirstUse = false;
+				Properties.Settings.Default.Save();
+
+				System.Media.SystemSounds.Exclamation.Play();
+				if (MessageBox.Show("Are you using default install locations for all Hi-Rez games?",
+									"First Time Setup",
+									MessageBoxButtons.YesNo,
+									MessageBoxIcon.Question) != DialogResult.Yes)
+				{
+					settingsMenuItem.PerformClick();
+				}
+
+			}
+		}
+
 		private void LoadOptionPresets(Assembly assembly)
 		{
 			try
@@ -370,8 +391,6 @@ namespace CyberAssistTool
 										.ToList();
 		}
 
-		
-
 		private void GetTgSettings(SettingGroup setting)
 		{
 			Dictionary<String, String> textureGroups = new Dictionary<String, String>();
@@ -402,62 +421,7 @@ namespace CyberAssistTool
 			textureGroupPresets.Add(setting.GameName + "," + setting.SettingName, textureGroups);
 		}
 
-		private List<DataSource> CompareTgSettings(Dictionary<String, String> dict, out String initialValue)
-		{
-			List<DataSource> data = new List<DataSource>();
-			String gameName = "";
-
-			if (ini.Filename.Split('\\').Last().ToLower() == "tribes.ini")
-			{
-				gameName = "tribes";
-
-			}
-			else if (ini.Filename.Split('\\').Last().ToLower() == "battleengine.ini")
-			{
-				gameName = "smite";
-
-			}
-
-			int i = 0;
-			int j = 0;
-
-			initialValue = "Custom";
-			//for each value in tgsettings where the key contains the gameName
-			foreach (var other in textureGroupPresets.Where(x => x.Key.Split(',')[0] == gameName))
-			{
-				data.Add(new DataSource(other.Key.Split(',')[1], other.Key));
-				if (initialValue == "Custom")
-				{
-					foreach (var pair in other.Value)
-					{
-						//if tg preset equals tg current
-						if (pair.Value.ToLower() == dict[pair.Key].ToLower())
-						{
-							j++;
-						}
-						else
-						{
-							j = 0;
-							break;
-						}
-
-					}
-				}
-
-				if (textureGroupPresets[other.Key].Count == j)
-				{
-					initialValue = other.Key;
-					j = 0;
-				}
-				i++;
-			}
-			if (initialValue == "Custom")
-			{
-				data.Insert(0, new DataSource(initialValue, gameName + ",Custom"));
-			}
-
-			return data;
-		}
+		
 
 		private static void ForceDeleteDirectory(string path)
 		{
@@ -511,34 +475,6 @@ namespace CyberAssistTool
 
 			LoadIniFile();
 
-
-		}
-
-		private Dictionary<String, String> FillDictionary(String sectionName)
-		{
-			Dictionary<String, String> dict = new Dictionary<String, String>();
-			String[] section = ini.ReadKeysInSection(sectionName);
-
-			foreach (String s in section)
-			{
-				try
-				{
-					dict.Add(s.ToLower(), CapFirstLetter(ini.ReadSetting(sectionName, s, 65535, "").ToLower()));
-				}
-				catch
-				{
-					Debug.WriteLine("The key " + s + " already exists");
-
-				}
-
-			}
-
-			return dict;
-		}
-
-		private String CapFirstLetter(String str)
-		{
-			return str.Substring(0, 1).ToUpper() + str.Substring(1);
 		}
 
 		private void LoadIniFile()
@@ -548,18 +484,13 @@ namespace CyberAssistTool
 				foreach (var dict in userConfigSections.Values)
 				{
 					String key = cbo.Name.Substring(0, cbo.Name.Length - comboBoxSuffix.Length).ToLower();
-					if (dict.ContainsKey(key))
+
+					try
 					{
-						try
+						if (dict.ContainsKey(key))
 						{
 							var data = optionPresets[key].ToList();
 							var currentValue = dict[key];
-
-							//double temp;
-							//if (double.TryParse(currentValue, out temp))
-							//{
-							//	currentValue = temp.ToString("0");
-							//}
 
 							// If none of the presets are equal to the current value, add a custom preset
 							if (optionPresets[key].TrueForAll(x => x.Value.ToString() != currentValue))
@@ -568,56 +499,148 @@ namespace CyberAssistTool
 							}
 
 							PopulateComboBox(cbo, data, "Name", "Value", currentValue);
-
 							cbo.Enabled = true;
+
+							break;
 						}
-						catch
+						else if (key == "screentype")
+						{
+							PopulateComboBox(cbo, screenTypeList, "Name", "Value", dict["fullscreen"] + "," + dict["borderless"]);
+							cbo.Enabled = true;
+
+							break;
+						}
+						else if (key == "screenres")
+						{
+							PopulateComboBox(cbo, screenResList, "Name", "Value", dict["resx"] + "x" + dict["resy"]);
+							cbo.Enabled = true;
+
+							break;
+						}
+						else if (key == "texturedetail")
+						{
+							String initialValue;
+							var data = new List<DataSource>();
+							var isSupportedGame = CompareTextureGroupSettings(dict, out data, out initialValue);
+
+							if (isSupportedGame)
+							{
+								PopulateComboBox(cbo, data, "Name", "Value", initialValue);
+								cbo.Enabled = true;
+							}
+							else
+							{
+								PopulateComboBox(cbo, null, null, null, null);
+								cbo.Enabled = false;
+							}
+
+							break;
+						}
+						else
 						{
 							PopulateComboBox(cbo, null, null, null, null);
 							cbo.Enabled = false;
-							Debug.WriteLine(cbo.Name.ToString() + " could not be populated");
+							//Debug.WriteLine(cbo.Name.ToString() + " could not be populated");
 						}
-						break;
-						//Debug.WriteLine(cb.Name.Substring(0, cb.Name.Length - 3) + "\t|\tTrue");
 					}
-					else if (key == "screentype")
-					{
-						PopulateComboBox(cbo, screenTypeList, "Name", "Value", dict["fullscreen"] + "," + dict["borderless"]);
-						cbo.Enabled = true;
-						break;
-					}
-					//http://stackoverflow.com/a/744609
-					else if (key == "screenres")
-					{
-						PopulateComboBox(cbo, screenResList, "Name", "Value", dict["resx"] + "x" + dict["resy"]);
-						cbo.Enabled = true;
-						break;
-					}
-					else if (key == "texturedetail")
-					{
-						try
-						{
-							String initialValue;
-							var data = CompareTgSettings(dict, out initialValue);
-
-							PopulateComboBox(cbo, data, "Name", "Value", initialValue);
-						}
-						catch
-						{
-
-						}
-						cbo.Enabled = true;
-						break;
-					}
-					else
+					catch
 					{
 						PopulateComboBox(cbo, null, null, null, null);
 						cbo.Enabled = false;
-						//Debug.WriteLine(cb.Name.Substring(0, cb.Name.Length - 3) + "\t|\tFalse");
+						//Debug.WriteLine(cbo.Name.ToString() + " could not be populated");
 					}
 				}
 
 			}
+
+		}
+
+		private String CapFirstLetter(String str)
+		{
+			return str.Substring(0, 1).ToUpper() + str.Substring(1);
+		}
+
+		private bool CompareTextureGroupSettings(Dictionary<String, String> dict, out List<DataSource> data, out String initialValue)
+		{
+			data = new List<DataSource>();
+			initialValue = "Custom";
+			String gameName = "";
+
+			if (ini.Filename.Split('\\').Last().ToLower() == "tribes.ini")
+			{
+				gameName = "tribes";
+
+			}
+			else if (ini.Filename.Split('\\').Last().ToLower() == "battleengine.ini")
+			{
+				gameName = "smite";
+
+			}
+			else
+			{
+				return false;
+			}
+
+			int i = 0;
+			int j = 0;
+
+			//for each value in tgsettings where the key contains the gameName
+			foreach (var other in textureGroupPresets.Where(x => x.Key.Split(',')[0] == gameName))
+			{
+				data.Add(new DataSource(other.Key.Split(',')[1], other.Key));
+				if (initialValue == "Custom")
+				{
+					foreach (var pair in other.Value)
+					{
+						//if tg preset equals tg current
+						if (pair.Value.ToLower() == dict[pair.Key].ToLower())
+						{
+							j++;
+						}
+						else
+						{
+							j = 0;
+							break;
+						}
+
+					}
+				}
+
+				if (textureGroupPresets[other.Key].Count == j)
+				{
+					initialValue = other.Key;
+					j = 0;
+				}
+				i++;
+			}
+			if (initialValue == "Custom")
+			{
+				data.Insert(0, new DataSource(initialValue, gameName + ",Custom"));
+			}
+
+			return true;
+		}
+
+		private Dictionary<String, String> FillDictionary(String sectionName)
+		{
+			Dictionary<String, String> dict = new Dictionary<String, String>();
+			String[] section = ini.ReadKeysInSection(sectionName);
+
+			foreach (String key in section)
+			{
+				try
+				{
+					if (!dict.ContainsKey(key))
+					{
+						dict.Add(key.ToLower(), CapFirstLetter(ini.ReadSetting(sectionName, key, 65535, "").ToLower()));
+					}
+				}
+				catch
+				{
+
+				}
+			}
+			return dict;
 
 		}
 
@@ -638,7 +661,7 @@ namespace CyberAssistTool
 
 				foreach (var dict in userConfigSections.Values)
 				{
-					if (key == "screentype")
+					if (cbo.Enabled && key == "screentype")
 					{
 						try
 						{
@@ -651,7 +674,7 @@ namespace CyberAssistTool
 
 						}
 					}
-					else if (key == "screenres")
+					else if (cbo.Enabled && key == "screenres")
 					{
 						try
 						{
@@ -664,7 +687,7 @@ namespace CyberAssistTool
 
 						}
 					}
-					else if (key == "texturedetail")
+					else if (cbo.Enabled && key == "texturedetail")
 					{
 						if (!cbo.SelectedValue.ToString().Contains("custom"))
 						{
@@ -681,7 +704,8 @@ namespace CyberAssistTool
 								}
 
 								String initialValue;
-								var data = CompareTgSettings(dict, out initialValue);
+								var data = new List<DataSource>();
+								CompareTextureGroupSettings(dict, out data, out initialValue);
 
 								PopulateComboBox(cbo, data, "Name", "Value", initialValue);
 
@@ -692,7 +716,7 @@ namespace CyberAssistTool
 							}
 						}
 					}
-					else
+					else if (cbo.Enabled)
 					{
 						String temp;
 						if (dict.TryGetValue(key, out temp) && cbo.SelectedValue != null)
@@ -716,27 +740,6 @@ namespace CyberAssistTool
 				}
 			}
 
-		}
-
-		private void FirstTimeSetup()
-		{
-			if (Properties.Settings.Default.FirstUse)
-			{
-				Properties.Settings.Default.MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-				Properties.Settings.Default.ProgramDataPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
-				Properties.Settings.Default.FirstUse = false;
-				Properties.Settings.Default.Save();
-
-				System.Media.SystemSounds.Exclamation.Play();
-				if (MessageBox.Show("Are you using default install locations for all Hi-Rez games?",
-									"First Time Setup",
-									MessageBoxButtons.YesNo,
-									MessageBoxIcon.Question) != DialogResult.Yes)
-				{
-					settingsMenuItem.PerformClick();
-				}
-
-			}
 		}
 
 		private void toolTip1_Popup(object sender, PopupEventArgs e)

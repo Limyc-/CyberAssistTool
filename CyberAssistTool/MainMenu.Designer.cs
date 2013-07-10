@@ -753,9 +753,9 @@
 			// 
 			// loadFileButton
 			// 
-			this.loadFileButton.Location = new System.Drawing.Point(282, 371);
+			this.loadFileButton.Location = new System.Drawing.Point(273, 371);
 			this.loadFileButton.Name = "loadFileButton";
-			this.loadFileButton.Size = new System.Drawing.Size(84, 33);
+			this.loadFileButton.Size = new System.Drawing.Size(90, 33);
 			this.loadFileButton.TabIndex = 4;
 			this.loadFileButton.Text = "Load File";
 			this.loadFileButton.UseVisualStyleBackColor = true;
@@ -764,9 +764,9 @@
 			// saveFileButton
 			// 
 			this.saveFileButton.Enabled = false;
-			this.saveFileButton.Location = new System.Drawing.Point(372, 371);
+			this.saveFileButton.Location = new System.Drawing.Point(369, 371);
 			this.saveFileButton.Name = "saveFileButton";
-			this.saveFileButton.Size = new System.Drawing.Size(84, 33);
+			this.saveFileButton.Size = new System.Drawing.Size(90, 33);
 			this.saveFileButton.TabIndex = 3;
 			this.saveFileButton.Text = "Save File";
 			this.saveFileButton.UseVisualStyleBackColor = true;
