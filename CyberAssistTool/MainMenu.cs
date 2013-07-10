@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
+using System.Runtime.Serialization.Json;
 
 namespace CyberAssistTool
 {
@@ -107,6 +108,7 @@ namespace CyberAssistTool
 			Button button = (Button)sender;
 			mainTabControl.SelectedTab = configEditorTab;
 			ImportIniFile(Settings.MyDocumentsPath + button.Tag);
+			
 			if (button.Name.ToLower() == "tribes ini")
 			{
 				currentGameLabel.Text = "Tribes Ascend";
@@ -285,6 +287,12 @@ namespace CyberAssistTool
 			//}
 		}
 
+		private void LoadConfigOptions()
+		{
+			var test = new Dictionary<String, List<DataSource>>();
+			test = test.FromJson("test");
+		}
+
 		private void LoadTextureGroups()
 		{
 			//this.GetType().Assembly.GetManifestResourceStream(@"CyberAssistTool.Resources." + @"texture_groups.bin");
@@ -309,6 +317,8 @@ namespace CyberAssistTool
 			{
 			}
 		}
+
+		
 
 		private void GetTgSettings(SettingGroup setting)
 		{
