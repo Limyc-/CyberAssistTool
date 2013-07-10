@@ -21,10 +21,11 @@ namespace CyberAssistTool
 	public partial class MainMenu : Form
 	{
 		private Dictionary<String, Dictionary<String, String>> userConfigSections = new Dictionary<String, Dictionary<String, String>>();
-		private Dictionary<String, Dictionary<String, String>> presetTextureGroups = new Dictionary<String, Dictionary<String, String>>();
-		private Dictionary<String, List<DataSource>> presetOptions = new Dictionary<String, List<DataSource>>();
-		private IniFile ini;
+		private Dictionary<String, Dictionary<String, String>> textureGroupPresets = new Dictionary<String, Dictionary<String, String>>();
+		private Dictionary<String, List<DataSource>> optionPresets;
+		private List<DataSource> screenTypeList;
 		private List<DataSource> screenResList;
+		private IniFile ini;
 		private String comboBoxSuffix = "ComboBox";
 
 		public MainMenu()
@@ -37,14 +38,17 @@ namespace CyberAssistTool
 			this.CenterToScreen();
 			currentGameLabel.Text = "";
 			saveFileButton.Enabled = false;
-			LoadConfigOptions();
-			LoadTextureGroups();
-			RetrieveScreenResList();
-			//FirstTimeSetup();
+
+			var assembly = Assembly.GetExecutingAssembly();
+
+			LoadOptionPresets(assembly);
+			LoadTextureGroupPresets(assembly);
+			LoadScreenTypeList();
+			LoadScreenResList();
 
 		}
 
-		private void MainMenu_Activated(object sender, EventArgs e)
+		private void MainMenu_Shown(object sender, EventArgs e)
 		{
 			FirstTimeSetup();
 		}
@@ -110,7 +114,7 @@ namespace CyberAssistTool
 			Button button = (Button)sender;
 			mainTabControl.SelectedTab = configEditorTab;
 			ImportIniFile(Settings.MyDocumentsPath + button.Tag);
-			
+
 			if (button.Name.ToLower() == "tribes ini")
 			{
 				currentGameLabel.Text = "Tribes Ascend";
@@ -289,33 +293,30 @@ namespace CyberAssistTool
 			//}
 		}
 
-		private void LoadConfigOptions()
+		private void LoadOptionPresets(Assembly assembly)
 		{
-			var assembly = Assembly.GetExecutingAssembly();
-			var resourceName = "CyberAssistTool.Resources.options.json";
-
 			try
 			{
-				using (var stream = assembly.GetManifestResourceStream(resourceName))
+				using (var stream = assembly.GetManifestResourceStream("CyberAssistTool.Resources.options.json"))
 				using (var reader = new StreamReader(stream))
 				{
 					var json = reader.ReadToEnd();
-					presetOptions = presetOptions.FromJson(json);
+					optionPresets = new Dictionary<String, List<DataSource>>().FromJson(json);
 				}
 			}
 			catch
 			{
 				MessageBox.Show("Could not load config options.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 			}
-			
+
 		}
 
-		private void LoadTextureGroups()
+		private void LoadTextureGroupPresets(Assembly assembly)
 		{
 			//this.GetType().Assembly.GetManifestResourceStream(@"CyberAssistTool.Resources." + @"texture_groups.bin");
 			try
 			{
-				using (XmlReader reader = XmlReader.Create(Assembly.GetExecutingAssembly().GetManifestResourceStream("CyberAssistTool.Resources.texture_groups.xml")))
+				using (XmlReader reader = XmlReader.Create(assembly.GetManifestResourceStream("CyberAssistTool.Resources.texture_groups.xml")))
 				{
 					XmlSerializer bin = new XmlSerializer(typeof(List<SettingGroup>));
 
@@ -334,6 +335,39 @@ namespace CyberAssistTool
 			{
 
 			}
+		}
+
+		private void LoadScreenTypeList()
+		{
+			screenTypeList = new List<DataSource>();
+
+			screenTypeList.Add(new DataSource("Fullscreen", "True,False"));
+			screenTypeList.Add(new DataSource("Borderless", "False,True"));
+			screenTypeList.Add(new DataSource("Windowed", "False,False"));
+		}
+
+		private void LoadScreenResList()
+		{
+			screenResList = new List<DataSource>();
+			DEVMODE vDevMode = new DEVMODE();
+			String resolution = "";
+			int i = 0;
+
+			while (NativeMethods.EnumDisplaySettings(null, i, ref vDevMode))
+			{
+				if (vDevMode.dmPelsWidth >= 800)
+				{
+					resolution = vDevMode.dmPelsWidth + "x" + vDevMode.dmPelsHeight;
+					screenResList.Add(new DataSource(resolution, resolution));
+				}
+				i++;
+			}
+			screenResList = screenResList.GroupBy(d => d.Value).Select(g => g.First()).ToList();
+			//data.Sort((a, b) => Convert.ToInt32(a.Value.ToString().Split('x')[0]).CompareTo(Convert.ToInt32(b.Value.ToString().Split('x')[0])));
+
+			screenResList = screenResList.OrderBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[0]))
+										.ThenBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[1]))
+										.ToList();
 		}
 
 		
@@ -365,7 +399,7 @@ namespace CyberAssistTool
 													tg.MipGenSettings));
 				}
 			}
-			presetTextureGroups.Add(setting.GameName + "," + setting.SettingName, textureGroups);
+			textureGroupPresets.Add(setting.GameName + "," + setting.SettingName, textureGroups);
 		}
 
 		private List<DataSource> CompareTgSettings(Dictionary<String, String> dict, out String initialValue)
@@ -389,7 +423,7 @@ namespace CyberAssistTool
 
 			initialValue = "Custom";
 			//for each value in tgsettings where the key contains the gameName
-			foreach (var other in presetTextureGroups.Where(x => x.Key.Split(',')[0] == gameName))
+			foreach (var other in textureGroupPresets.Where(x => x.Key.Split(',')[0] == gameName))
 			{
 				data.Add(new DataSource(other.Key.Split(',')[1], other.Key));
 				if (initialValue == "Custom")
@@ -410,7 +444,7 @@ namespace CyberAssistTool
 					}
 				}
 
-				if (presetTextureGroups[other.Key].Count == j)
+				if (textureGroupPresets[other.Key].Count == j)
 				{
 					initialValue = other.Key;
 					j = 0;
@@ -423,30 +457,6 @@ namespace CyberAssistTool
 			}
 
 			return data;
-		}
-
-		private void RetrieveScreenResList()
-		{
-			screenResList = new List<DataSource>();
-			DEVMODE vDevMode = new DEVMODE();
-			String resolution = "";
-			int i = 0;
-
-			while (NativeMethods.EnumDisplaySettings(null, i, ref vDevMode))
-			{
-				if (vDevMode.dmPelsWidth >= 800)
-				{
-					resolution = vDevMode.dmPelsWidth + "x" + vDevMode.dmPelsHeight;
-					screenResList.Add(new DataSource(resolution, resolution));
-				}
-				i++;
-			}
-			screenResList = screenResList.GroupBy(d => d.Value).Select(g => g.First()).ToList();
-			//data.Sort((a, b) => Convert.ToInt32(a.Value.ToString().Split('x')[0]).CompareTo(Convert.ToInt32(b.Value.ToString().Split('x')[0])));
-
-			screenResList = screenResList.OrderBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[0]))
-										.ThenBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[1]))
-										.ToList();
 		}
 
 		private static void ForceDeleteDirectory(string path)
@@ -542,11 +552,7 @@ namespace CyberAssistTool
 					{
 						try
 						{
-							//Get Text and data from combobox's tag
-							//String[] pairs = cbo.Tag.ToString().Split('|').ToArray();
-							//Dictionary<String, String> options = pairs.ToDictionary(s => s.Split(',')[0], s => s.Split(',')[1]);
-
-							var data = presetOptions[key].ToList();
+							var data = optionPresets[key].ToList();
 							var currentValue = dict[key];
 
 							//double temp;
@@ -555,67 +561,36 @@ namespace CyberAssistTool
 							//	currentValue = temp.ToString("0");
 							//}
 
-
-							//if (!options.Values.Contains<String>(dict[key], StringComparer.OrdinalIgnoreCase))
-							//{
-							//	data.Insert(0, new DataSource("User Defined", dict[key]));
-							//	//Debug.WriteLine(key + "=" + dict[key] + " not found");
-
-							//}			
-							
 							// If none of the presets are equal to the current value, add a custom preset
-							if (presetOptions[key].TrueForAll(x => x.Value.ToString() != currentValue))
+							if (optionPresets[key].TrueForAll(x => x.Value.ToString() != currentValue))
 							{
 								data.Insert(0, new DataSource("User Defined", currentValue));
-								//Debug.WriteLine(key + "=" + dict[key] + " not found");
-
 							}
-
-							//foreach (var pair in options)
-							//{
-							//	data.Add(new DataSource(pair.Key, pair.Value));
-							//}
 
 							PopulateComboBox(cbo, data, "Name", "Value", currentValue);
 
 							cbo.Enabled = true;
-
 						}
 						catch
 						{
 							PopulateComboBox(cbo, null, null, null, null);
 							cbo.Enabled = false;
 							Debug.WriteLine(cbo.Name.ToString() + " could not be populated");
-
 						}
 						break;
 						//Debug.WriteLine(cb.Name.Substring(0, cb.Name.Length - 3) + "\t|\tTrue");
 					}
 					else if (key == "screentype")
 					{
-						String[] pairs = cbo.Tag.ToString().Split('|').ToArray();
-						Dictionary<String, String> options = pairs.ToDictionary(s => s.Split(';')[0], s => s.Split(';')[1]);
-
-						List<DataSource> data = new List<DataSource>();
-
-						foreach (var pair in options)
-						{
-							data.Add(new DataSource(pair.Key, pair.Value));
-						}
-
-						PopulateComboBox(cbo, data, "Name", "Value", dict["fullscreen"] + "," + dict["borderless"]);
-
+						PopulateComboBox(cbo, screenTypeList, "Name", "Value", dict["fullscreen"] + "," + dict["borderless"]);
 						cbo.Enabled = true;
-
 						break;
 					}
 					//http://stackoverflow.com/a/744609
 					else if (key == "screenres")
 					{
 						PopulateComboBox(cbo, screenResList, "Name", "Value", dict["resx"] + "x" + dict["resy"]);
-
 						cbo.Enabled = true;
-
 						break;
 					}
 					else if (key == "texturedetail")
@@ -695,7 +670,7 @@ namespace CyberAssistTool
 						{
 							try
 							{
-								Dictionary<String, String> other = presetTextureGroups[cbo.SelectedValue.ToString()];
+								Dictionary<String, String> other = textureGroupPresets[cbo.SelectedValue.ToString()];
 
 								foreach (var pair in dict.ToList())
 								{
@@ -768,5 +743,7 @@ namespace CyberAssistTool
 		{
 
 		}
+
+
 	}
 }

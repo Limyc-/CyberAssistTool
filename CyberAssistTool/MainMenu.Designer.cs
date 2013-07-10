@@ -1716,8 +1716,8 @@
 			this.Name = "MainMenu";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.Text = "C.A.T. - CyberAssistTool v1.0.4.0";
-			this.Activated += new System.EventHandler(this.MainMenu_Activated);
 			this.Load += new System.EventHandler(this.MainMenu_Load);
+			this.Shown += new System.EventHandler(this.MainMenu_Shown);
 			this.Click += new System.EventHandler(this.settingsMenuItem_Click);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
