@@ -91,7 +91,7 @@ namespace CyberAssistTool
 		private void purgeButton_Click(object sender, EventArgs e)
 		{
 			Button button = (Button)sender;
-			String path = Settings.MyDocumentsPath + button.Tag.ToString();
+			String path = SettingsMenu.MyDocumentsPath + button.Tag.ToString();
 
 			ForceDeleteDirectory(path);
 
@@ -99,7 +99,7 @@ namespace CyberAssistTool
 
 		private void settingsMenuItem_Click(object sender, EventArgs e)
 		{
-			Settings options = new Settings();
+			SettingsMenu options = new SettingsMenu();
 			options.StartPosition = FormStartPosition.CenterParent;
 			options.ShowDialog(this);
 		}
@@ -113,7 +113,12 @@ namespace CyberAssistTool
 		{
 			Button button = (Button)sender;
 			mainTabControl.SelectedTab = configEditorTab;
-			ImportIniFile(Settings.MyDocumentsPath + button.Tag);
+			
+			String path = SettingsMenu.MyDocumentsPath + button.Tag;
+			if (File.Exists(path))
+			{
+				ImportIniFile(path);
+			}
 
 			if (button.Name.ToLower() == "tribes ini")
 			{
@@ -132,7 +137,7 @@ namespace CyberAssistTool
 		private void cacheButton_Click(object sender, EventArgs e)
 		{
 			Button btn = (Button)sender;
-			String path = Settings.ProgramDataPath + btn.Tag.ToString();
+			String path = SettingsMenu.ProgramDataPath + btn.Tag.ToString();
 
 			ForceDeleteDirectory(path);
 
@@ -145,26 +150,26 @@ namespace CyberAssistTool
 			String fileLabel = "";
 			try
 			{
-				ConfigChoice game = new ConfigChoice();
+				FileChoiceDialog game = new FileChoiceDialog();
 				game.StartPosition = FormStartPosition.CenterParent;
 				game.ShowDialog(this);
 
 				if (game.DialogResult == DialogResult.Yes)
 				{
-					filePath = Settings.MyDocumentsPath + @"\My Games\Tribes Ascend\TribesGame\Config\tribes.ini";
+					filePath = SettingsMenu.MyDocumentsPath + @"\My Games\Tribes Ascend\TribesGame\Config\tribes.ini";
 					gameLabel = "Tribes Ascend";
 					fileLabel = "tribes.ini";
 				}
 				else if (game.DialogResult == DialogResult.No)
 				{
-					filePath = Settings.MyDocumentsPath + @"\My Games\Smite\BattleGame\Config\BattleEngine.ini";
+					filePath = SettingsMenu.MyDocumentsPath + @"\My Games\Smite\BattleGame\Config\BattleEngine.ini";
 					gameLabel = "Smite";
 					fileLabel = "BattleEngine.ini";
 				}
 				else if (game.DialogResult == DialogResult.Retry)
 				{
 					OpenFileDialog file = new OpenFileDialog();
-					file.InitialDirectory = Settings.MyDocumentsPath + @"\My Games\";
+					file.InitialDirectory = SettingsMenu.MyDocumentsPath + @"\My Games\";
 					file.Filter = "INI Files|*.ini";
 					if (file.ShowDialog() == DialogResult.OK)
 					{
@@ -334,21 +339,16 @@ namespace CyberAssistTool
 
 		private void LoadTextureGroupPresets(Assembly assembly)
 		{
-			//this.GetType().Assembly.GetManifestResourceStream(@"CyberAssistTool.Resources." + @"texture_groups.bin");
 			try
 			{
 				using (XmlReader reader = XmlReader.Create(assembly.GetManifestResourceStream("CyberAssistTool.Resources.texture_groups.xml")))
 				{
 					XmlSerializer bin = new XmlSerializer(typeof(List<SettingGroup>));
-
 					var settingGroup = (List<SettingGroup>)bin.Deserialize(reader);
-
-					//List<DataSource> tribesData = new List<DataSource>();
-					//List<DataSource> smiteData = new List<DataSource>();
 
 					foreach (SettingGroup setting in settingGroup)
 					{
-						GetTgSettings(setting);
+						GetTextureGroupSettings(setting);
 					}
 				}
 			}
@@ -391,9 +391,10 @@ namespace CyberAssistTool
 										.ToList();
 		}
 
-		private void GetTgSettings(SettingGroup setting)
+		private void GetTextureGroupSettings(SettingGroup setting)
 		{
 			Dictionary<String, String> textureGroups = new Dictionary<String, String>();
+
 			foreach (TextureGroup tg in setting.TextureGroups)
 			{
 				if (tg.Name != "shadowmap")
@@ -420,8 +421,6 @@ namespace CyberAssistTool
 			}
 			textureGroupPresets.Add(setting.GameName + "," + setting.SettingName, textureGroups);
 		}
-
-		
 
 		private static void ForceDeleteDirectory(string path)
 		{
@@ -451,14 +450,12 @@ namespace CyberAssistTool
 		private void ImportIniFile(String path)
 		{
 			ini = new IniFile(path);
-			//systemSettings = new Dictionary<String, String>();
-			//engineSettings = new Dictionary<String, String>();
 			userConfigSections.Clear();
-
-			userConfigSections.Add("SystemSettings", FillDictionary("SystemSettings"));
 
 			try
 			{
+				userConfigSections.Add("SystemSettings", FillDictionary("SystemSettings"));
+
 				if (path.Contains("tribes.ini"))
 				{
 					userConfigSections.Add("TribesGame.TrGameEngine", FillDictionary("TribesGame.TrGameEngine"));
@@ -602,7 +599,6 @@ namespace CyberAssistTool
 							j = 0;
 							break;
 						}
-
 					}
 				}
 

@@ -1,6 +1,6 @@
 ﻿namespace CyberAssistTool
 {
-	partial class RepairProgress
+	partial class RepairMenu
 	{
 		/// <summary>
 		/// Required designer variable.

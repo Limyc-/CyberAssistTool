@@ -1,6 +1,6 @@
 ﻿namespace CyberAssistTool
 {
-	partial class ConfigChoice
+	partial class FileChoiceDialog
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -91,7 +91,6 @@
 			this.Name = "ConfigChoice";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.Text = "Decision Time";
-			this.Load += new System.EventHandler(this.ConfigChoice_Load);
 			this.ResumeLayout(false);
 
 		}

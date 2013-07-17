@@ -74,11 +74,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigChoice.cs">
+    <Compile Include="FileChoiceDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfigChoice.Designer.cs">
-      <DependentUpon>ConfigChoice.cs</DependentUpon>
+    <Compile Include="FileChoiceDialog.Designer.cs">
+      <DependentUpon>FileChoiceDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSource.cs" />
     <Compile Include="IniFile.cs" />
@@ -90,30 +90,30 @@
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="NativeMethods.cs" />
-    <Compile Include="Settings.cs">
+    <Compile Include="SettingsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <Compile Include="SettingsMenu.Designer.cs">
+      <DependentUpon>SettingsMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repair.cs">
+    <Compile Include="RepairMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RepairProgress.Designer.cs">
-      <DependentUpon>Repair.cs</DependentUpon>
+    <Compile Include="RepairMenu.Designer.cs">
+      <DependentUpon>RepairMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="SettingGroup.cs" />
     <Compile Include="TextureGroup.cs" />
-    <EmbeddedResource Include="ConfigChoice.resx">
-      <DependentUpon>ConfigChoice.cs</DependentUpon>
+    <EmbeddedResource Include="FileChoiceDialog.resx">
+      <DependentUpon>FileChoiceDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <EmbeddedResource Include="SettingsMenu.resx">
+      <DependentUpon>SettingsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,7 +126,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RepairProgress.resx">
-      <DependentUpon>Repair.cs</DependentUpon>
+      <DependentUpon>RepairMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\app.manifest" />

@@ -11,9 +11,9 @@ using System.IO;
 
 namespace CyberAssistTool
 {
-	public partial class RepairProgress : Form
+	public partial class RepairMenu : Form
 	{
-		public RepairProgress()
+		public RepairMenu()
 		{
 			InitializeComponent();
 		}

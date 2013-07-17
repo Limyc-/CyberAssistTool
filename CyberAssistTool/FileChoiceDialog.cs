@@ -9,18 +9,11 @@ using System.Windows.Forms;
 
 namespace CyberAssistTool
 {
-	public partial class ConfigChoice : Form
+	public partial class FileChoiceDialog : Form
 	{
-		public ConfigChoice()
+		public FileChoiceDialog()
 		{
 			InitializeComponent();
-		}
-
-		private void ConfigChoice_Load(object sender, EventArgs e)
-		{
-			//this.ShowInTaskbar = false;
-			//this.ShowIcon = false;
-			
 		}
 
 		private void tribesButton_Click(object sender, EventArgs e)

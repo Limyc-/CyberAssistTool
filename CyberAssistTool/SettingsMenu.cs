@@ -10,7 +10,7 @@ using System.IO;
 
 namespace CyberAssistTool
 {
-	public partial class Settings : Form
+	public partial class SettingsMenu : Form
 	{
 		public static String MyDocumentsPath
 		{
@@ -31,7 +31,7 @@ namespace CyberAssistTool
 			}
 		}
 
-		public Settings()
+		public SettingsMenu()
 		{
 			InitializeComponent();
 		}

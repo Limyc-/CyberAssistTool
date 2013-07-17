@@ -1,6 +1,6 @@
 ﻿namespace CyberAssistTool
 {
-	partial class Settings
+	partial class SettingsMenu
 	{
 		/// <summary>
 		/// Required designer variable.
