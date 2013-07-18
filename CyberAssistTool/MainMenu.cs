@@ -20,12 +20,12 @@ namespace CyberAssistTool
 {
 	public partial class MainMenu : Form
 	{
-		private Dictionary<String, Dictionary<String, String>> userConfigSections = new Dictionary<String, Dictionary<String, String>>();
+		private Dictionary<String, Dictionary<String, String>> userConfig = new Dictionary<String, Dictionary<String, String>>();
 		private Dictionary<String, Dictionary<String, String>> textureGroupPresets = new Dictionary<String, Dictionary<String, String>>();
 		private Dictionary<String, List<DataSource>> optionPresets;
-		private List<DataSource> screenTypeList;
-		private List<DataSource> screenResList;
 		private IniFile ini;
+		private List<DataSource> screenResList;
+		private List<DataSource> screenTypeList;
 		private String comboBoxSuffix = "ComboBox";
 
 		public MainMenu()
@@ -53,94 +53,19 @@ namespace CyberAssistTool
 			FirstTimeSetup();
 		}
 
-		private void startProcessButton_Click(object sender, EventArgs e)
+		private void cacheButton_Click(object sender, EventArgs e)
 		{
-			Button button = (Button)sender;
-			String tag = button.Tag.ToString();
-			String[] processes = tag.Split('^').ToArray();
-
-			foreach (String s in processes)
-			{
-				try
-				{
-					String[] info = s.Split('|').ToArray();
-					String path = info[0];
-					String args = "";
-
-					if (info.Length > 1)
-					{
-						args = info[1];
-					}
-
-					Process p = new Process();
-					p.StartInfo.FileName = path;
-					p.StartInfo.Arguments = args;
-					p.Start();
-
-				}
-				catch
-				{
-
-					//Debug.WriteLine("Something Broke");
-				}
-
-			}
-
-		}
-
-		private void purgeButton_Click(object sender, EventArgs e)
-		{
-			Button button = (Button)sender;
-			String path = SettingsMenu.MyDocumentsPath + button.Tag.ToString();
+			Button btn = (Button)sender;
+			// Append the Hi-Rez cache folder location to the user's program data path
+			String path = SettingsMenu.ProgramDataPath + btn.Tag.ToString();
 
 			ForceDeleteDirectory(path);
 
-		}
-
-		private void settingsMenuItem_Click(object sender, EventArgs e)
-		{
-			SettingsMenu options = new SettingsMenu();
-			options.StartPosition = FormStartPosition.CenterParent;
-			options.ShowDialog(this);
 		}
 
 		private void exitMenuItem_Click(object sender, EventArgs e)
 		{
 			this.Close();
-		}
-
-		private void openIniButton_Click(object sender, EventArgs e)
-		{
-			Button button = (Button)sender;
-			mainTabControl.SelectedTab = configEditorTab;
-			
-			String path = SettingsMenu.MyDocumentsPath + button.Tag;
-			if (File.Exists(path))
-			{
-				ImportIniFile(path);
-			}
-
-			if (button.Name.ToLower() == "tribes ini")
-			{
-				currentGameLabel.Text = "Tribes Ascend";
-				currentFileLabel.Text = "tribes.ini";
-			}
-			else if (button.Name.ToLower() == "smite ini")
-			{
-				currentGameLabel.Text = "Smite";
-				currentFileLabel.Text = "BattleEngine.ini";
-			}
-
-			saveFileButton.Enabled = true;
-		}
-
-		private void cacheButton_Click(object sender, EventArgs e)
-		{
-			Button btn = (Button)sender;
-			String path = SettingsMenu.ProgramDataPath + btn.Tag.ToString();
-
-			ForceDeleteDirectory(path);
-
 		}
 
 		private void loadFileButton_Click(object sender, EventArgs e)
@@ -154,28 +79,34 @@ namespace CyberAssistTool
 				game.StartPosition = FormStartPosition.CenterParent;
 				game.ShowDialog(this);
 
+				// If the user clicked "Tribes", append the tribes.ini location to the user's My Documents folder path
 				if (game.DialogResult == DialogResult.Yes)
 				{
 					filePath = SettingsMenu.MyDocumentsPath + @"\My Games\Tribes Ascend\TribesGame\Config\tribes.ini";
 					gameLabel = "Tribes Ascend";
 					fileLabel = "tribes.ini";
 				}
+				// If the user clicked "Smite", append the BattleEngine.ini location to the user's My Documents folder path
 				else if (game.DialogResult == DialogResult.No)
 				{
 					filePath = SettingsMenu.MyDocumentsPath + @"\My Games\Smite\BattleGame\Config\BattleEngine.ini";
 					gameLabel = "Smite";
 					fileLabel = "BattleEngine.ini";
 				}
+				// If the user clicked "Other", let the user choose the location of the INI file he/she wishes to edit
 				else if (game.DialogResult == DialogResult.Retry)
 				{
+					// Open a file dialog box that only shows .ini files
 					OpenFileDialog file = new OpenFileDialog();
 					file.InitialDirectory = SettingsMenu.MyDocumentsPath + @"\My Games\";
 					file.Filter = "INI Files|*.ini";
+
 					if (file.ShowDialog() == DialogResult.OK)
 					{
 						filePath = file.FileName;
 						try
 						{
+							// Attempt to get the name of the game. This isn't perfect and will not work if the config file isn't located under the My Games folder
 							String[] gameName = file.FileName.Split('\\').ToArray();
 							gameLabel = gameName[gameName.Length - 4];
 						}
@@ -189,6 +120,7 @@ namespace CyberAssistTool
 					}
 				}
 
+				// If the selected file exists, update the labels and start the importing process
 				if (filePath != "" && File.Exists(filePath))
 				{
 					ImportIniFile(filePath);
@@ -211,11 +143,44 @@ namespace CyberAssistTool
 
 		}
 
+		private void openIniButton_Click(object sender, EventArgs e)
+		{
+			Button button = (Button)sender;
+			// Switch the current tab to "Config Editor"
+			mainTabControl.SelectedTab = configEditorTab;
+
+			// Append the appropriate file location to the user's My Documents folder path
+			String path = SettingsMenu.MyDocumentsPath + button.Tag;
+
+			// If the file exists, start the importing process
+			if (File.Exists(path))
+			{
+				ImportIniFile(path);
+			}
+
+			// Update the labels based on which button was pressed
+			if (button.Name.ToLower() == "tribes ini")
+			{
+				currentGameLabel.Text = "Tribes Ascend";
+				currentFileLabel.Text = "tribes.ini";
+			}
+			else if (button.Name.ToLower() == "smite ini")
+			{
+				currentGameLabel.Text = "Smite";
+				currentFileLabel.Text = "BattleEngine.ini";
+			}
+
+			saveFileButton.Enabled = true;
+		}
+
 		private void saveFileButton_Click(object sender, EventArgs e)
 		{
+			// Update the user config dictionary based on the combobox selections
 			UpdateConfig();
 
 			FileInfo file = new FileInfo(ini.Filename);
+
+			// If the config file is set to read-only, remove the read-only flag, save to the file, and add the read-only property
 			if (file.IsReadOnly)
 			{
 				file.IsReadOnly = false;
@@ -229,168 +194,120 @@ namespace CyberAssistTool
 			System.Media.SystemSounds.Asterisk.Play();
 		}
 
-		private void iniSettingsComboBox_SelectedValueChanged(object sender, EventArgs e)
+		private void settingsMenuItem_Click(object sender, EventArgs e)
 		{
-			//ComboBox cbo = (ComboBox)sender;
-
-			//String key = cbo.Name.Substring(0, cbo.Name.Length - comboBoxSuffix.Length).ToLower();
-
-			//foreach (var dict in configSections.Values)
-			//{
-			//	if (cbo.Name == "screenType" + comboBoxSuffix)
-			//	{
-			//		try
-			//		{
-			//			String[] temp = cbo.SelectedValue.ToString().Split(',');
-			//			dict["fullscreen"] = temp[0];
-			//			dict["borderless"] = temp[1];
-			//		}
-			//		catch
-			//		{
-
-			//		}
-			//		break;
-			//	}
-			//	else if (cbo.Name == "screenRes" + comboBoxSuffix)
-			//	{
-			//		try
-			//		{
-			//			String[] temp = cbo.SelectedValue.ToString().Split('x');
-			//			dict["resx"] = temp[0];
-			//			dict["resy"] = temp[1];
-			//		}
-			//		catch
-			//		{
-
-			//		}
-			//		break;
-
-			//	}
-			//	else if (cbo.Name == "textureDetail" + comboBoxSuffix)
-			//	{
-			//		try
-			//		{
-			//			Dictionary<String, String> other = TgSettings[cbo.SelectedValue.ToString()];
-
-			//			foreach (var pair in dict.ToList())
-			//			{
-			//				if (pair.Key.Contains("texturegroup_"))
-			//				{
-			//					dict[pair.Key] = other[pair.Key];
-			//				}
-			//			}
-			//		}
-			//		catch
-			//		{
-
-			//		}
-			//		break;
-			//	}
-			//	else
-			//	{
-			//		String temp;
-			//		if (dict.TryGetValue(key, out temp) && cbo.SelectedValue != null)
-			//		{
-			//			dict[key] = cbo.SelectedValue.ToString();
-			//			//Debug.WriteLine(cbo.SelectedValue.ToString());
-			//		}
-			//	}
-			//}
+			SettingsMenu options = new SettingsMenu();
+			options.StartPosition = FormStartPosition.CenterParent;
+			options.ShowDialog(this);
 		}
 
-		private void FirstTimeSetup()
+		private void startProcessButton_Click(object sender, EventArgs e)
 		{
-			if (Properties.Settings.Default.FirstUse)
-			{
-				Properties.Settings.Default.MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-				Properties.Settings.Default.ProgramDataPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
-				Properties.Settings.Default.FirstUse = false;
-				Properties.Settings.Default.Save();
+			Button button = (Button)sender;
+			String tag = button.Tag.ToString();
+			// Split all process/args into an array. Each set of process/args are delimited by the carrot ('^') symbol.
+			String[] processes = tag.Split('^').ToArray();
 
-				System.Media.SystemSounds.Exclamation.Play();
-				if (MessageBox.Show("Are you using default install locations for all Hi-Rez games?",
-									"First Time Setup",
-									MessageBoxButtons.YesNo,
-									MessageBoxIcon.Question) != DialogResult.Yes)
+			// Execute each process that exists in the array
+			foreach (String s in processes)
+			{
+				try
 				{
-					settingsMenuItem.PerformClick();
-				}
+					// Split the processes from the commands. Processes are on the left side of the pipe ('|') delimiter.
+					String[] info = s.Split('|').ToArray();
+					String path = info[0];
+					String args = "";
 
-			}
-		}
-
-		private void LoadOptionPresets(Assembly assembly)
-		{
-			try
-			{
-				using (var stream = assembly.GetManifestResourceStream("CyberAssistTool.Resources.options.json"))
-				using (var reader = new StreamReader(stream))
-				{
-					var json = reader.ReadToEnd();
-					optionPresets = new Dictionary<String, List<DataSource>>().FromJson(json);
-				}
-			}
-			catch
-			{
-				MessageBox.Show("Could not load config options.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-			}
-
-		}
-
-		private void LoadTextureGroupPresets(Assembly assembly)
-		{
-			try
-			{
-				using (XmlReader reader = XmlReader.Create(assembly.GetManifestResourceStream("CyberAssistTool.Resources.texture_groups.xml")))
-				{
-					XmlSerializer bin = new XmlSerializer(typeof(List<SettingGroup>));
-					var settingGroup = (List<SettingGroup>)bin.Deserialize(reader);
-
-					foreach (SettingGroup setting in settingGroup)
+					// If the process has arguments, save them to a variable
+					if (info.Length > 1)
 					{
-						GetTextureGroupSettings(setting);
+						args = info[1];
+					}
+
+					// Setup and start the new process
+					Process p = new Process();
+					p.StartInfo.FileName = path;
+					p.StartInfo.Arguments = args;
+					p.Start();
+
+				}
+				catch { }
+			}
+		}
+
+		private String CapFirstLetter(String str)
+		{
+			return str.Substring(0, 1).ToUpper() + str.Substring(1);
+		}
+
+		private bool CompareTextureGroupSettings(Dictionary<String, String> dict, out List<DataSource> data, out String initialValue)
+		{
+			data = new List<DataSource>();
+			initialValue = "Custom";
+			String gameName = "";
+
+			switch (ini.Filename.Split('\\').Last().ToLower())
+			{
+				case "tribes.ini":
+					gameName = "tribes";
+					break;
+				case "battleengine.ini":
+					gameName = "smite";
+					break;
+				default:
+					// If the game name is not matched, the current game is not supported. Return false so the combobox is not enabled
+					return false;
+			}
+
+			int i = 0;
+			int j = 0;
+
+			// For each value in tgsettings where the key contains the gameName
+			foreach (var other in textureGroupPresets.Where(x => x.Key.Split(',')[0] == gameName))
+			{
+				// Add a new data source using the current key. ("presetValue", "gameName,presetValue")
+				data.Add(new DataSource(other.Key.Split(',')[1], other.Key));
+				
+				// If the current settings have yet to be matched with a preset, continue checking for matches
+				if (initialValue == "Custom")
+				{
+					// For each key/value pair in the presets dictionary
+					foreach (var tgPreset in other.Value)
+					{
+						// If tgPreset.Value == tgCurrent.Value
+						if (tgPreset.Value.ToLower() == dict[tgPreset.Key].ToLower())
+						{
+							// Increment the number of matched settings
+							j++;
+						}
+						else
+						{
+							// Reset the number of matched settings and break the loop. This ensures that the outer loop will continue if there are still presets left.
+							j = 0;
+							break;
+						}
 					}
 				}
-			}
-			catch
-			{
 
-			}
-		}
-
-		private void LoadScreenTypeList()
-		{
-			screenTypeList = new List<DataSource>();
-
-			screenTypeList.Add(new DataSource("Fullscreen", "True,False"));
-			screenTypeList.Add(new DataSource("Borderless", "False,True"));
-			screenTypeList.Add(new DataSource("Windowed", "False,False"));
-		}
-
-		private void LoadScreenResList()
-		{
-			screenResList = new List<DataSource>();
-			DEVMODE vDevMode = new DEVMODE();
-			String resolution = "";
-			int i = 0;
-
-			while (NativeMethods.EnumDisplaySettings(null, i, ref vDevMode))
-			{
-				if (vDevMode.dmPelsWidth >= 800)
+				// If the number of settings in tgPreset == the number of matched settings in tgCurrent
+				if (textureGroupPresets[other.Key].Count == j)
 				{
-					resolution = vDevMode.dmPelsWidth + "x" + vDevMode.dmPelsHeight;
-					screenResList.Add(new DataSource(resolution, resolution));
+					initialValue = other.Key;
+					j = 0;
 				}
+
 				i++;
 			}
-			screenResList = screenResList.GroupBy(d => d.Value).Select(g => g.First()).ToList();
-			//data.Sort((a, b) => Convert.ToInt32(a.Value.ToString().Split('x')[0]).CompareTo(Convert.ToInt32(b.Value.ToString().Split('x')[0])));
 
-			screenResList = screenResList.OrderBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[0]))
-										.ThenBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[1]))
-										.ToList();
+			// If the initialValue is still custom, no preset was matched. Insert tgCurrent as a new dataSource.
+			if (initialValue == "Custom")
+			{
+				data.Insert(0, new DataSource(initialValue, gameName + ",Custom"));
+			}
+
+			return true;
 		}
-
+		
 		private void GetTextureGroupSettings(SettingGroup setting)
 		{
 			Dictionary<String, String> textureGroups = new Dictionary<String, String>();
@@ -422,17 +339,70 @@ namespace CyberAssistTool
 			textureGroupPresets.Add(setting.GameName + "," + setting.SettingName, textureGroups);
 		}
 
+		private Dictionary<String, String> FillDictionary(String sectionName)
+		{
+			Dictionary<String, String> dict = new Dictionary<String, String>();
+			String[] section = this.ini.ReadKeysInSection(sectionName);
+
+			// For each key found in the specified section of the ini file
+			foreach (String key in section)
+			{
+				try
+				{
+					// If the dictionary does not already contain the key (needed for UE3 ini files :( )
+					if (!dict.ContainsKey(key))
+					{
+						// Add the lowercase key and the titlecase value to the dictionary
+						dict.Add(key.ToLower(), CapFirstLetter(ini.ReadSetting(sectionName, key, 65535, "").ToLower()));
+					}
+				}
+				catch
+				{
+
+				}
+			}
+			return dict;
+
+		}
+
+		private void FirstTimeSetup()
+		{
+			// If the user has never run the program before, set the default My Documents and Program Data paths
+			if (Properties.Settings.Default.FirstUse)
+			{
+				Properties.Settings.Default.MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+				Properties.Settings.Default.ProgramDataPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
+				Properties.Settings.Default.FirstUse = false;
+				Properties.Settings.Default.Save();
+
+				System.Media.SystemSounds.Exclamation.Play();
+
+				// If the user says they are not using the default install location, send them to the options window
+				if (MessageBox.Show("Are you using default install locations for all Hi-Rez games?",
+									"First Time Setup",
+									MessageBoxButtons.YesNo,
+									MessageBoxIcon.Question) != DialogResult.Yes)
+				{
+					settingsMenuItem.PerformClick();
+				}
+
+			}
+		}
+
 		private static void ForceDeleteDirectory(string path)
 		{
 			if (Directory.Exists(path))
 			{
+				// Get the directory and set its attributes to Normal
 				DirectoryInfo directory = new DirectoryInfo(path) { Attributes = FileAttributes.Normal };
 
+				// For each file/folder in the root directory, set the file/folder's attributes to Normal
 				foreach (var info in directory.GetFileSystemInfos("*", SearchOption.AllDirectories))
 				{
 					info.Attributes = FileAttributes.Normal;
 				}
 
+				// Delete the root directory recursively
 				directory.Delete(true);
 
 				System.Media.SystemSounds.Asterisk.Play();
@@ -450,40 +420,44 @@ namespace CyberAssistTool
 		private void ImportIniFile(String path)
 		{
 			ini = new IniFile(path);
-			userConfigSections.Clear();
+			userConfig.Clear();
 
 			try
 			{
-				userConfigSections.Add("SystemSettings", FillDictionary("SystemSettings"));
+				// Add the ini section as the key and a dictionary of the key/value pairs from the section as the Value
+				userConfig.Add("SystemSettings", FillDictionary("SystemSettings"));
 
+				// If file is tribes.ini, use the specific section for the engine settings. Otherwise, use the UE3 default.
 				if (path.Contains("tribes.ini"))
 				{
-					userConfigSections.Add("TribesGame.TrGameEngine", FillDictionary("TribesGame.TrGameEngine"));
+					userConfig.Add("TribesGame.TrGameEngine", FillDictionary("TribesGame.TrGameEngine"));
 				}
 				else
 				{
-					userConfigSections.Add("Engine.Engine", FillDictionary("Engine.Engine"));
+					userConfig.Add("Engine.Engine", FillDictionary("Engine.Engine"));
 				}
 			}
-			catch
-			{
+			catch {	}
 
-			}
-
+			// Load the userConfig into the appropriate comboboxes
 			LoadIniFile();
 
 		}
 
 		private void LoadIniFile()
 		{
-			foreach (ComboBox cbo in iniEditorPanel.Controls.OfType<ComboBox>())
+			// For each combobox found in the config editor panel
+			foreach (ComboBox cbo in configEditorPanel.Controls.OfType<ComboBox>())
 			{
-				foreach (var dict in userConfigSections.Values)
+				// For each dictionary of key/value pairs (SystemSettings and Engine.Engine) found in userconfig.Values
+				foreach (var dict in userConfig.Values)
 				{
+					// Remove the suffix from the combobox name so we can use it as a key for the dictionary
 					String key = cbo.Name.Substring(0, cbo.Name.Length - comboBoxSuffix.Length).ToLower();
 
 					try
 					{
+						// If the dictionary contains the key, use the default procedure. Otherwise, use the key-specific procedure.
 						if (dict.ContainsKey(key))
 						{
 							var data = optionPresets[key].ToList();
@@ -520,6 +494,7 @@ namespace CyberAssistTool
 							var data = new List<DataSource>();
 							var isSupportedGame = CompareTextureGroupSettings(dict, out data, out initialValue);
 
+							// If CompareTextureGroupSettings returned true, populate and enable the combobox
 							if (isSupportedGame)
 							{
 								PopulateComboBox(cbo, data, "Name", "Value", initialValue);
@@ -552,92 +527,81 @@ namespace CyberAssistTool
 
 		}
 
-		private String CapFirstLetter(String str)
+		private void LoadOptionPresets(Assembly asm)
 		{
-			return str.Substring(0, 1).ToUpper() + str.Substring(1);
+			try
+			{
+				using (var stream = asm.GetManifestResourceStream("CyberAssistTool.Resources.options.json"))
+				using (var reader = new StreamReader(stream))
+				{
+					var json = reader.ReadToEnd();
+					optionPresets = new Dictionary<String, List<DataSource>>().FromJson(json);
+				}
+			}
+			catch
+			{
+				MessageBox.Show("Could not load config options.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			}
+
 		}
 
-		private bool CompareTextureGroupSettings(Dictionary<String, String> dict, out List<DataSource> data, out String initialValue)
+		private void LoadScreenResList()
 		{
-			data = new List<DataSource>();
-			initialValue = "Custom";
-			String gameName = "";
-
-			if (ini.Filename.Split('\\').Last().ToLower() == "tribes.ini")
-			{
-				gameName = "tribes";
-
-			}
-			else if (ini.Filename.Split('\\').Last().ToLower() == "battleengine.ini")
-			{
-				gameName = "smite";
-
-			}
-			else
-			{
-				return false;
-			}
-
+			screenResList = new List<DataSource>();
+			DEVMODE vDevMode = new DEVMODE();
+			String resolution = "";
 			int i = 0;
-			int j = 0;
 
-			//for each value in tgsettings where the key contains the gameName
-			foreach (var other in textureGroupPresets.Where(x => x.Key.Split(',')[0] == gameName))
+			while (NativeMethods.EnumDisplaySettings(null, i, ref vDevMode))
 			{
-				data.Add(new DataSource(other.Key.Split(',')[1], other.Key));
-				if (initialValue == "Custom")
+				if (vDevMode.dmPelsWidth >= 800)
 				{
-					foreach (var pair in other.Value)
-					{
-						//if tg preset equals tg current
-						if (pair.Value.ToLower() == dict[pair.Key].ToLower())
-						{
-							j++;
-						}
-						else
-						{
-							j = 0;
-							break;
-						}
-					}
-				}
-
-				if (textureGroupPresets[other.Key].Count == j)
-				{
-					initialValue = other.Key;
-					j = 0;
+					resolution = vDevMode.dmPelsWidth + "x" + vDevMode.dmPelsHeight;
+					screenResList.Add(new DataSource(resolution, resolution));
 				}
 				i++;
 			}
-			if (initialValue == "Custom")
-			{
-				data.Insert(0, new DataSource(initialValue, gameName + ",Custom"));
-			}
+			screenResList = screenResList.GroupBy(d => d.Value).Select(g => g.First()).ToList();
+			//data.Sort((a, b) => Convert.ToInt32(a.Value.ToString().Split('x')[0]).CompareTo(Convert.ToInt32(b.Value.ToString().Split('x')[0])));
 
-			return true;
+			screenResList = screenResList.OrderBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[0]))
+										.ThenBy(x => Convert.ToInt32(x.Value.ToString().Split('x')[1]))
+										.ToList();
 		}
 
-		private Dictionary<String, String> FillDictionary(String sectionName)
+		private void LoadScreenTypeList()
 		{
-			Dictionary<String, String> dict = new Dictionary<String, String>();
-			String[] section = ini.ReadKeysInSection(sectionName);
+			screenTypeList = new List<DataSource>();
 
-			foreach (String key in section)
+			screenTypeList.Add(new DataSource("Fullscreen", "True,False"));
+			screenTypeList.Add(new DataSource("Borderless", "False,True"));
+			screenTypeList.Add(new DataSource("Windowed", "False,False"));
+		}
+
+		private void LoadTextureGroupPresets(Assembly asm)
+		{
+			/* 
+			 * The texture group saving/loading procedure has not yet been refactored
+			 * It's a bit clunky and still using an XML file to store the data
+			 * This will be remedied in the near future (probably)
+			 */
+
+			try
 			{
-				try
+				// Get the XML file from the embedded resources and deseriealize it to List<settingGroup>
+				using (XmlReader reader = XmlReader.Create(asm.GetManifestResourceStream("CyberAssistTool.Resources.texture_groups.xml")))
 				{
-					if (!dict.ContainsKey(key))
+					XmlSerializer xml = new XmlSerializer(typeof(List<SettingGroup>));
+					var settingGroup = (List<SettingGroup>)xml.Deserialize(reader);
+
+					// For each tgPreset in settingGroup, load the preset into a dictionary
+					foreach (SettingGroup gamePreset in settingGroup)
 					{
-						dict.Add(key.ToLower(), CapFirstLetter(ini.ReadSetting(sectionName, key, 65535, "").ToLower()));
+						GetTextureGroupSettings(gamePreset);
 					}
 				}
-				catch
-				{
-
-				}
 			}
-			return dict;
-
+			catch {	}
 		}
 
 		private void PopulateComboBox(ComboBox cb, Object data, String displayMember, String valueMember, Object initialValue)
@@ -649,14 +613,33 @@ namespace CyberAssistTool
 			//Debug.WriteLine(initialValue);
 		}
 
+		private void SaveIniFile()
+		{
+			//For every section in the userConfig dictionary... 
+			foreach (var section in userConfig)
+			{
+				// For every key/value pair in each section...
+				foreach (var pair in section.Value)
+				{
+					// Write to the ini file
+					ini.WriteSetting(section.Key, pair.Key, pair.Value);
+				}
+			}
+
+		}
+
 		private void UpdateConfig()
 		{
-			foreach (ComboBox cbo in iniEditorPanel.Controls.OfType<ComboBox>())
+			// For each combobox in the config editor panel
+			foreach (ComboBox cbo in configEditorPanel.Controls.OfType<ComboBox>())
 			{
-				String key = cbo.Name.Substring(0, cbo.Name.Length - comboBoxSuffix.Length).ToLower();
-
-				foreach (var dict in userConfigSections.Values)
+				// For each dictionary of key/value pairs (SystemSettings and Engine.Engine) found in userconfig.Values
+				foreach (var dict in userConfig.Values)
 				{
+					// Remove the suffix from the combobox name so we can use it as a key for the dictionary
+					String key = cbo.Name.Substring(0, cbo.Name.Length - comboBoxSuffix.Length).ToLower();
+
+					// If the combobox is enabled (was editable) and the key matches, run the key-specific procedure
 					if (cbo.Enabled && key == "screentype")
 					{
 						try
@@ -665,10 +648,7 @@ namespace CyberAssistTool
 							dict["fullscreen"] = temp[0];
 							dict["borderless"] = temp[1];
 						}
-						catch
-						{
-
-						}
+						catch { }
 					}
 					else if (cbo.Enabled && key == "screenres")
 					{
@@ -678,27 +658,28 @@ namespace CyberAssistTool
 							dict["resx"] = temp[0];
 							dict["resy"] = temp[1];
 						}
-						catch
-						{
-
-						}
+						catch {	}
 					}
 					else if (cbo.Enabled && key == "texturedetail")
 					{
+						// If the combobox value is not a custom setting
 						if (!cbo.SelectedValue.ToString().Contains("custom"))
 						{
 							try
 							{
 								Dictionary<String, String> other = textureGroupPresets[cbo.SelectedValue.ToString()];
 
-								foreach (var pair in dict.ToList())
+								// For each tg setting in the dictionary
+								foreach (var tgCurrent in dict.ToList())
 								{
-									if (pair.Key.Contains("texturegroup_"))
+									// If the key is a texturegroup (they all are), copy the value to the master dictionary
+									if (tgCurrent.Key.Contains("texturegroup_"))
 									{
-										dict[pair.Key] = other[pair.Key];
+										dict[tgCurrent.Key] = other[tgCurrent.Key];
 									}
 								}
 
+								// Removes any extra options in the combobox
 								String initialValue;
 								var data = new List<DataSource>();
 								CompareTextureGroupSettings(dict, out data, out initialValue);
@@ -706,15 +687,14 @@ namespace CyberAssistTool
 								PopulateComboBox(cbo, data, "Name", "Value", initialValue);
 
 							}
-							catch
-							{
-
-							}
+							catch {	}
 						}
 					}
+					// Otherwise, try to save the combobox value to the dictionary directly
 					else if (cbo.Enabled)
 					{
 						String temp;
+						// If the value associated with the key exists and the value is not null
 						if (dict.TryGetValue(key, out temp) && cbo.SelectedValue != null)
 						{
 							dict[key] = cbo.SelectedValue.ToString();
@@ -724,25 +704,6 @@ namespace CyberAssistTool
 				}
 			}
 		}
-
-		private void SaveIniFile()
-		{
-			//For every iniSection in the main array, and for every keyValuePair in each section, write to the ini file.
-			foreach (var section in userConfigSections)
-			{
-				foreach (var pair in section.Value)
-				{
-					ini.WriteSetting(section.Key, pair.Key, pair.Value);
-				}
-			}
-
-		}
-
-		private void toolTip1_Popup(object sender, PopupEventArgs e)
-		{
-
-		}
-
 
 	}
 }

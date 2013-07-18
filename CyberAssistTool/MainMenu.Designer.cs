@@ -81,7 +81,7 @@
 			this.presetComboBox = new System.Windows.Forms.ComboBox();
 			this.loadFileButton = new System.Windows.Forms.Button();
 			this.saveFileButton = new System.Windows.Forms.Button();
-			this.iniEditorPanel = new System.Windows.Forms.Panel();
+			this.configEditorPanel = new System.Windows.Forms.Panel();
 			this.particleLodBiasComboBox = new System.Windows.Forms.ComboBox();
 			this.particleLodBiasLabel = new System.Windows.Forms.Label();
 			this.bShouldAllowRagdollingComboBox = new System.Windows.Forms.ComboBox();
@@ -166,7 +166,7 @@
 			this.mainTabControl.SuspendLayout();
 			this.repairTab.SuspendLayout();
 			this.configEditorTab.SuspendLayout();
-			this.iniEditorPanel.SuspendLayout();
+			this.configEditorPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -698,7 +698,7 @@
 			this.configEditorTab.Controls.Add(this.presetComboBox);
 			this.configEditorTab.Controls.Add(this.loadFileButton);
 			this.configEditorTab.Controls.Add(this.saveFileButton);
-			this.configEditorTab.Controls.Add(this.iniEditorPanel);
+			this.configEditorTab.Controls.Add(this.configEditorPanel);
 			this.configEditorTab.Location = new System.Drawing.Point(4, 22);
 			this.configEditorTab.Name = "configEditorTab";
 			this.configEditorTab.Padding = new System.Windows.Forms.Padding(3);
@@ -773,89 +773,89 @@
 			this.saveFileButton.UseVisualStyleBackColor = true;
 			this.saveFileButton.Click += new System.EventHandler(this.saveFileButton_Click);
 			// 
-			// iniEditorPanel
+			// configEditorPanel
 			// 
-			this.iniEditorPanel.AutoScroll = true;
-			this.iniEditorPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.iniEditorPanel.Controls.Add(this.particleLodBiasComboBox);
-			this.iniEditorPanel.Controls.Add(this.particleLodBiasLabel);
-			this.iniEditorPanel.Controls.Add(this.bShouldAllowRagdollingComboBox);
-			this.iniEditorPanel.Controls.Add(this.bShouldAllowRagdollingLabel);
-			this.iniEditorPanel.Controls.Add(this.bForceStaticTerrainComboBox);
-			this.iniEditorPanel.Controls.Add(this.bForceStaticTerrainLabel);
-			this.iniEditorPanel.Controls.Add(this.useVsyncComboBox);
-			this.iniEditorPanel.Controls.Add(this.maxSmoothedFrameRateComboBox);
-			this.iniEditorPanel.Controls.Add(this.minSmoothedFrameRateComboBox);
-			this.iniEditorPanel.Controls.Add(this.bSmoothFrameRateComboBox);
-			this.iniEditorPanel.Controls.Add(this.trilinearComboBox);
-			this.iniEditorPanel.Controls.Add(this.maxAnisotropyComboBox);
-			this.iniEditorPanel.Controls.Add(this.textureDetailComboBox);
-			this.iniEditorPanel.Controls.Add(this.bAllowWholeSceneDominantShadowsComboBox);
-			this.iniEditorPanel.Controls.Add(this.lightEnvironmentShadowsComboBox);
-			this.iniEditorPanel.Controls.Add(this.textureDetailLabel);
-			this.iniEditorPanel.Controls.Add(this.bAllowWholeSceneDominantShadowsLabel);
-			this.iniEditorPanel.Controls.Add(this.textureDetailHeaderLabel);
-			this.iniEditorPanel.Controls.Add(this.maxAnisotropyLabel);
-			this.iniEditorPanel.Controls.Add(this.trilinearLabel);
-			this.iniEditorPanel.Controls.Add(this.extraHeaderLabel);
-			this.iniEditorPanel.Controls.Add(this.minSmoothedFrameRateLabel);
-			this.iniEditorPanel.Controls.Add(this.maxSmoothedFrameRateLabel);
-			this.iniEditorPanel.Controls.Add(this.useVsyncLabel);
-			this.iniEditorPanel.Controls.Add(this.bSmoothFrameRateLabel);
-			this.iniEditorPanel.Controls.Add(this.lightEnvironmentShadowsLabel);
-			this.iniEditorPanel.Controls.Add(this.dynamicShadowsComboBox);
-			this.iniEditorPanel.Controls.Add(this.oneFrameThreadLagComboBox);
-			this.iniEditorPanel.Controls.Add(this.skeletalMeshLodBiasComboBox);
-			this.iniEditorPanel.Controls.Add(this.detailModeComboBox);
-			this.iniEditorPanel.Controls.Add(this.speedTreeFrondsComboBox);
-			this.iniEditorPanel.Controls.Add(this.speedTreeLeavesComboBox);
-			this.iniEditorPanel.Controls.Add(this.allowRadialBlurComboBox);
-			this.iniEditorPanel.Controls.Add(this.motionBlurComboBox);
-			this.iniEditorPanel.Controls.Add(this.lensFlaresComboBox);
-			this.iniEditorPanel.Controls.Add(this.fogVolumesComboBox);
-			this.iniEditorPanel.Controls.Add(this.dynamicShadowsLabel);
-			this.iniEditorPanel.Controls.Add(this.shadowDetailHeaderLabel);
-			this.iniEditorPanel.Controls.Add(this.fogVolumesLabel);
-			this.iniEditorPanel.Controls.Add(this.lensFlaresLabel);
-			this.iniEditorPanel.Controls.Add(this.motionBlurLabel);
-			this.iniEditorPanel.Controls.Add(this.speedTreeLeavesLabel);
-			this.iniEditorPanel.Controls.Add(this.speedTreeFrondsLabel);
-			this.iniEditorPanel.Controls.Add(this.detailModeLabel);
-			this.iniEditorPanel.Controls.Add(this.skeletalMesLodBiasLabel);
-			this.iniEditorPanel.Controls.Add(this.oneFrameThreadLagLabel);
-			this.iniEditorPanel.Controls.Add(this.allowRadialBlurLabel);
-			this.iniEditorPanel.Controls.Add(this.distortionLabel);
-			this.iniEditorPanel.Controls.Add(this.distortionComboBox);
-			this.iniEditorPanel.Controls.Add(this.depthOfFieldComboBox);
-			this.iniEditorPanel.Controls.Add(this.depthOfFieldLabel);
-			this.iniEditorPanel.Controls.Add(this.bloomComboBox);
-			this.iniEditorPanel.Controls.Add(this.ambientOcclusionComboBox);
-			this.iniEditorPanel.Controls.Add(this.bAllowLightShaftsComboBox);
-			this.iniEditorPanel.Controls.Add(this.staticDecalsComboBox);
-			this.iniEditorPanel.Controls.Add(this.dynamicDecalsComboBox);
-			this.iniEditorPanel.Controls.Add(this.directionalLightMapsComboBox);
-			this.iniEditorPanel.Controls.Add(this.compositeDynamicLightsComboBox);
-			this.iniEditorPanel.Controls.Add(this.dynamicLightsComboBox);
-			this.iniEditorPanel.Controls.Add(this.bUseMaxQualityModeComboBox);
-			this.iniEditorPanel.Controls.Add(this.screenResComboBox);
-			this.iniEditorPanel.Controls.Add(this.screenTypeComboBox);
-			this.iniEditorPanel.Controls.Add(this.worldDetailHeaderLabel);
-			this.iniEditorPanel.Controls.Add(this.screenTypeLabel);
-			this.iniEditorPanel.Controls.Add(this.screenResLabel);
-			this.iniEditorPanel.Controls.Add(this.bUseMaxQualityModeLabel);
-			this.iniEditorPanel.Controls.Add(this.dynamicLightsLabel);
-			this.iniEditorPanel.Controls.Add(this.compositeDynamicLightsLabel);
-			this.iniEditorPanel.Controls.Add(this.dynamicDecalsLabel);
-			this.iniEditorPanel.Controls.Add(this.staticDecalsLabel);
-			this.iniEditorPanel.Controls.Add(this.bAllowLightShaftsLabel);
-			this.iniEditorPanel.Controls.Add(this.ambientOcclusionLabel);
-			this.iniEditorPanel.Controls.Add(this.bloomLabel);
-			this.iniEditorPanel.Controls.Add(this.directionalLightMapsLabel);
-			this.iniEditorPanel.Controls.Add(this.screenSettingsHeaderLabel);
-			this.iniEditorPanel.Location = new System.Drawing.Point(3, 3);
-			this.iniEditorPanel.Name = "iniEditorPanel";
-			this.iniEditorPanel.Size = new System.Drawing.Size(456, 359);
-			this.iniEditorPanel.TabIndex = 0;
+			this.configEditorPanel.AutoScroll = true;
+			this.configEditorPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.configEditorPanel.Controls.Add(this.particleLodBiasComboBox);
+			this.configEditorPanel.Controls.Add(this.particleLodBiasLabel);
+			this.configEditorPanel.Controls.Add(this.bShouldAllowRagdollingComboBox);
+			this.configEditorPanel.Controls.Add(this.bShouldAllowRagdollingLabel);
+			this.configEditorPanel.Controls.Add(this.bForceStaticTerrainComboBox);
+			this.configEditorPanel.Controls.Add(this.bForceStaticTerrainLabel);
+			this.configEditorPanel.Controls.Add(this.useVsyncComboBox);
+			this.configEditorPanel.Controls.Add(this.maxSmoothedFrameRateComboBox);
+			this.configEditorPanel.Controls.Add(this.minSmoothedFrameRateComboBox);
+			this.configEditorPanel.Controls.Add(this.bSmoothFrameRateComboBox);
+			this.configEditorPanel.Controls.Add(this.trilinearComboBox);
+			this.configEditorPanel.Controls.Add(this.maxAnisotropyComboBox);
+			this.configEditorPanel.Controls.Add(this.textureDetailComboBox);
+			this.configEditorPanel.Controls.Add(this.bAllowWholeSceneDominantShadowsComboBox);
+			this.configEditorPanel.Controls.Add(this.lightEnvironmentShadowsComboBox);
+			this.configEditorPanel.Controls.Add(this.textureDetailLabel);
+			this.configEditorPanel.Controls.Add(this.bAllowWholeSceneDominantShadowsLabel);
+			this.configEditorPanel.Controls.Add(this.textureDetailHeaderLabel);
+			this.configEditorPanel.Controls.Add(this.maxAnisotropyLabel);
+			this.configEditorPanel.Controls.Add(this.trilinearLabel);
+			this.configEditorPanel.Controls.Add(this.extraHeaderLabel);
+			this.configEditorPanel.Controls.Add(this.minSmoothedFrameRateLabel);
+			this.configEditorPanel.Controls.Add(this.maxSmoothedFrameRateLabel);
+			this.configEditorPanel.Controls.Add(this.useVsyncLabel);
+			this.configEditorPanel.Controls.Add(this.bSmoothFrameRateLabel);
+			this.configEditorPanel.Controls.Add(this.lightEnvironmentShadowsLabel);
+			this.configEditorPanel.Controls.Add(this.dynamicShadowsComboBox);
+			this.configEditorPanel.Controls.Add(this.oneFrameThreadLagComboBox);
+			this.configEditorPanel.Controls.Add(this.skeletalMeshLodBiasComboBox);
+			this.configEditorPanel.Controls.Add(this.detailModeComboBox);
+			this.configEditorPanel.Controls.Add(this.speedTreeFrondsComboBox);
+			this.configEditorPanel.Controls.Add(this.speedTreeLeavesComboBox);
+			this.configEditorPanel.Controls.Add(this.allowRadialBlurComboBox);
+			this.configEditorPanel.Controls.Add(this.motionBlurComboBox);
+			this.configEditorPanel.Controls.Add(this.lensFlaresComboBox);
+			this.configEditorPanel.Controls.Add(this.fogVolumesComboBox);
+			this.configEditorPanel.Controls.Add(this.dynamicShadowsLabel);
+			this.configEditorPanel.Controls.Add(this.shadowDetailHeaderLabel);
+			this.configEditorPanel.Controls.Add(this.fogVolumesLabel);
+			this.configEditorPanel.Controls.Add(this.lensFlaresLabel);
+			this.configEditorPanel.Controls.Add(this.motionBlurLabel);
+			this.configEditorPanel.Controls.Add(this.speedTreeLeavesLabel);
+			this.configEditorPanel.Controls.Add(this.speedTreeFrondsLabel);
+			this.configEditorPanel.Controls.Add(this.detailModeLabel);
+			this.configEditorPanel.Controls.Add(this.skeletalMesLodBiasLabel);
+			this.configEditorPanel.Controls.Add(this.oneFrameThreadLagLabel);
+			this.configEditorPanel.Controls.Add(this.allowRadialBlurLabel);
+			this.configEditorPanel.Controls.Add(this.distortionLabel);
+			this.configEditorPanel.Controls.Add(this.distortionComboBox);
+			this.configEditorPanel.Controls.Add(this.depthOfFieldComboBox);
+			this.configEditorPanel.Controls.Add(this.depthOfFieldLabel);
+			this.configEditorPanel.Controls.Add(this.bloomComboBox);
+			this.configEditorPanel.Controls.Add(this.ambientOcclusionComboBox);
+			this.configEditorPanel.Controls.Add(this.bAllowLightShaftsComboBox);
+			this.configEditorPanel.Controls.Add(this.staticDecalsComboBox);
+			this.configEditorPanel.Controls.Add(this.dynamicDecalsComboBox);
+			this.configEditorPanel.Controls.Add(this.directionalLightMapsComboBox);
+			this.configEditorPanel.Controls.Add(this.compositeDynamicLightsComboBox);
+			this.configEditorPanel.Controls.Add(this.dynamicLightsComboBox);
+			this.configEditorPanel.Controls.Add(this.bUseMaxQualityModeComboBox);
+			this.configEditorPanel.Controls.Add(this.screenResComboBox);
+			this.configEditorPanel.Controls.Add(this.screenTypeComboBox);
+			this.configEditorPanel.Controls.Add(this.worldDetailHeaderLabel);
+			this.configEditorPanel.Controls.Add(this.screenTypeLabel);
+			this.configEditorPanel.Controls.Add(this.screenResLabel);
+			this.configEditorPanel.Controls.Add(this.bUseMaxQualityModeLabel);
+			this.configEditorPanel.Controls.Add(this.dynamicLightsLabel);
+			this.configEditorPanel.Controls.Add(this.compositeDynamicLightsLabel);
+			this.configEditorPanel.Controls.Add(this.dynamicDecalsLabel);
+			this.configEditorPanel.Controls.Add(this.staticDecalsLabel);
+			this.configEditorPanel.Controls.Add(this.bAllowLightShaftsLabel);
+			this.configEditorPanel.Controls.Add(this.ambientOcclusionLabel);
+			this.configEditorPanel.Controls.Add(this.bloomLabel);
+			this.configEditorPanel.Controls.Add(this.directionalLightMapsLabel);
+			this.configEditorPanel.Controls.Add(this.screenSettingsHeaderLabel);
+			this.configEditorPanel.Location = new System.Drawing.Point(3, 3);
+			this.configEditorPanel.Name = "configEditorPanel";
+			this.configEditorPanel.Size = new System.Drawing.Size(456, 359);
+			this.configEditorPanel.TabIndex = 0;
 			// 
 			// particleLodBiasComboBox
 			// 
@@ -890,7 +890,6 @@
 			this.bShouldAllowRagdollingComboBox.Size = new System.Drawing.Size(164, 23);
 			this.bShouldAllowRagdollingComboBox.TabIndex = 72;
 			this.bShouldAllowRagdollingComboBox.Tag = "True,True|False,False";
-			this.bShouldAllowRagdollingComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// bShouldAllowRagdollingLabel
 			// 
@@ -913,7 +912,6 @@
 			this.bForceStaticTerrainComboBox.Size = new System.Drawing.Size(164, 23);
 			this.bForceStaticTerrainComboBox.TabIndex = 70;
 			this.bForceStaticTerrainComboBox.Tag = "True,True|False,False";
-			this.bForceStaticTerrainComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// bForceStaticTerrainLabel
 			// 
@@ -936,7 +934,6 @@
 			this.useVsyncComboBox.Size = new System.Drawing.Size(164, 23);
 			this.useVsyncComboBox.TabIndex = 68;
 			this.useVsyncComboBox.Tag = "True,True|False,False";
-			this.useVsyncComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// maxSmoothedFrameRateComboBox
 			// 
@@ -950,7 +947,6 @@
 			this.maxSmoothedFrameRateComboBox.Size = new System.Drawing.Size(164, 23);
 			this.maxSmoothedFrameRateComboBox.TabIndex = 66;
 			this.maxSmoothedFrameRateComboBox.Tag = "30 FPS,32|60 FPS,62|90 FPS,92|120 FPS,122";
-			this.maxSmoothedFrameRateComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// minSmoothedFrameRateComboBox
 			// 
@@ -963,7 +959,6 @@
 			this.minSmoothedFrameRateComboBox.Size = new System.Drawing.Size(164, 23);
 			this.minSmoothedFrameRateComboBox.TabIndex = 64;
 			this.minSmoothedFrameRateComboBox.Tag = "15 FPS, 17|20 FPS,22|30 FPS,32";
-			this.minSmoothedFrameRateComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// bSmoothFrameRateComboBox
 			// 
@@ -976,7 +971,6 @@
 			this.bSmoothFrameRateComboBox.Size = new System.Drawing.Size(164, 23);
 			this.bSmoothFrameRateComboBox.TabIndex = 62;
 			this.bSmoothFrameRateComboBox.Tag = "True,True|False,False";
-			this.bSmoothFrameRateComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// trilinearComboBox
 			// 
@@ -989,7 +983,6 @@
 			this.trilinearComboBox.Size = new System.Drawing.Size(164, 23);
 			this.trilinearComboBox.TabIndex = 59;
 			this.trilinearComboBox.Tag = "True,True|False,False";
-			this.trilinearComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// maxAnisotropyComboBox
 			// 
@@ -1003,7 +996,6 @@
 			this.maxAnisotropyComboBox.Size = new System.Drawing.Size(164, 23);
 			this.maxAnisotropyComboBox.TabIndex = 57;
 			this.maxAnisotropyComboBox.Tag = "Off,0|1x,1|2x,2|4x,4|8x,8|16x,16";
-			this.maxAnisotropyComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// textureDetailComboBox
 			// 
@@ -1015,7 +1007,6 @@
 			this.textureDetailComboBox.Name = "textureDetailComboBox";
 			this.textureDetailComboBox.Size = new System.Drawing.Size(164, 23);
 			this.textureDetailComboBox.TabIndex = 55;
-			this.textureDetailComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// bAllowWholeSceneDominantShadowsComboBox
 			// 
@@ -1028,7 +1019,6 @@
 			this.bAllowWholeSceneDominantShadowsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.bAllowWholeSceneDominantShadowsComboBox.TabIndex = 52;
 			this.bAllowWholeSceneDominantShadowsComboBox.Tag = "True,True|False,False";
-			this.bAllowWholeSceneDominantShadowsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// lightEnvironmentShadowsComboBox
 			// 
@@ -1042,7 +1032,6 @@
 			this.lightEnvironmentShadowsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.lightEnvironmentShadowsComboBox.TabIndex = 50;
 			this.lightEnvironmentShadowsComboBox.Tag = "True,True|False,False";
-			this.lightEnvironmentShadowsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// textureDetailLabel
 			// 
@@ -1162,7 +1151,6 @@
 			this.dynamicShadowsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.dynamicShadowsComboBox.TabIndex = 48;
 			this.dynamicShadowsComboBox.Tag = "True,True|False,False";
-			this.dynamicShadowsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// oneFrameThreadLagComboBox
 			// 
@@ -1175,7 +1163,6 @@
 			this.oneFrameThreadLagComboBox.Size = new System.Drawing.Size(164, 23);
 			this.oneFrameThreadLagComboBox.TabIndex = 45;
 			this.oneFrameThreadLagComboBox.Tag = "True,True|False,False";
-			this.oneFrameThreadLagComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// skeletalMeshLodBiasComboBox
 			// 
@@ -1188,7 +1175,6 @@
 			this.skeletalMeshLodBiasComboBox.Size = new System.Drawing.Size(164, 23);
 			this.skeletalMeshLodBiasComboBox.TabIndex = 43;
 			this.skeletalMeshLodBiasComboBox.Tag = "Low,10|Medium,1|High,0";
-			this.skeletalMeshLodBiasComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// detailModeComboBox
 			// 
@@ -1201,7 +1187,6 @@
 			this.detailModeComboBox.Size = new System.Drawing.Size(164, 23);
 			this.detailModeComboBox.TabIndex = 41;
 			this.detailModeComboBox.Tag = "Off,0|Low,1|Medium,2|High,3|Maximum,4";
-			this.detailModeComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// speedTreeFrondsComboBox
 			// 
@@ -1214,7 +1199,6 @@
 			this.speedTreeFrondsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.speedTreeFrondsComboBox.TabIndex = 39;
 			this.speedTreeFrondsComboBox.Tag = "True,True|False,False";
-			this.speedTreeFrondsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// speedTreeLeavesComboBox
 			// 
@@ -1227,7 +1211,6 @@
 			this.speedTreeLeavesComboBox.Size = new System.Drawing.Size(164, 23);
 			this.speedTreeLeavesComboBox.TabIndex = 37;
 			this.speedTreeLeavesComboBox.Tag = "True,True|False,False";
-			this.speedTreeLeavesComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// allowRadialBlurComboBox
 			// 
@@ -1253,7 +1236,6 @@
 			this.motionBlurComboBox.Size = new System.Drawing.Size(164, 23);
 			this.motionBlurComboBox.TabIndex = 33;
 			this.motionBlurComboBox.Tag = "True,True|False,False";
-			this.motionBlurComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// lensFlaresComboBox
 			// 
@@ -1267,7 +1249,6 @@
 			this.lensFlaresComboBox.Size = new System.Drawing.Size(164, 23);
 			this.lensFlaresComboBox.TabIndex = 31;
 			this.lensFlaresComboBox.Tag = "True,True|False,False";
-			this.lensFlaresComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// fogVolumesComboBox
 			// 
@@ -1280,7 +1261,6 @@
 			this.fogVolumesComboBox.Size = new System.Drawing.Size(164, 23);
 			this.fogVolumesComboBox.TabIndex = 29;
 			this.fogVolumesComboBox.Tag = "True,True|False,False";
-			this.fogVolumesComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// dynamicShadowsLabel
 			// 
@@ -1405,7 +1385,6 @@
 			this.distortionComboBox.Size = new System.Drawing.Size(164, 23);
 			this.distortionComboBox.TabIndex = 27;
 			this.distortionComboBox.Tag = "True,True|False,False";
-			this.distortionComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// depthOfFieldComboBox
 			// 
@@ -1418,7 +1397,6 @@
 			this.depthOfFieldComboBox.Size = new System.Drawing.Size(164, 23);
 			this.depthOfFieldComboBox.TabIndex = 25;
 			this.depthOfFieldComboBox.Tag = "True,True|False,False";
-			this.depthOfFieldComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// depthOfFieldLabel
 			// 
@@ -1440,7 +1418,6 @@
 			this.bloomComboBox.Size = new System.Drawing.Size(164, 23);
 			this.bloomComboBox.TabIndex = 23;
 			this.bloomComboBox.Tag = "True,True|False,False";
-			this.bloomComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// ambientOcclusionComboBox
 			// 
@@ -1454,7 +1431,6 @@
 			this.ambientOcclusionComboBox.Size = new System.Drawing.Size(164, 23);
 			this.ambientOcclusionComboBox.TabIndex = 21;
 			this.ambientOcclusionComboBox.Tag = "True,True|False,False";
-			this.ambientOcclusionComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// bAllowLightShaftsComboBox
 			// 
@@ -1467,7 +1443,6 @@
 			this.bAllowLightShaftsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.bAllowLightShaftsComboBox.TabIndex = 19;
 			this.bAllowLightShaftsComboBox.Tag = "True,True|False,False";
-			this.bAllowLightShaftsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// staticDecalsComboBox
 			// 
@@ -1481,7 +1456,6 @@
 			this.staticDecalsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.staticDecalsComboBox.TabIndex = 17;
 			this.staticDecalsComboBox.Tag = "True,True|False,False";
-			this.staticDecalsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// dynamicDecalsComboBox
 			// 
@@ -1494,7 +1468,6 @@
 			this.dynamicDecalsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.dynamicDecalsComboBox.TabIndex = 15;
 			this.dynamicDecalsComboBox.Tag = "True,True|False,False";
-			this.dynamicDecalsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// directionalLightMapsComboBox
 			// 
@@ -1507,7 +1480,6 @@
 			this.directionalLightMapsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.directionalLightMapsComboBox.TabIndex = 13;
 			this.directionalLightMapsComboBox.Tag = "True,True|False,False";
-			this.directionalLightMapsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// compositeDynamicLightsComboBox
 			// 
@@ -1521,7 +1493,6 @@
 			this.compositeDynamicLightsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.compositeDynamicLightsComboBox.TabIndex = 11;
 			this.compositeDynamicLightsComboBox.Tag = "True,True|False,False";
-			this.compositeDynamicLightsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// dynamicLightsComboBox
 			// 
@@ -1534,7 +1505,6 @@
 			this.dynamicLightsComboBox.Size = new System.Drawing.Size(164, 23);
 			this.dynamicLightsComboBox.TabIndex = 9;
 			this.dynamicLightsComboBox.Tag = "True,True|False,False";
-			this.dynamicLightsComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// bUseMaxQualityModeComboBox
 			// 
@@ -1548,7 +1518,6 @@
 			this.bUseMaxQualityModeComboBox.Size = new System.Drawing.Size(164, 23);
 			this.bUseMaxQualityModeComboBox.TabIndex = 7;
 			this.bUseMaxQualityModeComboBox.Tag = "True,True|False,False";
-			this.bUseMaxQualityModeComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// screenResComboBox
 			// 
@@ -1561,7 +1530,6 @@
 			this.screenResComboBox.Name = "screenResComboBox";
 			this.screenResComboBox.Size = new System.Drawing.Size(164, 23);
 			this.screenResComboBox.TabIndex = 4;
-			this.screenResComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// screenTypeComboBox
 			// 
@@ -1574,7 +1542,6 @@
 			this.screenTypeComboBox.Size = new System.Drawing.Size(164, 23);
 			this.screenTypeComboBox.TabIndex = 2;
 			this.screenTypeComboBox.Tag = "Fullscreen;True,False|Borderless;False,True|Windowed;False,False";
-			this.screenTypeComboBox.SelectedValueChanged += new System.EventHandler(this.iniSettingsComboBox_SelectedValueChanged);
 			// 
 			// worldDetailHeaderLabel
 			// 
@@ -1730,7 +1697,7 @@
 			this.repairTab.PerformLayout();
 			this.configEditorTab.ResumeLayout(false);
 			this.configEditorTab.PerformLayout();
-			this.iniEditorPanel.ResumeLayout(false);
+			this.configEditorPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -1784,7 +1751,7 @@
 		private System.Windows.Forms.TabPage configEditorTab;
 		private System.Windows.Forms.Button loadFileButton;
 		private System.Windows.Forms.Button saveFileButton;
-		private System.Windows.Forms.Panel iniEditorPanel;
+		private System.Windows.Forms.Panel configEditorPanel;
 		private System.Windows.Forms.Label worldDetailHeaderLabel;
 		private System.Windows.Forms.Label screenTypeLabel;
 		private System.Windows.Forms.Label screenResLabel;

@@ -9,6 +9,15 @@ namespace CyberAssistTool
 {
 	public static class JsonHelper
 	{
+		public static T FromJson<T>(this T obj, String json) where T : class
+		{
+			using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
+			{
+				var js = new DataContractJsonSerializer(typeof(T));
+				return js.ReadObject(ms) as T;
+			}
+		}
+
 		public static String ToJson<T>(this T obj) where T : class
 		{
 			using (var ms = new MemoryStream())
@@ -19,14 +28,6 @@ namespace CyberAssistTool
 				return Encoding.Default.GetString(ms.ToArray());
 			}
 		}
-
-		public static T FromJson<T>(this T obj, String json) where T : class
-		{
-			using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
-			{
-				var js = new DataContractJsonSerializer(typeof(T));
-				return js.ReadObject(ms) as T;
-			}
-		}
+		
 	}
 }

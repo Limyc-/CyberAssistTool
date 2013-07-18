@@ -42,6 +42,11 @@ namespace CyberAssistTool
 			programDataTextBox.Text = ProgramDataPath;
 		}
 
+		private void cancelButton_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+
 		private void pathButton_Click(object sender, EventArgs e)
 		{
 			Button btn = (Button)sender;
@@ -100,13 +105,6 @@ namespace CyberAssistTool
 			this.Close();
 			
 		}
-
-		private void cancelButton_Click(object sender, EventArgs e)
-		{
-			this.Close();
-		}
-
-		
 
 	}
 }
