@@ -267,7 +267,7 @@ namespace CyberAssistTool
 			{
 				// Add a new data source using the current key. ("presetValue", "gameName,presetValue")
 				data.Add(new DataSource(other.Key.Split(',')[1], other.Key));
-				
+
 				// If the current settings have yet to be matched with a preset, continue checking for matches
 				if (initialValue == "Custom")
 				{
@@ -307,7 +307,7 @@ namespace CyberAssistTool
 
 			return true;
 		}
-		
+
 		private void GetTextureGroupSettings(SettingGroup setting)
 		{
 			Dictionary<String, String> textureGroups = new Dictionary<String, String>();
@@ -370,22 +370,36 @@ namespace CyberAssistTool
 			// If the user has never run the program before, set the default My Documents and Program Data paths
 			if (Properties.Settings.Default.FirstUse)
 			{
-				Properties.Settings.Default.MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-				Properties.Settings.Default.ProgramDataPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
-				Properties.Settings.Default.FirstUse = false;
-				Properties.Settings.Default.Save();
-
-				System.Media.SystemSounds.Exclamation.Play();
-
-				// If the user says they are not using the default install location, send them to the options window
-				if (MessageBox.Show("Are you using default install locations for all Hi-Rez games?",
-									"First Time Setup",
+				if (MessageBox.Show("This is a third party application. It is not endorsed by Hi-Rez Studios or its affiliates." +
+									"\nThe authors are not liable for any damages caused by the use of the application." +
+									"\n\nDo you agree to these terms?",
+									"Disclaimer",
 									MessageBoxButtons.YesNo,
-									MessageBoxIcon.Question) != DialogResult.Yes)
+									MessageBoxIcon.Exclamation) != DialogResult.Yes)
 				{
-					settingsMenuItem.PerformClick();
+					this.Close();
 				}
+				else
+				{
 
+
+					Properties.Settings.Default.MyDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+					Properties.Settings.Default.ProgramDataPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
+					Properties.Settings.Default.FirstUse = false;
+					Properties.Settings.Default.Save();
+
+					System.Media.SystemSounds.Exclamation.Play();
+
+					// If the user says they are not using the default install location, send them to the options window
+					if (MessageBox.Show("Are you using default install locations for all Hi-Rez games?",
+										"First Time Setup",
+										MessageBoxButtons.YesNo,
+										MessageBoxIcon.Question) != DialogResult.Yes)
+					{
+						settingsMenuItem.PerformClick();
+					}
+
+				}
 			}
 		}
 
@@ -437,7 +451,7 @@ namespace CyberAssistTool
 					userConfig.Add("Engine.Engine", FillDictionary("Engine.Engine"));
 				}
 			}
-			catch {	}
+			catch { }
 
 			// Load the userConfig into the appropriate comboboxes
 			LoadIniFile();
@@ -601,7 +615,7 @@ namespace CyberAssistTool
 					}
 				}
 			}
-			catch {	}
+			catch { }
 		}
 
 		private void PopulateComboBox(ComboBox cb, Object data, String displayMember, String valueMember, Object initialValue)
@@ -658,7 +672,7 @@ namespace CyberAssistTool
 							dict["resx"] = temp[0];
 							dict["resy"] = temp[1];
 						}
-						catch {	}
+						catch { }
 					}
 					else if (cbo.Enabled && key == "texturedetail")
 					{
@@ -687,7 +701,7 @@ namespace CyberAssistTool
 								PopulateComboBox(cbo, data, "Name", "Value", initialValue);
 
 							}
-							catch {	}
+							catch { }
 						}
 					}
 					// Otherwise, try to save the combobox value to the dictionary directly

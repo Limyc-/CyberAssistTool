@@ -44,8 +44,6 @@
 			this.nvidiaDriversButton = new System.Windows.Forms.Button();
 			this.installerButton = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.smiteLoopButton = new System.Windows.Forms.Button();
-			this.tribesLoopButton = new System.Windows.Forms.Button();
 			this.cacheButton = new System.Windows.Forms.Button();
 			this.playButton = new System.Windows.Forms.Button();
 			this.dotNetCheckButton = new System.Windows.Forms.Button();
@@ -67,7 +65,6 @@
 			this.checklistLabel = new System.Windows.Forms.Label();
 			this.supportTicketButton = new System.Windows.Forms.Button();
 			this.supportToolButton = new System.Windows.Forms.Button();
-			this.disclaimerLabel = new System.Windows.Forms.Label();
 			this.mainMenuStrip = new System.Windows.Forms.MainMenu(this.components);
 			this.fileMenuItem = new System.Windows.Forms.MenuItem();
 			this.exitMenuItem = new System.Windows.Forms.MenuItem();
@@ -158,6 +155,8 @@
 			this.directionalLightMapsLabel = new System.Windows.Forms.Label();
 			this.screenSettingsHeaderLabel = new System.Windows.Forms.Label();
 			this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+			this.groupBox6 = new System.Windows.Forms.GroupBox();
+			this.button1 = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -167,6 +166,7 @@
 			this.repairTab.SuspendLayout();
 			this.configEditorTab.SuspendLayout();
 			this.configEditorPanel.SuspendLayout();
+			this.groupBox6.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -340,41 +340,19 @@
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Controls.Add(this.smiteLoopButton);
-			this.groupBox2.Controls.Add(this.tribesLoopButton);
 			this.groupBox2.Controls.Add(this.cacheButton);
 			this.groupBox2.Controls.Add(this.playButton);
 			this.groupBox2.Controls.Add(this.dotNetCheckButton);
-			this.groupBox2.Location = new System.Drawing.Point(121, 6);
+			this.groupBox2.Location = new System.Drawing.Point(121, 65);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(107, 166);
+			this.groupBox2.Size = new System.Drawing.Size(107, 107);
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Auto Fix";
 			// 
-			// smiteLoopButton
-			// 
-			this.smiteLoopButton.Enabled = false;
-			this.smiteLoopButton.Location = new System.Drawing.Point(6, 19);
-			this.smiteLoopButton.Name = "smiteLoopButton";
-			this.smiteLoopButton.Size = new System.Drawing.Size(95, 23);
-			this.smiteLoopButton.TabIndex = 2;
-			this.smiteLoopButton.Text = "Smite Loop";
-			this.smiteLoopButton.UseVisualStyleBackColor = true;
-			// 
-			// tribesLoopButton
-			// 
-			this.tribesLoopButton.Enabled = false;
-			this.tribesLoopButton.Location = new System.Drawing.Point(6, 48);
-			this.tribesLoopButton.Name = "tribesLoopButton";
-			this.tribesLoopButton.Size = new System.Drawing.Size(95, 23);
-			this.tribesLoopButton.TabIndex = 3;
-			this.tribesLoopButton.Text = "Tribes Loop";
-			this.tribesLoopButton.UseVisualStyleBackColor = true;
-			// 
 			// cacheButton
 			// 
-			this.cacheButton.Location = new System.Drawing.Point(6, 135);
+			this.cacheButton.Location = new System.Drawing.Point(6, 77);
 			this.cacheButton.Name = "cacheButton";
 			this.cacheButton.Size = new System.Drawing.Size(95, 23);
 			this.cacheButton.TabIndex = 6;
@@ -385,7 +363,7 @@
 			// 
 			// playButton
 			// 
-			this.playButton.Location = new System.Drawing.Point(6, 106);
+			this.playButton.Location = new System.Drawing.Point(6, 48);
 			this.playButton.Name = "playButton";
 			this.playButton.Size = new System.Drawing.Size(95, 23);
 			this.playButton.TabIndex = 5;
@@ -398,7 +376,7 @@
 			// 
 			// dotNetCheckButton
 			// 
-			this.dotNetCheckButton.Location = new System.Drawing.Point(6, 77);
+			this.dotNetCheckButton.Location = new System.Drawing.Point(6, 18);
 			this.dotNetCheckButton.Name = "dotNetCheckButton";
 			this.dotNetCheckButton.Size = new System.Drawing.Size(95, 23);
 			this.dotNetCheckButton.TabIndex = 4;
@@ -467,7 +445,7 @@
 			this.groupBox4.Controls.Add(this.stopServiceButton);
 			this.groupBox4.Controls.Add(this.uninstallServiceButton);
 			this.groupBox4.Controls.Add(this.startServiceButton);
-			this.groupBox4.Location = new System.Drawing.Point(121, 180);
+			this.groupBox4.Location = new System.Drawing.Point(121, 182);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(107, 107);
 			this.groupBox4.TabIndex = 2;
@@ -498,7 +476,7 @@
 			// 
 			// startServiceButton
 			// 
-			this.startServiceButton.Location = new System.Drawing.Point(6, 19);
+			this.startServiceButton.Location = new System.Drawing.Point(6, 17);
 			this.startServiceButton.Name = "startServiceButton";
 			this.startServiceButton.Size = new System.Drawing.Size(95, 23);
 			this.startServiceButton.TabIndex = 0;
@@ -593,9 +571,9 @@
 			// 
 			// supportTicketButton
 			// 
-			this.supportTicketButton.Location = new System.Drawing.Point(328, 372);
+			this.supportTicketButton.Location = new System.Drawing.Point(121, 372);
 			this.supportTicketButton.Name = "supportTicketButton";
-			this.supportTicketButton.Size = new System.Drawing.Size(126, 29);
+			this.supportTicketButton.Size = new System.Drawing.Size(333, 29);
 			this.supportTicketButton.TabIndex = 9;
 			this.supportTicketButton.Tag = "http://hi-rez.custhelp.com/app/utils/login_form/redirect/ask";
 			this.supportTicketButton.Text = "Open a support ticket";
@@ -604,28 +582,15 @@
 			// 
 			// supportToolButton
 			// 
-			this.supportToolButton.Location = new System.Drawing.Point(328, 337);
+			this.supportToolButton.Location = new System.Drawing.Point(121, 337);
 			this.supportToolButton.Name = "supportToolButton";
-			this.supportToolButton.Size = new System.Drawing.Size(126, 29);
+			this.supportToolButton.Size = new System.Drawing.Size(333, 29);
 			this.supportToolButton.TabIndex = 8;
 			this.supportToolButton.Tag = "C:\\Program Files\\Hi-Rez Studios\\HiRezGamesDiagAndSupport.exe^C:\\Program Files (x8" +
     "6)\\Hi-Rez Studios\\HiRezGamesDiagAndSupport.exe";
 			this.supportToolButton.Text = "Hi-Rez Support Tool";
 			this.supportToolButton.UseVisualStyleBackColor = true;
 			this.supportToolButton.Click += new System.EventHandler(this.startProcessButton_Click);
-			// 
-			// disclaimerLabel
-			// 
-			this.disclaimerLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.disclaimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.disclaimerLabel.Location = new System.Drawing.Point(121, 315);
-			this.disclaimerLabel.Name = "disclaimerLabel";
-			this.disclaimerLabel.Size = new System.Drawing.Size(201, 86);
-			this.disclaimerLabel.TabIndex = 3;
-			this.disclaimerLabel.Text = "This is a third party application and not endorsed by Hi-Rez Studios. The authors" +
-    " are not responsible for damage or data loss of any kind caused by the use of th" +
-    "is app.";
-			this.disclaimerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// mainMenuStrip
 			// 
@@ -673,10 +638,10 @@
 			// repairTab
 			// 
 			this.repairTab.BackColor = System.Drawing.SystemColors.Control;
+			this.repairTab.Controls.Add(this.groupBox6);
 			this.repairTab.Controls.Add(this.groupBox1);
 			this.repairTab.Controls.Add(this.groupBox2);
 			this.repairTab.Controls.Add(this.groupBox3);
-			this.repairTab.Controls.Add(this.disclaimerLabel);
 			this.repairTab.Controls.Add(this.groupBox4);
 			this.repairTab.Controls.Add(this.supportToolButton);
 			this.repairTab.Controls.Add(this.groupBox5);
@@ -1672,6 +1637,27 @@
 			// 
 			this.openFileDialog.FileName = "openFileDialog";
 			// 
+			// groupBox6
+			// 
+			this.groupBox6.Controls.Add(this.button1);
+			this.groupBox6.Location = new System.Drawing.Point(121, 6);
+			this.groupBox6.Name = "groupBox6";
+			this.groupBox6.Size = new System.Drawing.Size(107, 50);
+			this.groupBox6.TabIndex = 10;
+			this.groupBox6.TabStop = false;
+			this.groupBox6.Text = "Install / Repair";
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(6, 19);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(95, 23);
+			this.button1.TabIndex = 2;
+			this.button1.Tag = "http://www.mediafire.com/download/gfzo0qq6gzz35tv/ManualPatcher_3.7.0.9.exe";
+			this.button1.Text = "Loop Fix";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.startProcessButton_Click);
+			// 
 			// MainMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1683,7 +1669,7 @@
 			this.Menu = this.mainMenuStrip;
 			this.Name = "MainMenu";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-			this.Text = "C.A.T. - CyberAssistTool v1.0.4.0";
+			this.Text = "Cyber Assist Tool v1.0.4.1";
 			this.Load += new System.EventHandler(this.MainMenu_Load);
 			this.Shown += new System.EventHandler(this.MainMenu_Shown);
 			this.Click += new System.EventHandler(this.settingsMenuItem_Click);
@@ -1698,6 +1684,7 @@
 			this.configEditorTab.ResumeLayout(false);
 			this.configEditorTab.PerformLayout();
 			this.configEditorPanel.ResumeLayout(false);
+			this.groupBox6.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -1719,8 +1706,6 @@
 		private System.Windows.Forms.Button timeDateButton;
 		private System.Windows.Forms.Button nvidiaDriversButton;
 		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.Button smiteLoopButton;
-		private System.Windows.Forms.Button tribesLoopButton;
 		private System.Windows.Forms.Button cacheButton;
 		private System.Windows.Forms.Button playButton;
 		private System.Windows.Forms.Button dotNetCheckButton;
@@ -1742,7 +1727,6 @@
 		private System.Windows.Forms.Label checklistLabel;
 		private System.Windows.Forms.Button supportTicketButton;
 		private System.Windows.Forms.Button supportToolButton;
-		private System.Windows.Forms.Label disclaimerLabel;
 		private System.Windows.Forms.MainMenu mainMenuStrip;
 		private System.Windows.Forms.MenuItem fileMenuItem;
 		private System.Windows.Forms.MenuItem editMenuItem;
@@ -1833,5 +1817,7 @@
 		private System.Windows.Forms.Label particleLodBiasLabel;
 		private System.Windows.Forms.MenuItem exitMenuItem;
 		private System.Windows.Forms.MenuItem settingsMenuItem;
+		private System.Windows.Forms.GroupBox groupBox6;
+		private System.Windows.Forms.Button button1;
 	}
 }
